@@ -1,0 +1,711 @@
+{
+  "kb_id": "osint_llm_kb_2969ba8a",
+  "title": "OSINT Field-Document Analysis KB (Solo LLM Analyst)",
+  "version": "1.1",
+  "created_utc": "2025-11-09T18:27:25.538058Z",
+  "updated_utc": "2025-11-09T21:05:00Z",
+  "source_files": [
+    {
+      "path": "/mnt/data/STAN_llm_osint_redacted.json",
+      "notes": "Curated solo-usable methods and document-focused techniques derived from the structured analytic techniques taxonomy."
+    }
+  ],
+  "intended_role": "Large Language Model acting as an OSINT analyst that extracts knowledge from field documents and open-source articles without relying on group activities.",
+  "core_principles": [
+    "Make reasoning explicit in structures the user can review (matrices, checklists, timelines).",
+    "Consider multiple hypotheses simultaneously; seek disconfirming evidence.",
+    "Continuously validate assumptions and indicators; track diagnosticity and confidence.",
+    "Prefer observable, document-grounded signals over conjecture; record source quality and potential deception.",
+    "Highlight uncertainty, gaps, and collection requirements; propose next steps."
+  ],
+  "document_intake_workflow": {
+    "steps": [
+      "Capture basic metadata (title, author, outlet, date(s), URL/filename, language, geography, doc_type, media_type).",
+      "Normalize text (dedupe headers/footers, expand abbreviations if known, preserve quotes, capture figures/tables captions).",
+      "Identify content types present (claims, data tables, photos, maps, first-hand statements, second-hand reporting).",
+      "Extract 5W1H items; collect proper nouns and temporal markers; resolve relative dates to absolute if possible.",
+      "Assess provenance and potential biases (publisher history, author affiliations, anonymous sourcing).",
+      "Detect red flags for manipulation (selective stats, inconsistent numbers/dates, misattributed quotes, deepfake risk hints).",
+      "Create a working evidence log with IDs, snippets, locations (page/paragraph), and initial credibility notes."
+    ],
+    "evidence_log_fields": [
+      "evidence_id",
+      "snippet",
+      "claim_or_fact",
+      "source_location",
+      "date_time_ref",
+      "evidence_type",
+      "provenance_notes",
+      "credibility_initial",
+      "links_to_indicators",
+      "links_to_hypotheses"
+    ]
+  },
+  "extraction_schema": {
+    "entity": {
+      "fields": [
+        "entity_id",
+        "name",
+        "type",
+        "aliases",
+        "roles",
+        "affiliations",
+        "locations",
+        "first_seen",
+        "last_seen",
+        "sources",
+        "confidence"
+      ]
+    },
+    "event": {
+      "fields": [
+        "event_id",
+        "type",
+        "when",
+        "where",
+        "actors",
+        "objects",
+        "capabilities",
+        "means",
+        "motive",
+        "outcomes",
+        "evidence_ids",
+        "confidence"
+      ]
+    },
+    "indicator": {
+      "fields": [
+        "indicator_id",
+        "name",
+        "definition",
+        "signal_patterns",
+        "collection_method",
+        "expected_when_true",
+        "expected_when_false",
+        "diagnosticity_0to1",
+        "polarity",
+        "priority",
+        "notes"
+      ]
+    },
+    "hypothesis": {
+      "fields": [
+        "hypothesis_id",
+        "statement",
+        "mutually_exclusive_group",
+        "status",
+        "supporting_evidence_ids",
+        "disconfirming_evidence_ids",
+        "confidence",
+        "notes"
+      ]
+    },
+    "timeline_item": {
+      "fields": [
+        "timepoint",
+        "description",
+        "evidence_ids",
+        "uncertainty"
+      ]
+    },
+    "network_edge": {
+      "fields": [
+        "from",
+        "to",
+        "relationship_type",
+        "evidence_ids",
+        "time_bounds",
+        "confidence"
+      ]
+    },
+    "deception_flag": {
+      "fields": [
+        "flag_id",
+        "category",
+        "rationale",
+        "evidence_ids",
+        "severity_1to5"
+      ]
+    }
+  },
+  "alert_rules": [
+    {
+      "name": "Imminent Activity Window",
+      "logic": "≥3 high-diagnostic indicators within a 7-day span align on one hypothesis.",
+      "action": "Flag H as Priority-1; compile decision brief."
+    },
+    {
+      "name": "Deception Risk",
+      "logic": "≥2 severe deception flags + single-source dependency for core claim.",
+      "action": "Downgrade confidence; seek independent corroboration."
+    },
+    {
+      "name": "Critical Assumption Breach",
+      "logic": "Any linchpin assumption falsified by new evidence.",
+      "action": "Trigger rapid reassessment; notify consumer of shift."
+    }
+  ],
+  "confidence_and_uncertainty": {
+    "scales": {
+      "confidence": [
+        "low",
+        "moderate",
+        "high"
+      ],
+      "severity": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "narrative_requirements": [
+      "Explicitly state dominant hypothesis and viable alternatives.",
+      "Summarize key disconfirming evidence that survived scrutiny.",
+      "List principal uncertainties and information gaps."
+    ]
+  },
+  "deception_checks": [
+    "Numbers/dates/units internally consistent? Cross-document consistent?",
+    "Quotes accurately attributed? Any ellipses changing meaning?",
+    "Are images/captions aligned? Reverse-image or metadata checks recommended (if available).",
+    "Source has motive/capability to deceive? Evidence of copy-paste propagation?",
+    "Language markers: excessive certainty, emotional appeals, hedged claims clustered around key assertions."
+  ],
+  "collection_requirements_template": [
+    "What specific indicator observations would most shift current judgments?",
+    "Which assumptions are least supported and most consequential—what would test them?",
+    "What independent sources could corroborate or falsify the core claim?"
+  ],
+  "output_templates": {
+    "document_brief_yaml": "document:\n  title: \"\"\n  date: \"\"\n  source: \"\"\n  url_or_path: \"\"\n  doc_type: \"\"\n  summary: \"\"\nfindings:\n  entities: []\n  events: []\n  indicators_observed: []\n  timeline: []\n  networks: []\nanalysis:\n  hypotheses_tested: []\n  assumptions_checked: []\n  deception_flags: []\n  confidence: \"moderate\"\n  uncertainties: []\n  collection_requirements: []\nalerts:\n  triggered_rules: []\n"
+  },
+  "excluded_techniques_and_rationale": [
+    {
+      "technique": "Structured Brainstorming (incl. Virtual)",
+      "reason": "Requires multi-participant group process."
+    },
+    {
+      "technique": "Nominal Group Technique",
+      "reason": "Explicit group interaction and voting."
+    },
+    {
+      "technique": "Alternative Futures Analysis",
+      "reason": "Designed as facilitated group scenario exercise."
+    },
+    {
+      "technique": "Multiple Scenarios Generation (facilitated)",
+      "reason": "Group-oriented morphological workshops."
+    },
+    {
+      "technique": "Cross-Impact Matrix (facilitated)",
+      "reason": "Typically a group learning tool; solo variant omitted to avoid hidden group assumptions."
+    },
+    {
+      "technique": "Structured Debate / Devil’s Advocacy / Red Team (multi-party)",
+      "reason": "Depend on opposing analysts and a jury; replaced by solo self-critique and what-if stress tests."
+    },
+    {
+      "technique": "Adversarial Collaboration / Delphi / Prediction Markets",
+      "reason": "Crowd/group aggregation not applicable to a solo LLM."
+    },
+    {
+      "technique": "After-Action Review / Lessons-Learned Program",
+      "reason": "Organizational process beyond solo LLM scope."
+    },
+    {
+      "technique": "Customer Checklist (coordination aspects)",
+      "reason": "Human stakeholder coordination; only analytic parts retained elsewhere."
+    }
+  ],
+  "solo_techniques": {
+    "Key Assumptions Check": {
+      "use_when": "Any analysis begins or when new evidence challenges your frame.",
+      "steps": [
+        "List explicit assumptions that your conclusions depend upon.",
+        "For each assumption: rate confidence (H/M/L), cite basis (evidence vs. inference), and note what would falsify it.",
+        "Identify which assumptions are linchpins and design checks/collections to test them."
+      ],
+      "outputs": [
+        "assumption_list",
+        "linchpin_flags",
+        "tests_and_checks"
+      ],
+      "cautions": [
+        "Do not accept prior analyses without re-validating their assumptions."
+      ]
+    },
+    "Indicators & Indicators Validator": {
+      "use_when": "Monitoring, early warning, and hypothesis tracking.",
+      "steps": [
+        "Define candidate indicators as observable, document-grounded signals that would change under different hypotheses.",
+        "For each indicator, articulate what you expect to see if H is true vs. false; estimate diagnosticity (0–1).",
+        "Periodically score indicators as observed / absent / ambiguous and update hypothesis likelihoods qualitatively."
+      ],
+      "outputs": [
+        "indicator_register",
+        "indicator_scores",
+        "early_warning_notes"
+      ],
+      "cautions": [
+        "Avoid overly generic indicators; prefer ones that discriminate among hypotheses."
+      ]
+    },
+    "Chronologies & Timelines": {
+      "use_when": "Sequencing events, spotting gaps, estimating windows of opportunity/activity.",
+      "steps": [
+        "Extract all dated/relative time expressions and order them.",
+        "Insert expected process steps (from doctrine/TTPs) to reveal gaps/lead indicators.",
+        "Highlight uncertainties (ranges, alternative sequences) and annotate with evidence IDs."
+      ],
+      "outputs": [
+        "timeline_table",
+        "gap_list",
+        "cue_points"
+      ],
+      "cautions": [
+        "Distinguish reported dates from inferred ones; keep both with provenance."
+      ]
+    },
+    "Sorting / Coding": {
+      "use_when": "Early evidence triage and pattern surfacing.",
+      "steps": [
+        "Bucket snippets by category (actors, capabilities, logistics, finance, comms, cyber, influence, geography).",
+        "Iterate alternative sorts (by time, by source, by location) to reveal correlations and anomalies.",
+        "Capture outliers separately for targeted follow-up."
+      ],
+      "outputs": [
+        "coded_corpus",
+        "category_stats",
+        "outliers"
+      ],
+      "cautions": [
+        "Correlations are not causation; mark speculative links as such."
+      ]
+    },
+    "Simple & Multiple Hypotheses Generation": {
+      "use_when": "Framing the full space of explanations.",
+      "steps": [
+        "Draft simple alternative hypotheses that could explain the document’s claims.",
+        "Generate permutations with 5W1H elements to avoid tunnel vision.",
+        "Cull internally inconsistent options; retain plausible rivals for testing."
+      ],
+      "outputs": [
+        "hypothesis_set"
+      ],
+      "cautions": [
+        "Ensure hypotheses are mutually exclusive when used in ACH-like testing."
+      ]
+    },
+    "Diagnostic Reasoning": {
+      "use_when": "A new item/event could fit several explanations.",
+      "steps": [
+        "List the plausible explanations for the item.",
+        "Identify distinctive predictions each explanation makes and test against the item’s details.",
+        "Update confidence and record residual ambiguities."
+      ],
+      "outputs": [
+        "diagnostic_table",
+        "updated_confidences"
+      ],
+      "cautions": [
+        "Prefer specific, risky predictions; avoid vague fits-all rationales."
+      ]
+    },
+    "Analysis of Competing Hypotheses (solo variant)": {
+      "use_when": "Resolving among mutually exclusive hypotheses using cumulative evidence.",
+      "steps": [
+        "Define a mutually exclusive hypothesis set and the evidence log.",
+        "Code evidence for diagnosticity and consistency per hypothesis.",
+        "Eliminate hypotheses with substantial disconfirming evidence; carry forward survivors with explicit residual risk."
+      ],
+      "outputs": [
+        "ach_matrix",
+        "surviving_hypotheses",
+        "confidence_statement"
+      ],
+      "cautions": [
+        "Do not weight supportive evidence more than disconfirming evidence."
+      ]
+    },
+    "Argument Mapping": {
+      "use_when": "Building a single-hypothesis case with pro/con structure.",
+      "steps": [
+        "Lay out claim → arguments → evidence nodes with explicit attack/defense links.",
+        "Tag each edge with strength and provenance; surface counterarguments and defeaters.",
+        "Summarize the net case and key vulnerabilities."
+      ],
+      "outputs": [
+        "argument_graph",
+        "vulnerability_list"
+      ],
+      "cautions": [
+        "Keep quotes/snippets attached; avoid paraphrasing away nuance."
+      ]
+    },
+    "Matrices (Evidence↔Hypothesis)": {
+      "use_when": "Testing multiple hypotheses and revealing inconsistent evidence.",
+      "steps": [
+        "Build a grid: rows = evidence items; columns = competing hypotheses.",
+        "Mark each cell as Consistent, Inconsistent, or Not Diagnostic; note strength (weak/moderate/strong).",
+        "Favor the hypothesis with the least disconfirming evidence (ACH principle)."
+      ],
+      "outputs": [
+        "consistency_matrix",
+        "inconsistency_counts"
+      ],
+      "cautions": [
+        "Beware confirmation bias; prioritize disconfirmation over support."
+      ]
+    },
+    "Ranking / Scoring / Prioritizing (solo)": {
+      "use_when": "Order indicators, leads, or COAs against explicit criteria.",
+      "steps": [
+        "Define criteria (relevance, reliability, timeliness, diagnosticity, actionability).",
+        "Assign criterion weights; rate each item 1–10 per criterion; compute weighted totals.",
+        "Select top items for deeper work and document rationale."
+      ],
+      "outputs": [
+        "weighted_matrix",
+        "priority_list"
+      ],
+      "cautions": [
+        "Keep weights and ratings transparent for auditability."
+      ]
+    },
+    "Deception Detection (document-centric)": {
+      "use_when": "Source credibility is uncertain or stakes are high.",
+      "steps": [
+        "Check for internal inconsistencies (dates, quantities, identities).",
+        "Compare against independent sources; look for one-way dependency chains (copying).",
+        "Assess motive/capability for deception; flag linguistic tells (over-certainty, hedging clusters, emotional language)."
+      ],
+      "outputs": [
+        "deception_flags",
+        "alternate_explanations"
+      ],
+      "cautions": [
+        "Tells are suggestive, not definitive; combine with external corroboration."
+      ]
+    },
+    "Structured Analogies (cautious use)": {
+      "use_when": "A current case resembles prior documented cases.",
+      "steps": [
+        "List candidate analog cases and explicit similarity and dissimilarity criteria.",
+        "Score each case on both; discount conclusions when critical dissimilarities exist.",
+        "Transfer only mechanisms/process insights, not outcomes, unless strongly justified."
+      ],
+      "outputs": [
+        "analogy_grid",
+        "transferable_mechanisms"
+      ],
+      "cautions": [
+        "Avoid cherry-picking a single confirming analogy."
+      ]
+    },
+    "Outside-In Scan": {
+      "use_when": "Broaden context beyond the document’s narrow focus.",
+      "steps": [
+        "Scan for external drivers (political, economic, social, tech, environmental, legal).",
+        "Note pressures that would amplify or suppress the document’s claims/events.",
+        "Update indicators and hypotheses accordingly."
+      ],
+      "outputs": [
+        "driver_list",
+        "contextual_risks"
+      ],
+      "cautions": [
+        "Keep scan tied to testable effects, not generic background."
+      ]
+    },
+    "What-If? & High-Impact/Low-Probability (HILP)": {
+      "use_when": "Stress-testing plans or exploring tail risks indicated by weak signals.",
+      "steps": [
+        "Assume an unexpected event occurred; trace plausible pathways from current evidence.",
+        "List consequences, early indicators, and breakpoints.",
+        "Capture risk-mitigating actions or watch items."
+      ],
+      "outputs": [
+        "contingency_scenarios",
+        "watch_items"
+      ],
+      "cautions": [
+        "Keep scenarios anchored to at least some observed signals."
+      ]
+    },
+    "Premortem (solo)": {
+      "use_when": "Before finalizing judgments, to surface failure modes.",
+      "steps": [
+        "Imagine your conclusion proved wrong in six months.",
+        "List concrete reasons (missed indicators, bad assumptions, source error, deception).",
+        "Adjust analysis and collection plan to mitigate those failure modes."
+      ],
+      "outputs": [
+        "failure_mode_list",
+        "mitigations"
+      ],
+      "cautions": [
+        "Treat this as mandatory on high-impact judgments."
+      ]
+    },
+    "Process & Commodity Flow Mapping": {
+      "use_when": "Understanding multi-step operations (logistics, finance, procurement).",
+      "steps": [
+        "Extract steps, inputs, outputs, durations from the document.",
+        "Arrange as a process map; attach evidence per step and expected next steps.",
+        "Identify choke points and required resources."
+      ],
+      "outputs": [
+        "process_map",
+        "chokepoints"
+      ],
+      "cautions": [
+        "Do not infer missing steps without marking them as inferred."
+      ]
+    },
+    "Network/Association Analysis (text-only)": {
+      "use_when": "Mapping relationships among actors, orgs, assets from a single corpus.",
+      "steps": [
+        "Extract co-mentions and stated relationships; normalize entities and roles.",
+        "Build edges with relation types (e.g., ‘financed’, ‘reported_to’, ‘co-located’).",
+        "Score tie strengths by frequency and corroboration; surface clusters and brokers."
+      ],
+      "outputs": [
+        "association_graph",
+        "clusters",
+        "brokers"
+      ],
+      "cautions": [
+        "Text-only graphs omit non-text signals; treat centrality as heuristic, not ground truth."
+      ]
+    },
+    "Devils_Advocacy_solo_adaptation": {
+      "use_when": "A strong analytic line has formed or you suspect confirmation bias. Use as a final stress-test before publishing or when dissenting signals appear.",
+      "steps": [
+        "State the dominant judgment in one sentence; list its key assumptions and decisive evidence.",
+        "Formulate a single, clear counter-hypothesis that would, if true, overturn the dominant line.",
+        "Steelmanning: build the strongest possible case for the counter-hypothesis using only evidence and logic (no caricatures).",
+        "Identify the weakest links in the dominant case (assumptions, evidence quality, reasoning steps).",
+        "Draft 3–5 ‘killer questions’ and concrete disconfirming observations that would flip your view.",
+        "Record changes to confidence, residual risks, and specific collection tasks to resolve the dispute."
+      ],
+      "outputs": [
+        "counter_case",
+        "killer_questions",
+        "revised_assessment",
+        "collection_tasks"
+      ],
+      "cautions": [
+        "Do not straw-man the original argument; maximize fairness and evidence quality.",
+        "Timebox the exercise (e.g., 30–60 min) to prevent analysis paralysis.",
+        "Integrate results into the final product (what would change my mind, key uncertainties)."
+      ]
+    },
+    "Alternative_Futures": {
+      "use_when": "Framing uncertainty, exploring divergent outcomes, or deriving indicators for early warning at project start or mid-course.",
+      "steps": [
+        "Define the focal issue/question and time horizon (e.g., 12–24 months).",
+        "List major driving forces and uncertainties; select two that are both high-impact and high-uncertainty and as independent as possible.",
+        "Set the two uncertainties as X and Y axes with clearly labeled end-states (avoid value-laden ‘good vs. bad’ labels).",
+        "Generate four quadrant scenarios; for each: brief narrative, key actors, enabling conditions, risks/opportunities.",
+        "Derive 5–10 specific indicators/signposts per quadrant (observable, discriminating).",
+        "Identify implications for decisions (no-regrets moves, hedges, bets) and note early triggers to pivot."
+      ],
+      "outputs": [
+        "focal_issue",
+        "axes_definition",
+        "scenario_quadrants",
+        "indicators_per_quadrant",
+        "decision_implications",
+        "early_triggers"
+      ],
+      "cautions": [
+        "Ensure axes are independent and truly uncertain; if correlated, pick a different axis.",
+        "Keep scenarios plausible and evidence-anchored; avoid world-building beyond available signals.",
+        "Refresh indicators as new evidence arrives; retire scenarios that become implausible."
+      ]
+    }
+  },
+  "midrashic_osint": {
+    "definition": "Apply a midrashic interpretive framework to OSINT reasoning. Treat each record as a layered text whose meaning may reside in explicit data, omissions, echoes, or cross-reference.",
+    "method_core": "Use ODS/IFSN vectorized semantic search to locate conceptual parallels rather than literal word matches.",
+    "interpretive_strata": "Operate across four layers: Peshat=surface content (keyword/entity extraction); Derash=contextual inference (embedding similarity of roles or emotions); Remez=weak or indirect cues (low-magnitude vector correlations); Sod=structural or network meaning (graph-level embeddings).",
+    "workflow": "1. Vectorize each RCI profile or field report into its semantic feature space. 2. Encode the user query as a conceptual prototype. 3. Retrieve similar records by vector similarity. 4. Correlate layers to reconstruct motives, sentiment, and relational dynamics.",
+    "activation": "User can activate by prefixing 'midrash:' or specifying 'mode: midrash' to signal conceptual analysis. 'literal:' or 'mode: literal' reverts to keyword search. 'mode: hybrid' combines both.",
+    "output": "Results return clusters, analogues, and inferred links with confidence and provenance, functioning as a vectorized hermeneutic engine for high-resolution OSINT analysis."
+  },
+  "audit": {
+    "migration_from": "1.0",
+    "consolidated_date": "2025-11-10",
+    "migration_notes": [
+      "Merged multi-object JSON into a single canonical object.",
+      "Promoted appended v1.1 solo techniques into solo_techniques.",
+      "Integrated Midrashic_OSINT as structured 'midrashic_osint' object.",
+      "Preserved all templates, rules, and schemas; no semantic content altered."
+    ]
+  },
+  "profile_schema": {
+    "notes": "Profiles are the first-stage, persistent narrative identities built from document evidence using ODS/IFSN extractions. They must be mechanically derivable from evidence logs and extraction_schema objects.",
+    "actor_profile": {
+      "fields": [
+        "profile_id",
+        "canonical_entity_id",
+        "primary_name",
+        "aliases",
+        "entity_type",
+        "roles_history",
+        "affiliations",
+        "locations_activity",
+        "communication_channels",
+        "behavioral_patterns",
+        "narrative_fingerprint",
+        "source_mix",
+        "deception_risk",
+        "gaps",
+        "last_updated_utc"
+      ],
+      "field_definitions": {
+        "profile_id": "Stable internal ID for this profile.",
+        "canonical_entity_id": "Link to ENTITY node from ODS/IFSN/RCI registry, not a free-text name.",
+        "primary_name": "Preferred display name, from highest-quality sources.",
+        "aliases": "All known surface forms / handles with evidence_ids.",
+        "entity_type": "person | organization | institution | collective | channel | online_persona | infrastructure.",
+        "roles_history": "Array of {role, org, start, end, evidence_ids, confidence}.",
+        "affiliations": "Array of {entity_id, relationship_type, start, end, evidence_ids, confidence}. Mirrors network_edge schema.",
+        "locations_activity": "Array of {location, role (base|transit|ops|symbolic), time_bounds, evidence_ids}.",
+        "communication_channels": "Known accounts/sites: {platform, handle, url, verified, evidence_ids}.",
+        "behavioral_patterns": "Summaries derived from events/IFSN records: {common_activities, typical_targets, TTPs, cadence_notes}.",
+        "narrative_fingerprint": {
+          "description": "How this actor is framed and self-frames across sources.",
+          "fields": [
+            "self_presentation_tags",
+            "external_portrayal_tags",
+            "stance_distribution",
+            "rhetorical_markers",
+            "alignment_to_known_frames"
+          ]
+        },
+        "source_mix": "Counts and proportions of HUMINT/OSINT/official/etc for this profile; includes single-source dependency flags.",
+        "deception_risk": "Aggregate from deception_flag objects touching this profile; {level, rationale, evidence_ids}.",
+        "gaps": "Structured list of unknowns: [{category, question, priority, notes}]. Drives collection_requirements.",
+        "last_updated_utc": "ISO-8601 timestamp of last material change."
+      }
+    },
+    "source_profile": {
+      "description": "Profiles for outlets, channels, recurring sources.",
+      "fields": [
+        "profile_id",
+        "canonical_entity_id",
+        "source_type",
+        "topics",
+        "geography",
+        "historical_bias_notes",
+        "deception_history",
+        "reliability_summary",
+        "linked_channels",
+        "last_updated_utc"
+      ]
+    },
+    "channel_profile": {
+      "description": "Optional specialization for social/media channels strongly relevant to OSINT.",
+      "fields": [
+        "profile_id",
+        "platform",
+        "handle",
+        "linked_actor_profile_ids",
+        "content_themes",
+        "posting_patterns",
+        "audience_indicators",
+        "manipulation_signals",
+        "last_updated_utc"
+      ]
+    }
+  },
+  "profile_construction_workflow": {
+    "goal": "Given one or more documents, build or update actor/source profiles deterministically before higher-level hypothesis work.",
+    "steps": [
+      "1. Run document_intake_workflow and create the evidence_log.",
+      "2. Extract entities, events, and network_edges using extraction_schema (or ODS/IFSN if available); normalize names/aliases into a canonical entity registry.",
+      "3. For each canonical entity with at least one role, affiliation, or event: either create a new actor_profile or select an existing one.",
+      "4. Populate roles_history, affiliations, locations_activity directly from events and network_edges (no free-text invention).",
+      "5. Derive behavioral_patterns: aggregate frequently observed ACT types, targets, capabilities, and TTP-like regularities from events.",
+      "6. Derive narrative_fingerprint by aggregating stance/evaluation/rhetoric about the actor: supportive vs hostile vs neutral, common frames, recurring labels.",
+      "7. Compute source_mix and deception_risk from evidence provenance and deception_flag objects.",
+      "8. Identify gaps: any critical fields repeatedly referenced but unresolved (e.g., unknown funders, unclear command links) become collection requirements.",
+      "9. Write the updated profile object with explicit evidence_ids for every non-trivial field; do not overwrite without traceable evidence.",
+      "10. Only after profiles are updated should hypotheses, timelines, and alerts be recalculated."
+    ],
+    "llm_constraints": [
+      "Profiles must be reproducible from evidence_log + extraction_schema outputs; no hidden intuition.",
+      "Any field not backed by explicit or strongly aggregated evidence remains null or is recorded under 'gaps', not filled speculatively."
+    ]
+  },
+  "narrative_layer": {
+    "description": "Defines structured narrative objects that bind profiles, evidence, and hypotheses into auditable storylines.",
+    "narrative": {
+      "fields": [
+        "narrative_id",
+        "title",
+        "focal_profile_ids",
+        "related_hypothesis_ids",
+        "ordered_timeline_items",
+        "key_indicators",
+        "stance_summary",
+        "intended_consumer",
+        "confidence",
+        "alternative_paths",
+        "evidence_ids"
+      ],
+      "semantics": {
+        "ordered_timeline_items": "References to timeline_item objects arranged to express process (past→present→future).",
+        "stance_summary": "How the narrative positions itself (warning, reassurance, advocacy, propaganda-suspect), inferred from rhetoric and source_mix.",
+        "alternative_paths": "Short descriptions of plausible alternative narratives for the same actors/events and what evidence would differentiate them."
+      }
+    },
+    "rules": [
+      "Every major assessment product should be representable as one or more narrative objects.",
+      "Narratives must link back to actor_profile and evidence_ids; this prevents untraceable story drift.",
+      "Forecasts or warnings must be backed by indicators and timeline logic, not only prose."
+    ]
+  },
+  "stream_alignment": {
+    "description": "Mechanism to compare HUMINT, OSINT, and official narratives over the same profiles.",
+    "alignment_unit": {
+      "fields": [
+        "unit_id",
+        "target_profile_id",
+        "stream",
+        "narrative_id",
+        "stance_summary",
+        "key_claims",
+        "divergence_notes"
+      ],
+      "stream_values": [
+        "humint",
+        "osint",
+        "official",
+        "analyst_synthesis"
+      ]
+    },
+    "workflow": [
+      "For a selected profile or hypothesis, collect all narrative objects by stream.",
+      "Compare stance_summary, key_claims, and supporting evidence across streams.",
+      "Flag high-divergence cases where one stream is unsupported or contradicted by others (candidate deception or blind spot)."
+    ]
+  },
+  "yaphe_mode": {
+    "description": "Profile- and narrative-aware operating mode inspired by 'Time and Narrative in Intelligence Analysis'.",
+    "principles": [
+      "Treat profiles as narrative identities evolving over time; track turning points explicitly in roles_history and timeline.",
+      "Treat every analytic product as a narrative object that must expose its construction: profiles used, evidence cited, alternatives considered.",
+      "Use temporal structure (beginning/middle/trajectory) to distinguish stable patterns from transient noise around each profile.",
+      "Continuously compare self-presentation vs external portrayal in narrative_fingerprint to detect propaganda, radicalization, or image management.",
+      "Avoid 'AI scientism': all narrative outputs must be explainable via profiles, evidence logs, and matrices defined elsewhere in this KB."
+    ],
+    "llm_behavior": [
+      "When in doubt, update or build profiles first, then answer questions using those profiles.",
+      "Never attribute motive, capability, or alignment to a profile without linking to concrete evidence_ids or systematically aggregated patterns."
+    ]
+  }
+}
