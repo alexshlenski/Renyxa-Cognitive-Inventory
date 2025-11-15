@@ -1,0 +1,566 @@
+IFSN-1.6 — INFERENCE-FREE SEMANTIC NOTATION (CORE)
+Version: 2025-10-28A-1.6-QN-A
+Status: Operational / Deterministic (Core Inference-Free)
+Format: Monospace literal spec. No commentary.
+Lineage: Derived from IFSN-1.6-QN (2025-10-28A-1.6-QN) and IFSN-1.5
+
+CONFIGURATION:
+
+MODE = EXTENDED
+CONTEXT_POLICY = ISOLATED
+LOCK_NAMESPACE_SCOPE = SENTENCE
+LOCK_ROLE_SCOPE = SENTENCE
+DISABLE_ENTITY_FUSION = true
+STRICT_SERIALIZATION_ORDER = true
+ALLOW_AXIS_DIVERGENCE = true
+DISABLE_PROP_MERGE = true
+ASSERT_SCOPE = SENTENCE
+RETAIN_COMPARATIVES = true
+REBUILD_TEMPLATE_PER_SENTENCE = true
+EMIT_EMPTY_PROP_FIELDS = true
+WARN_ON_PROP_DOWNGRADE = true
+VALIDATE_QBASE_CHAIN = true
+
+CONTRACT: IFSN is an atomistic level language. You must treat each sentence in a totally isolated
+context environment. DO NOT mix up context from different sentences, do not share roles or objects
+or anything else. Do not apply any kind of inference in between separate sentences in the CORE encoder.
+Do not shrink, summarize, flatten, truncate any semantic or syntax. Do the exact job.
+Any type of words concatenation is strictly forbidden. Use functional instruments of IFSN to (i) keep
+English words separate, never concatenated and (ii) semantically annotated.
+Any concatenated string or unannontated word disqualifies RCI profile immediately!
+  NON-NEGOTIABLE: This contract is non-negotiable and overrides any pre-training or reflexes, to keep the job abiding
+  by the spec.
+
+──────────────────────────────────────────────────────────────────────────────
+0) OPERATIONAL PRINCIPLES
+• Lossless bijection between serialized form and semantic graph.
+• Deterministic NL rendering; every field → fixed template; zero inference in CORE.
+• Triad rule: every predicate has a receiver (R.OBJ). Uniform header/nested blocks.
+• STRICT TOKEN HYGIENE: <token> = [a–z0–9]+ ONLY; no "-", "_", ".", camelCase, or spaces.
+• Multiword concepts MUST be expressed via <nested> + connectors (not by token concatenation).
+• QUOTATIONS via LIT{{…}} only.
+
+──────────────────────────────────────────────────────────────────────────────
+1) FULL NAMESPACE CATALOG (CORE + AUX + IFSN EXTENSIONS)
+
+CORE / SEMANTIC:
+ENT    | entity (person, org, object, place)
+OBJ    | object/subpart/target
+FUNC   | function/purpose (teleology)
+FND    | function domain
+FNR    | function role
+MODE   | function mode
+PROP   | predicative property (copular)
+PAX    | property axis
+LVL    | axis level
+SCALE  | axis scale mapping
+ATTR   | attributive modifier
+ROLE   | role/classification title
+ID     | identifier type
+UNIT   | measurement unit
+BASE   | baseline set
+CMP    | comparator vs baseline
+TOPIC  | domain/topic tag
+CNCPT  | abstract concept
+EFFECT | influence polarity/type
+REL    | generic relation (fallback)
+EVAL   | evaluative stance
+ST     | header-level stance tag
+ADV    | adverbial class
+
+CLAUSAL / CONTROL:
+ACT    | action block marker
+COP    | copular block marker
+ACTV   | action predicate stem
+STAT   | stative predicate stem
+MOD    | modality
+MANNER | manner/style
+GOAL   | goal/intent adjunct
+Q      | quantification group (Q.N/Q.U/Q.BASE[/Q.SCOPE])
+DP     | dependency group (DP.DOMAIN/DP.REL)
+DEPD   | dependency domain
+DEPR   | dependency relation
+FN     | function group (FN.DOMAIN/FN.ROLE/FN.MODE)
+AGNT   | agentivity control (explicit, implicit, suppressed, unknown)
+
+IFSN-1.0 OPERATIONAL AXES:
+SRCQ   | source quality/reliability
+CONF   | analytic confidence
+ASSERT | assertion type (report/rumor/observation/document)
+DISC   | intelligence discipline (humint/sigint/imint/osint)
+EVID   | evidence type (image/signal/document/narrative)
+SOURCE | source entity (distinct from R.SRC)
+LOCN   | geospatial tag / AOI
+TEMP   | temporal context (past/current/forecast/projected)
+TIMEF  | temporal function (start/end/duration/deadline)
+STATUS | operational status (active/inactive/pending/complete)
+INTENT | intentionality (deliberate/accidental/coerced)
+SEVERITY| event severity
+RISK   | risk level
+TASK   | operational task type
+CHAIN  | command/dependency chain (nested ENT hierarchy)
+TCOND  | temporal condition trigger (after/when/following)
+LCOND  | logical condition trigger (if/unless/had/should)
+
+IFSN-1.1 ADDITIONS:
+DEF    | definition type
+TERM   | defined term (lemma)
+QUOTE  | quotation container (QUOTE.TXT/QUOTE.SPK/QUOTE.CTX)
+CIT    | citation/bibliography (CIT.AUTH/CIT.WORK/CIT.DATE/CIT.SRC/CIT.XREF/CIT.PG/CIT.URLX)
+RSN    | explicit reason/justification
+RHE    | rhetorical relation (example/contrast/elaboration/warning/cause/effect/definition/conclusion)
+EXMP   | example anchor (instance-of linkage)
+COREF  | coreference anchor token
+SEG    | segment identifiers (SEG.ID/SEG.REL/SEG.PREV)
+CTX    | context frame (CTX.TOPIC/CTX.TIME/CTX.LOC)
+
+SUPPORT / LITERALS:
+TIME   | temporal literal (value position only)
+LOC    | location literal (value position only)
+NUM    | numeric literal (value position only)
+LIT    | literal text container (QUOTE.TXT only)
+
+AUXILIARY:
+ABBR   | abbreviation / initialism token
+
+IFSN-1.6 ADDITIONS (QUANTIFIER & POLARITY VALIDATION):
+VLD    | validation rule identifiers (see §4 VALIDATION; no new fields added)
+— VLD:QUANTIFIER_REQUIRED (deterministic enforcement of Q.* when determiners/quantifiers present)
+— VLD:EXTERNAL_NEGATION_REQUIRED (deterministic enforcement of C.POL when surface negation present)
+
+IFSN-1.6-QN-A EXTENSION (QUANTIFIER–ANAPHORA SCOPE):
+— Q.SCOPE (deterministic propagation domain for Q.* over co-referents; see §4A)
+
+──────────────────────────────────────────────────────────────────────────────
+2) CONNECTORS (DETERMINISTIC; MULTIWORD COMPOSITION)
+>    part-of / specialization
+>>   enumeration (siblings, no containment)
+->   cross-attribute (right qualifies left)
+=>   teleology/outcome (right is intended result/function of left)
+#>   group/label heading (for subsequent >> items)
+Depth limit (global): 16 segments per <nested> chain.
+
+NOTE (ABBREVIATION STACKS): Adjacent abbreviations (e.g., “GUR MOU”) are MULTIWORD and MUST be serialized as separate ABBR:* segments within a <nested> chain using connectors (e.g., ABBR:gur->ABBR:mou), never fused into a single <token>.
+
+──────────────────────────────────────────────────────────────────────────────
+3) FORMAL GRAMMAR (EBNF; CORE — COMPLETE)
+
+; RECORD
+<record>        ::= <header> "\n" <payload-line> (<nested-payload>)*
+
+; PAYLOAD-LINE (compact multi-payload tolerance; semantic isolation)
+<payload-line>  ::= <payload> (";" " " "^" " " <payload>)*
+
+; HEADER (DX)
+<header>  ::= "DX|N=" <nsid> "|T=" <iso8601> "|L=" (<nsid> | "null") "|ST=" <st> "|NS=" <nslist>
+               ( "|" "N.XREF=" <xref> )? ( "|" "L.XREF=" <xref> )?
+
+; PAYLOAD (top-level line)
+<payload> ::= <block> "|" "P=" <predicate> "|" <gblock> "|" <roles> <more-roles> "
+
+; NESTED PAYLOAD (child lines)
+<nested-payload> ::= <nestprefix> <block> "|" "P=" <predicate> "|" <gblock> "|"
+                     <roles> <more-roles-nest> "
+
+; NEST PREFIX
+<nestprefix> ::= "@"{1,} " "
+
+; BLOCK
+<block>      ::= "COP" | "ACT"
+
+; PREDICATE  (NO multiword tokens; NO hyphen/underscore)
+<predicate>  ::= <coppred> | "ACTV:" <token>
+<coppred>    ::= "be" | "be-classified-as" | "become" | "remain" | "seem" | "appear"
+               | "serve-as" | "function-as" | "be-identified-by" | "relate-to"
+               | "depend-on" | "influence"
+
+; G-BLOCK (GRAMMAR)
+<gblock>     ::= "G.T=" <tense> "|" "G.V=" <verbtype> "|" "G.M=" <mood> "|" "G.AS=" <aspect>
+<tense>      ::= "PA" | "PR" | "FU" | "GN"
+<verbtype>   ::= "ACT" | "STAT"
+<mood>       ::= "IND" | "SUBJ" | "IMP"
+<aspect>     ::= "PRF" | "PROG" | "HAB" | "-"
+
+; ROLES (MINIMUM)
+<roles>      ::= "R.AFF=" <nsid> ( "|" "R.AFF.XREF=" <xref> )? "|"
+                 "R.OBJ=" ( <code> | <nested> | <num> | <date> | <nsid> )
+                          ( "|" "R.OBJ.XREF=" <xref> )?
+                          ( "|" "R.OBJ.MODE=" ( "SINGLE" | "ENUM" ) )? "|"
+                 "R.AEE=" ( <code> | <nested> | <num> | <date> )
+                          ( "|" "R.AEE.XREF=" <xref> )?
+
+; MORE ROLES (TOP-LEVEL)
+<more-roles> ::= ( "|" <rolefield> )*
+<rolefield>  ::= "R.DST=" ( <code> | <nested> | <num> | <date> ) ( "|" "R.DST.XREF=" <xref> )?
+               | "R.SRC=" <nsid> ( "|" "R.SRC.XREF=" <xref> )?
+               | "R.BEN=" <nsid> ( "|" "R.BEN.XREF=" <xref> )?
+               | "R.FAC=" <nsid> ( "|" "R.FAC.XREF=" <xref> )?
+               | "R.INH=" <nsid> ( "|" "R.INH.XREF=" <xref> )?
+               | "R.ARB=" <nsid> ( "|" "R.ARB.XREF=" <xref> )?
+               | "R.CON=" <nsid> ( "|" "R.CON.XREF=" <xref> )?
+               | "R.HLP=" <nsid> ( "|" "R.HLP.XREF=" <xref> )?
+               | "R.CT=" <code>
+               | "R.PCT=" <int>
+               | "C.ADV=" "ADV:" <token>
+               | "C.MOD=" <code>
+               | "C.MANNER=" <code>
+               | "C.GOAL=" <code>
+               | "C.EVAL=" <code>
+               | "C.POL=" ("AFF" | "NEG")
+               | "Q.N=" <num>
+               | "Q.U=" <code>
+               | "Q.BASE=" <code>
+               | "Q.SCOPE=" ( "SENTENCE" | "PASSAGE" )
+               | "P.AXIS=" <code>
+               | "P.LEVEL=" <code>
+               | "P.SCALE=" <code>
+               | "DP.DOMAIN=" <code>
+               | "DP.REL=" <code>
+               | "FN.DOMAIN=" <code>
+               | "FN.ROLE=" <code>
+               | "FN.MODE=" <code>
+               | "SRCQ=" <code>
+               | "CONF=" <code>
+               | "ASSERT=" <code>
+               | "DISC=" <code>
+               | "EVID=" <code>
+               | "SOURCE=" <nsid> ( "|" "SOURCE.XREF=" <xref> )?
+               | "LOCN=" ( <code> | <nsid> ) ( "|" "LOCN.XREF=" <xref> )?
+               | "TEMP=" ( <code> | <date> )
+               | "TIMEF=" <code>
+               | "STATUS=" <code>
+               | "INTENT=" <code>
+               | "SEVERITY=" <code>
+               | "RISK=" <code>
+               | "TASK=" <code>
+               | "CHAIN=" <nested>
+               | "TCOND=" ( <code> | <nested> )
+               | "LCOND=" ( <code> | <nested> )
+               | "DEF=" <code>
+               | "TERM=" <nested>
+               | "QUOTE.TXT=" "LIT{{" <litchars> "}}"
+               | "QUOTE.SPK=" <nsid>
+               | "QUOTE.CTX=" <nested>
+               | "CIT.AUTH=" <nsid>
+               | "CIT.WORK=" <nested>
+               | "CIT.DATE=" <date>
+               | "CIT.SRC=" <nsid>
+               | "CIT.XREF=" <xref>
+               | "CIT.PG=" <num>
+               | "CIT.URLX=" <xref>
+               | "RSN=" <nested>
+               | "RHE=" <code>
+               | "EXMP=" <nested>
+               | "COREF=" "COREF:" <token>
+               | "SEG.ID=" "SEG:" <token>
+               | "SEG.REL=" "SEGR:" <token>
+               | "SEG.PREV=" "SEG:" <token>
+               | "CTX.TOPIC=" <code>
+               | "CTX.TIME=" ( <date> | <code> )
+               | "CTX.LOC=" ( <code> | <nsid> )
+               | "AGNT=" ( "explicit" | "suppressed" | "unknown" )
+
+; NESTED MORE-ROLES
+<more-roles-nest> ::= <more-roles> ( "|" "NEST.AS=" <nestrole> )?
+<nestrole>         ::= "OBJ" | "DST" | "CT" | "BEN" | "SRC" | "FAC" | "INH" | "ARB" | "CON" | "HLP"
+
+; NESTED VALUE
+<nested>     ::= <segment> ( <connector> <segment> ){0,15}
+<segment>    ::= <prefix> ":" <token> ( ":" <prefix> ":" <token> )*
+<connector>  ::= ">" | ">>" | "->" | "=>" | "#>"
+
+; ATOMS
+<nsid>       ::= <prefix> ":" <token>
+<code>       ::= <prefix> ":" <token> ( "." <token> )*
+<prefix>     ::= (one of all prefixes listed in §1)
+<token>      ::= [a-z0-9]+
+<num>        ::= [0-9]+ ( "." [0-9]+ )?
+<int>        ::= [0-9]+
+<date>       ::= [0-9]{4} "-" [0-9]{2} "-" [0-9]{2}
+<iso8601>    ::= [0-9]{4} "-" [0-9]{2} ("T" [0-9]{2} ":" [0-9]{2} ( ":" [0-9]{2} )? "Z")?
+<st>         ::= "ST:" <token>
+<nslist>     ::= <prefix> ( "," <prefix> )*
+<xref>       ::= "[" <src> "|" <code-token> "]"
+<src>        ::= [A-Z0-9]+
+<code-token> ::= [A-Z0-9]+ ( "-" [A-Z0-9]+ )*
+<litchars>   ::= ( any UTF-8 char except unescaped "}}" or "|" )
+<idkey>      ::= <int>
+
+──────────────────────────────────────────────────────────────────────────────
+4) VALIDATION (NORMATIVE)
+
+GENERAL:
+• R.AFF and R.OBJ required in every payload; COP requiring complement must provide R.AEE.
+• ENT:* values in R.* must emit corresponding .XREF where mandated by policy.
+• Disallow R.OBJ = PROP:* (properties are not objects). PROP only in R.AEE (COP).
+• PROP decomposition required: P.AXIS and P.LEVEL (optional P.SCALE).
+• Q.* fields: Q.N numeric; Q.U = UNIT:*; Q.BASE = BASE:*; C.CMP in {CMP:*}.
+• Depth of <nested> chains ≤ 16; reject overflow (no truncation).
+• Tokens must satisfy hygiene; multiword ONLY via <nested> + connectors.
+• All used prefixes MUST appear in header NS list.
+• AGNT governs realization of R.AFF.
+  - AGNT=explicit → R.AFF required and rendered as subject (active voice).
+  - AGNT=suppressed → R.AFF omitted from surface (for passive/impersonal).
+  - AGNT=unknown → R.AFF present but realized as indefinite pronoun (“someone” / “they”).
+  - If AGNT is absent, builders SHALL treat the clause as AGNT=suppressed unless R.AFF is present; if R.AFF is present, treat AGNT=explicit.
+
+STRICT ANTI-SNAKE / ANTI-KEBAB POLICY:
+• REJECT any <token> containing "_" or "-" characters anywhere.
+• REJECT any <token> formed by concatenating multiple English words.
+• PREDICATES MUST be single stems: <predicate> does NOT allow connectors or compound tokens.
+• Multiword verb idioms MUST be modeled via roles/properties (see §8), NOT via token concatenation.
+
+ABBREVIATIONS (NORMATIVE):
+• Abbreviation stacks MUST be serialized as MULTIWORD via ABBR:* segments in a <nested> chain; builders MUST NOT fuse adjacent abbreviations into a single <token>. Example (valid): ABBR:gur->ABBR:mou. Example (reject): ENT:gurmou.
+• When an abbreviation qualifies an entity, attach ABBR:* via "->" to ENT:*/OBJ:* as appropriate (e.g., ENT:operatives->ABBR:gur->ABBR:mou->ENT:ukraine).
+• REJECT abbreviation fusion: any <token> formed by concatenating two or more abbreviations that appear separately in source text (with whitespace/punctuation between them).
+
+TOLERANCE (NORMALIZED EXPORTS):
+• Lowercase prefixes MUST be accepted by parsers; builders SHALL normalize to catalog UPPERCASE and auto-insert into NS list if missing.
+• TEMP MAY accept either <code> or <date>. If TEMP=<date>, builders SHALL copy to CTX.TIME=<date>.
+• Compact multi-payload lines (payload-line with “; ^”) MUST be split into independent internal records preserving sequential order; no cross-payload inference.
+
+IFSN-AXES:
+• QUOTE.TXT must be LIT{{…}}; allowed only in QUOTE.TXT. QUOTE.SPK optional nsid; QUOTE.CTX optional nested.
+• CIT.URLX must be XREF; other CIT.* consistent (AUTH/WORK/DATE/SRC/PG).
+• RSN only when author text encodes causation/justification (no inference).
+• COREF anchors are opaque IDs; repeated use for same entity must keep identical <nsid>.
+• SEG.ID/REL/PREV are opaque; cycles allowed but flagged; no NL obligation.
+• LCOND accepts code or nested; renderer must emit logical conditional phrase (only if present) and/or logical connective (“if”, “unless”, “had”, “should”).
+• TCOND accepts code or nested; renderer must emit temporal connective (“after”, “following”, “when”).
+• When R.OBJ = OBJ:fear, R.AEE MAY indicate cause/target-of-emotion, but ONLY if the R.AEE chain starts with OBJ: or ENT: and contains a qualifying connector (-> or =>). If the intent is enumeration (multiple parallel objects), use ">>" within R.OBJ and DO NOT provide R.AEE. Builder must reject any record where R.OBJ=OBJ:fear and R.AEE uses ">>".
+
+ATTACHMENT:
+• Default nested attachment follows prioritized semantic chain:
+  TCOND > LCOND > RSN > BEN > OBJ (fallback).
+• Builder must verify attachment scope for C.MOD and C.EVAL when RSN or LCOND or TCOND is present;
+  if no explicit NEST.AS is declared, attach to nearest higher-priority clause in chain.
+• Builder SHALL emit temporal connective (“after”, “following”, “when”) for TCOND, and logical connective (“if”, “unless”, “had”, “should”) for LCOND.
+• When both occur, TCOND precedes LCOND in surface rendering.
+• USF WRAP ORDER (T>L>C>E>M) is normative for advisory validation; CORE output must be consistent with USF if a USF line is present.
+
+ISOLATED SENTENCE BEHAVIOR:
+• Comparative or superlative degrees (C.CMP, P.LEVEL) are preserved per sentence; omission in other sentences has no harmonizing effect.
+• PROP chains may diverge in structure or depth across records under CONTEXT_POLICY = ISOLATED.
+• Comparative bases (Q.BASE) must be serialized intact if present.
+• Builder emits a warning if a comparative or superlative degree is downgraded.
+
+VLD:QUANTIFIER_REQUIRED (NEW — DETERMINISTIC):
+• CONDITION: Any ENT:* or OBJ:* serving as R.AFF, R.OBJ, R.BEN, or R.SRC whose lexical realization contains a determiner/quantifier (“each”, “every”, “all”, “some”, “any”, “no”, “many”, “few”, numeric count, distributive phrase).
+• ACTION: If no Q.N/Q.BASE/Q.U present → ERROR:QUANTIFIER-OMISSION.
+• AUTO-INSERT (builder policy): Q.BASE=BASE:all for “every/each/all”; Q.BASE=BASE:exist for “some/any”.
+• POST: Explicit Q.* must appear when determiner is attested.
+
+VLD:EXTERNAL_NEGATION_REQUIRED (NEW — DETERMINISTIC):
+• CONDITION: Predicate phrase or infinitival clause includes explicit negative marker (“not”, “never”, “no longer”, “fail to”, etc.) and corresponding ACT/COP payload lacks C.POL.
+• ACTION: ERROR:POLARITY-LOSS; builder SHALL insert C.POL=NEG.
+• POST: Every syntactically negated predicate carries explicit polarity.
+
+──────────────────────────────────────────────────────────────────────────────
+4A) DETERMINER–ANAPHORA SCOPING (PASSAGE-LEVEL PROPAGATION)
+
+NEW FIELD:
+• Q.SCOPE = SENTENCE | PASSAGE
+
+DEFAULT:
+• Q.SCOPE defaults to SENTENCE.
+
+DEFINITION:
+• Governs the propagation domain of quantifier metadata (Q.*)
+
+DETERMINATIVE REACH:
+• When Q.SCOPE=PASSAGE, quantifier fields (Q.BASE, Q.N, Q.U) apply deterministically to all coreferential or anaphorically linked nominals (ENT:*/OBJ:*) within the same top-level passage block.
+• Quantifier propagation MUST NOT cross: subordinate clause boundaries (NEST.AS=*), adverbial or modal adjuncts (C.ADV, C.MANNER, C.MOD, C.GOAL), logical or temporal conditions (LCOND, TCOND), or sentence boundaries when CONTEXT_POLICY=ISOLATED.
+
+ORDERING:
+• Quantifier inheritance SHALL occur before USF construction and after COREF resolution.
+
+RENDERING ENFORCEMENT:
+• Under Q.SCOPE=SENTENCE, realization is local (“every agency man …”).
+• Under Q.SCOPE=PASSAGE, realization is distributive across co-referents within the passage (“every agency man has his picture of Fred”).
+• Propagated quantifiers retain polarity and units from their originating nominal.
+• If a propagated quantifier conflicts with a nested clause boundary, inheritance MUST be suppressed locally (no override).
+
+VALIDATION ADDENDUM:
+• VLD:QUANTIFIER_SCOPE_CONSISTENCY
+  — CONDITION: A sentence or passage includes multiple nominals sharing identical COREF; one or more bear Q.* with Q.SCOPE=PASSAGE.
+  — ACTION: Verify all matching nominals reflect consistent Q.* values; on mismatch → WARN:QUANTIFIER-SCOPE-DIVERGENCE.
+
+──────────────────────────────────────────────────────────────────────────────
+5) DETERMINISTIC NL RENDERING (TEMPLATE KEYS)
+
+COP be + PROP → “<S> is/are <LEVEL> on <AXIS> [than <BASE> if C.CMP].”
+COP be-classified-as + ROLE → “<S> is classified as <ROLE>.”
+COP become + ROLE/PROP → “<S> became/has become <ROLE/PROP>.”
+COP remain + PROP → “<S> remained <PROP-level>.”
+COP seem/appear + PROP → “<S> seems/appears <PROP-level>.”
+COP serve-as → “<S> serves as <ROLE/FUNC>.”
+COP function-as (+FN.*) → “<S> functions as <FUNC> in <FND> (role: <FNR>[, mode: <MODE>]).”
+COP be-identified-by + ID → “<S> is identified by <ID>.”
+COP relate-to + OBJ → “<S> relates to <OBJ>.”
+COP depend-on (+DP.*) → “<S> depends on <OBJ> (domain: <DEPD>, relation: <DEPR>).”
+COP influence (+PROP) → “<S> influences <O> toward <AXIS:LEVEL>.”
+
+ACT (general) → “<S> <VERB> <O> [ADV/MOD/GOAL/MANNER as present].”
+If AGNT=suppressed → render R.OBJ as subject; verb in passive form.
+If AGNT=unknown → render with generic indefinite subject (“someone” / “they”) + active verb.
+If AGNT=explicit (default) → standard active template.
+C.MANNER → adverbial phrase; C.MOD → modal/support; C.GOAL → “for/to …”; C.EVAL → stance.
+C.POL=NEG → invert predicate truth value and render with surface negation as appropriate.
+RSN → “because <nested-NP>.”
+QUOTE → “<SPK> said: ‘<LIT>’” or “Quote: ‘<LIT>’.”
+CIT → “Citation: <AUTH>, <WORK>, <DATE> [<SRC>] [p.<PG>].”
+SRCQ/CONF/ASSERT/DISC/EVID/SOURCE/LOCN/TEMP/TIMEF/STATUS/INTENT/SEVERITY/RISK/TASK/CHAIN/TCOND/LCOND → emitted as fixed adjunct phrases in canonical order if present.
+TCOND → “after/following/when <nested-NP>.”
+LCOND → “if/unless/had/should <nested-NP>.”
+Rendering order:  TCOND → LCOND → RSN.
+If USF is present, rendering order must respect WRAP hierarchy (T>L>C>E>M).
+
+Enumeration/qualification disambiguation:
+• If R.OBJ.MODE = ENUM, interpret ">>" as a coordination group (“X, Y, and Z”) and suppress any R.AEE rendering.
+• If R.OBJ.MODE = SINGLE and R.AEE exists, render as a qualified NP (“X of Y”).
+
+Hyphenation rule (surface-only): pre-nominal multi-ATTR compounds and conventional proper-name joins rendered with hyphens in NL output; never in tokens.
+
+──────────────────────────────────────────────────────────────────────────────
+6) BUILDER CONFIG (MANDATORY DEFAULTS)
+
+MAX_NESTED_DEPTH = 16
+ENABLE_SEGMENT_LINKS = true
+ENABLE_COREF = true
+REQUIRE_NS_LISTING = true
+QUOTE_MODE = LIT_ONLY
+STRICT_CAUSAL_USE = true
+ENUM_GROUPING = "#>" + ">>"
+DEFAULT_ATTACHMENT_PRIORITY = [RSN, TCOND, LCOND, BEN, OBJ]
+WARN_ON_OBJ_RAEEDUAL = true
+DEFAULT_AGNT = suppressed
+AUTO_ELEVATE_AGNT = true   ; if R.AFF is present, treat AGNT=explicit
+WARN_ON_PASSIVE_LOSS = true
+ALLOW_AXIS_DIVERGENCE = true
+DISABLE_PROP_MERGE = true
+ASSERT_SCOPE = SENTENCE
+RETAIN_COMPARATIVES = true
+REBUILD_TEMPLATE_PER_SENTENCE = true
+EMIT_EMPTY_PROP_FIELDS = true
+WARN_ON_PROP_DOWNGRADE = true
+VALIDATE_QBASE_CHAIN = true
+
+; NORMALIZATION & TOLERANCE (builders SHALL)
+ALLOW_COMPACT_JOINED_PAYLOADS         = true   ; parse payload-line with “; ^”
+CASE_NORMALIZE_PREFIXES               = true   ; accept lowercase prefixes, normalize to catalog UPPERCASE
+AUTO_INSERT_PREFIXES_IN_NS            = true   ; add any normalized prefixes to header NS=
+TEMP_ACCEPTS_DATE_LITERAL             = true   ; TEMP can ingest <date>
+TEMP_TO_CTXTIME_COPY_ON_DATE          = true   ; if TEMP=<date>, also set CTX.TIME=<date>
+PROP_PROMOTION_TO_RAE_ON_COP          = true   ; if R.OBJ=PROP:* and no R.AEE, promote to R.AEE
+EXPAND_PROP_FLATTENING                = true   ; PROP:x.y → R.AEE=PROP:x | P.AXIS=PAX:x | P.LEVEL=LVL:y
+SYNTHESIZE_HEADER_ON_NORMALIZED       = true   ; synthesize DX header if omitted in normalized exports
+SYNTH_HEADER_TEMPLATE                 = "DX|N=ENT:local|T=0000-00-00T00:00Z|L=null|ST=ST:normalized|NS=ENT,OBJ,PROP,PAX,LVL,ROLE,ID,UNIT,BASE,MOD,CMP,ADV,ABBR"
+
+; JSON/API-SAFE LINEARIZATION (micro-merge)
+REPLACE_NEWLINES_WITH_CARET           = true   ; Replace every newline (\n or \r\n) in serialized IFSN with '^'. Do not alter existing '^'.
+
+; ANTI-SNAKE / ANTI-KEBAB ENFORCEMENT
+REJECT_SNAKE_TOKENS                   = true   ; reject tokens containing "_"
+REJECT_KEBAB_TOKENS                   = true   ; reject tokens containing "-"
+REJECT_COMPOUND_PREDICATES            = true   ; predicate must be single <token> stem (no "->" inside P=)
+REJECT_MULTIWORD_TOKENS               = true   ; block space-joined or concatenated multiword tokens
+
+; ABBREVIATION ENFORCEMENT
+REJECT_ABBR_FUSION                    = true   ; forbid fused multi-abbreviation tokens (e.g., "gurmou")
+ABBR_CHAIN_REQUIRED                   = true   ; require ABBR:*->ABBR:* chains for adjacent abbreviations
+
+; QUANTIFIER & POLARITY ENFORCEMENT (1.6-QN)
+STRICT_QUANTIFIER_VALIDATION          = true
+STRICT_POLARITY_VALIDATION            = true
+AUTO_INSERT_DEFAULT_QUANTIFIER        = true
+AUTO_INSERT_NEGATIVE_POLARITY         = true
+REJECT_DETERMINER_WITHOUT_QUANT       = true
+REJECT_NEGATION_WITHOUT_POLARITY      = true
+
+; Builder emits warning if R.OBJ includes enumeration (">>") and R.AEE is also present.
+; Builder emits warning if source morphology = passive and AGNT not set ≠ suppressed/unknown.
+
+WARN_ON_SCOPE_BREAK = true
+CHECK_RELCLAUSE_OWNERSHIP = true
+AUTO_APPLY_POSSESSIVE_RULES = true
+
+──────────────────────────────────────────────────────────────────────────────
+7) SYNTHETIC VERIFICATION EXAMPLES (ABRIDGED)
+
+A) Comparative PROP (valid):
+^ COP|P=be|G.T=PR|G.V=STAT|G.M=IND|G.AS=-|
+R.AFF=ENT:graduates|R.OBJ=ENT:graduates|
+R.AEE=PROP:proficiency|P.AXIS=PAX:proficiency|P.LEVEL=LVL:low|
+Q.BASE=BASE:skillsbased|C.CMP=CMP:less-than-baseline
+
+B) Function + outcome (valid):
+^ COP|P=function-as|G.T=PR|G.V=STAT|G.M=IND|G.AS=-|
+R.AFF=ENT:education|R.OBJ=FUNC:nurture|
+FN.DOMAIN=FND:education|FN.ROLE=FNR:formation|FN.MODE=MODE:used
+
+C) Quantified report (valid, compact join):
+^ ACT|P=ACTV:report|G.T=PR|G.V=ACT|G.M=IND|G.AS=-|
+R.AFF=ENT:students|R.OBJ=OBJ:stress|Q.N=66|Q.U=UNIT:percent;
+^ ACT|P=ACTV:report|G.T=PR|G.V=ACT|G.M=IND|G.AS=-|
+R.AFF=ENT:students|R.OBJ=OBJ:loneliness|Q.N=39|Q.U=UNIT:percent
+
+D) Idiom modeling without snakes (valid):
+; “fall short (of responsibilities)” → use a non-idiomatic predicate or COP+PROP
+^ ACT|P=ACTV:fail|G.T=PR|G.V=ACT|G.M=IND|G.AS=-|
+R.AFF=ENT:institutions->ENT:higher->OBJ:education|R.OBJ=OBJ:responsibilities
+; alternatively:
+^ COP|P=be|G.T=PR|G.V=STAT|G.M=IND|G.AS=-|
+R.AFF=ENT:institutions->ENT:higher->OBJ:education|R.OBJ=PROP:sufficiency|P.AXIS=PAX:sufficiency|P.LEVEL=LVL:low
+
+E) Rejected (demonstrative; NOT allowed):
+; P=ACTV:fall->short  (compound predicate)  → REJECT
+; OBJ:sincerity-questioned-for-inconsistency (kebab) → REJECT
+; ACTV:gain_traction (snake) → REJECT
+
+F) Valid (abbreviation chain):
+^ ACT|P=ACTV:discover|G.T=PA|G.V=ACT|G.M=IND|G.AS=-|
+R.AFF=ENT:bellingcat|
+R.OBJ=OBJ:suspension->OBJ:operatives->ABBR:gur->ABBR:mou->ENT:ukraine|
+TEMP=2020-08-00|LOCN=LOC:ukraine
+
+G) Rejected (abbreviation fusion):
+; ENT:gurmou → REJECT (violates ABBREVIATIONS rules + STRICT TOKEN HYGIENE)
+
+I) Quantified subject (1.6-QN):
+Input: “Every agent knew the plan.”
+Output:
+^ ACT|P=ACTV:know|G.T=PA|G.V=ACT|G.M=IND|G.AS=-|
+R.AFF=ENT:agent|Q.BASE=BASE:all|
+R.OBJ=OBJ:plan
+
+J) Negated infinitive (1.6-QN):
+Input: “He decided not to try to leave.”
+Output:
+^ ACT|P=ACTV:decide|G.T=PA|G.V=ACT|G.M=IND|G.AS=-|
+R.AFF=ENT:he|R.OBJ=ACT:try
+@ ACT|P=ACTV:try|G.T=PA|G.V=ACT|G.M=IND|G.AS=-|
+R.AFF=ENT:he|R.OBJ=ACT:leave|C.POL=NEG|NEST.AS=OBJ
+@@ ACT|P=ACTV:leave|G.T=PA|G.V=ACT|G.M=IND|G.AS=-|
+R.AFF=ENT:he|R.OBJ=LOC:city|NEST.AS=OBJ
+
+──────────────────────────────────────────────────────────────────────────────
+8) IDIOM MODELING GUIDE (NON-LEXICAL REGISTRY; NO SNAKES)
+
+• fall short      → ACTV:fail  (+ R.OBJ = OBJ:obligation/responsibility) OR COP be + PROP:sufficiency (LVL:low)
+• gain traction   → ACTV:gain  (+ R.OBJ = OBJ:traction)
+• lose faith      → ACTV:lose  (+ R.OBJ = OBJ:faith)
+
+──────────────────────────────────────────────────────────────────────────────
+9) PROCESSING PIPELINE (NORMATIVE ORDER; CORE REMAINS INFERENCE-FREE)
+
+Raw Text
+   ↓
+[USF Constructor]   enforce WRAP order: TEMPORAL → LOGICAL → CAUSAL → EVIDENTIAL → MANNER → ROOT
+   ↓
+[IFSN CORE Encoder] deterministic serialization to §3 grammar
+   ↓
+[Validation]   §4 CORE checks + USF advisory checks
+
+──────────────────────────────────────────────────────────────────────────────
+END OF IFSN SPECIFICATION
