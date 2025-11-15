@@ -1,0 +1,4783 @@
+[
+  {
+    "global_deixis": {
+      "narrator": "Congressional Research Service (CRS)",
+      "timeframe": "Updated December 11, 2023; narrative covers late 1980s–2023",
+      "location": "United States",
+      "environment": "media_space",
+      "audience": "U.S. Congress and U.S. policymakers",
+      "language": "English"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "United States",
+      "description": "the national government of the United States",
+      "full_classification": "Entity > Collective > GovernmentStructure > NationalGovernment",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|000C-0016,0052-0056,0068-006C,0078-0091,0108-010A,0124-0125]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "North Korea",
+      "description": "the national government of the Democratic People’s Republic of Korea (DPRK)",
+      "full_classification": "Entity > Collective > GovernmentStructure > NationalGovernment",
+      "alias_list": [
+        "DPRK",
+        "Democratic People’s Republic of Korea",
+        "Pyongyang"
+      ],
+      "xref": "[NKREA|000E-0016,004E-0056,0063-0066,0101-0108,0120-0123]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Congressional Research Service",
+      "description": "non-partisan policy research institute serving the United States Congress",
+      "full_classification": "Entity > Collective > Agency",
+      "alias_list": [
+        "CRS"
+      ],
+      "xref": "[NKREA|0003]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Library of Congress",
+      "description": "U.S. federal cultural institution and research library",
+      "full_classification": "Entity > Collective > Agency",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|0006-0009]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "U.S. Department of State",
+      "description": "U.S. executive branch department responsible for foreign affairs",
+      "full_classification": "Entity > Collective > Agency",
+      "alias_list": [
+        "State Department"
+      ],
+      "xref": "[NKREA|0142,0147-0151]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "U.S. Congress",
+      "description": "legislature of the United States federal government",
+      "full_classification": "Entity > Collective > GovernmentStructure > Legislature",
+      "alias_list": [
+        "Congress"
+      ],
+      "xref": "[NKREA|0078-0091]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Biden Administration",
+      "description": "the executive branch leadership of U.S. President Joe Biden",
+      "full_classification": "Entity > Collective > GovernmentStructure > ExecutiveOffice",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|001F-002B,010B-0128]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "President Joe Biden",
+      "description": "President of the United States",
+      "full_classification": "Entity > MaterialEntity > Person > Politician",
+      "alias_list": [
+        "Joe Biden",
+        "President Biden"
+      ],
+      "xref": "[NKREA|0113-0128]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Ambassador Sung Kim",
+      "description": "U.S. diplomat; Special Representative for North Korea Policy (part-time)",
+      "full_classification": "Entity > MaterialEntity > Person > Diplomat",
+      "alias_list": [
+        "Sung Kim"
+      ],
+      "xref": "[NKREA|0129-0131]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Kurt Campbell",
+      "description": "U.S. official nominated to be Deputy Secretary of State (118th Congress, 1st session)",
+      "full_classification": "Entity > MaterialEntity > Person > Official",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|0152-0157]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Kim Jong Un",
+      "description": "North Korean leader",
+      "full_classification": "Entity > MaterialEntity > Person > Politician",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|005D-005F]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Donald Trump",
+      "description": "Former President of the United States",
+      "full_classification": "Entity > MaterialEntity > Person > Politician",
+      "alias_list": [
+        "President Donald Trump"
+      ],
+      "xref": "[NKREA|005D-005F]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "CRS Report R45033",
+      "description": "CRS report titled 'Nuclear Negotiations with North Korea' (certified and signed metadata present)",
+      "full_classification": "Entity > InformationCarrier > DigitalCarrier > PDF",
+      "alias_list": [
+        "R45033"
+      ],
+      "xref": "[NKREA|0001,0002,0005-0009]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Agreed Framework (1994–2002)",
+      "description": "U.S.–DPRK agreement under which North Korea halted and disabled parts of its nuclear program",
+      "full_classification": "Entity > ConventionalEntity > Diplomacy > TreatyInstrument",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|0057,0060-0073]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "U.S.–DPRK bilateral missile negotiations (1996–2000)",
+      "description": "series of talks on North Korean missile activities",
+      "full_classification": "Entity > Phenomenon > Process > NegotiationProcess",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|0058]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Six-Party Talks (2003–2009)",
+      "description": "multilateral negotiations involving the DPRK, U.S., South Korea, China, Japan, and Russia",
+      "full_classification": "Entity > Phenomenon > Process > NegotiationProcess",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|0059,0070-0077]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Leap Day Deal (2012)",
+      "description": "U.S.–DPRK bilateral understanding reached on February 29, 2012",
+      "full_classification": "Entity > ConventionalEntity > Diplomacy > TreatyInstrument",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|005A]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "2018–2019 U.S.–DPRK top-level summitry",
+      "description": "summit meetings and letter exchanges between President Donald Trump and Kim Jong Un",
+      "full_classification": "Entity > Phenomenon > Event > DiplomaticEvent",
+      "alias_list": [
+        "2018–2019 summits"
+      ],
+      "xref": "[NKREA|005C-005F]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Since the late 1980s, when U.S. officials became aware that North Korea was actively pursuing nuclear weapons capabilities, U.S. administrations have used a combination of pressure, deterrence, and diplomacy to try to reduce the threat posed by a nuclear-armed North Korea.",
+      "normalized": "Since the late 1980s U.S. administrations used pressure, deterrence, and diplomacy after learning North Korea actively pursued nuclear weapons, aiming to reduce the threat from a nuclear-armed North Korea.",
+      "operative_verb": [
+        "Perception.GeneralSensing.sense",
+        "Act.Generic.pursue",
+        "Act.Generic.use",
+        "SecurityAndProtection.Prevention.mitigate"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "United States",
+          "role": "Affector",
+          "subject_xref": "[NKREA|000C-0016]"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "North Korea",
+          "role": "Stimulus",
+          "subject_xref": "[NKREA|000E-0016]"
+        }
+      ],
+      "outcome": "U.S. adopted a combined strategy of pressure, deterrence, and diplomacy toward DPRK.",
+      "xref": "[NKREA|000C-0016]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The need for an effective North Korea strategy has become more pressing over the past decade, as Pyongyang has made advances in its nuclear weapons and missile programs.",
+      "normalized": "Over the past decade the need for an effective North Korea strategy increased as Pyongyang advanced its nuclear and missile programs.",
+      "operative_verb": [
+        "LifecycleAndStatus.EventStatus.become",
+        "Act.Generic.advance"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "North Korea",
+          "role": "Affector",
+          "subject_xref": "[NKREA|001C-001E]"
+        }
+      ],
+      "outcome": "Rising urgency for a DPRK strategy due to DPRK capability advances.",
+      "xref": "[NKREA|0017-001E]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Shortly after assuming office, the Biden Administration conducted a review of U.S. policy toward North Korea, deciding that it will engage in a “calibrated, practical approach that is open to and will explore diplomacy” with North Korea with a goal of achieving its eventual “complete denuclearization.”",
+      "normalized": "After taking office the Biden Administration reviewed North Korea policy and decided to pursue a calibrated, practical, diplomacy-open approach aimed at eventual complete denuclearization.",
+      "operative_verb": [
+        "CognitionAndDecision.DecisionMaking.decide",
+        "CollaborationAndOrganization.Organization.organize",
+        "Negotiation.negotiate"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "Biden Administration",
+          "role": "Affector",
+          "subject_xref": "[NKREA|001F-002B]"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "North Korea",
+          "role": "Affectee",
+          "subject_xref": "[NKREA|0026-0029]"
+        }
+      ],
+      "outcome": "U.S. set a diplomacy-forward approach targeting eventual complete denuclearization.",
+      "xref": "[NKREA|001F-002B]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The approach appears to envision offering partial sanctions relief in exchange for partial steps toward denuclearization.",
+      "normalized": "The Biden Administration approach envisions offering partial sanctions relief in exchange for partial denuclearization steps.",
+      "operative_verb": [
+        "FinanceAndMarkets.MarketInstruments.guarantee",
+        "Negotiation.bargain"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "Biden Administration",
+          "role": "Affector",
+          "subject_xref": "[NKREA|0031-0034]"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "North Korea",
+          "role": "Affectee",
+          "subject_xref": "[NKREA|0028-002B]"
+        }
+      ],
+      "outcome": "Conceptual quid pro quo of partial relief for partial steps.",
+      "xref": "[NKREA|0031-0034]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Biden Administration officials say they have reached out to North Korea, offering to meet “without preconditions,” and say Pyongyang largely has ignored U.S. outreach, including offers of humanitarian assistance and attempts to communicate.",
+      "normalized": "Biden Administration officials offered to meet North Korea without preconditions and reported Pyongyang largely ignored U.S. outreach, including humanitarian aid and communication attempts.",
+      "operative_verb": [
+        "CollaborationAndOrganization.Meetings.meet",
+        "Act.Generic.offer",
+        "LifecycleAndStatus.EventStatus.remain"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "Biden Administration",
+          "role": "Affector",
+          "subject_xref": "[NKREA|0035-003D]"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "North Korea",
+          "role": "Affectee",
+          "subject_xref": "[NKREA|003A-003E]"
+        }
+      ],
+      "outcome": "No meeting occurred; outreach reportedly went unanswered.",
+      "xref": "[NKREA|0035-003E]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Since the last round of U.S.-DPRK talks broke down in 2019, North Korea appears to have advanced key aspects of its military capabilities, particularly in the reliability and precision of its missile forces.",
+      "normalized": "After U.S.-DPRK talks broke down in 2019, North Korea advanced its military capabilities, especially missile reliability and precision.",
+      "operative_verb": [
+        "LifecycleAndStatus.EventStatus.collapse",
+        "Act.Generic.advance"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "North Korea",
+          "role": "Affector",
+          "subject_xref": "[NKREA|0042-0047]"
+        }
+      ],
+      "outcome": "Talks ended; DPRK capabilities improved.",
+      "xref": "[NKREA|003F-0047]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The United States has engaged in five major sets of formal nuclear and missile negotiations with North Korea: the bilateral Agreed Framework (1994-2002), bilateral missile negotiations (1996-2000), the multilateral Six-Party Talks (2003-2009), the bilateral Leap Day Deal (2012), and top-level summit meetings and letter exchanges between President Donald Trump and North Korean leader Kim Jong Un (2018-2019).",
+      "normalized": "The United States engaged in five major formal nuclear and missile negotiations with North Korea: Agreed Framework (1994–2002), bilateral missile talks (1996–2000), Six-Party Talks (2003–2009), Leap Day Deal (2012), and 2018–2019 Trump–Kim summits and letters.",
+      "operative_verb": [
+        "Negotiation.negotiate",
+        "Negotiation.agree",
+        "CollaborationAndOrganization.Meetings.meet"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "United States",
+          "role": "Affector",
+          "subject_xref": "[NKREA|0052-0056]"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "North Korea",
+          "role": "Affectee",
+          "subject_xref": "[NKREA|0056-005F]"
+        }
+      ],
+      "outcome": "Five major negotiation tracks identified.",
+      "xref": "[NKREA|0052-005F]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In general, the formula for these negotiations has been for North Korea to halt, and in some cases disable, its nuclear or missile programs in return for economic and diplomatic incentives, including the promise of better U.S.-DPRK relations and of a formal end to the Korean War.",
+      "normalized": "Negotiations generally traded North Korea’s halts or disablement of nuclear or missile programs for economic and diplomatic incentives, including better U.S.–DPRK relations and a formal end to the Korean War.",
+      "operative_verb": [
+        "Act.Generic.halt",
+        "Act.Generic.disable",
+        "Negotiation.bargain"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "North Korea",
+          "role": "Affector",
+          "subject_xref": "[NKREA|0063-0066]"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "United States",
+          "role": "Beneficiary",
+          "subject_xref": "[NKREA|0068-006C]"
+        }
+      ],
+      "outcome": "Quid pro quo structure of talks summarized.",
+      "xref": "[NKREA|0060-006C]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "All five diplomatic efforts resulted in an agreement; two—the Agreed Framework and the Six-Party Talks—produced tangible reductions in North Korea’s existing capabilities. Even those achievements proved fleeting when the two agreements eventually collapsed.",
+      "normalized": "All five efforts produced agreements; the Agreed Framework and the Six-Party Talks reduced existing DPRK capabilities, but both collapsed and the gains proved fleeting.",
+      "operative_verb": [
+        "Negotiation.agree",
+        "LifecycleAndStatus.EventStatus.resolve",
+        "LifecycleAndStatus.EventStatus.collapse"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "Agreed Framework (1994–2002)",
+          "role": "Stimulus",
+          "subject_xref": "[NKREA|0070-0071]"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "Six-Party Talks (2003–2009)",
+          "role": "Stimulus",
+          "subject_xref": "[NKREA|0071-0073]"
+        }
+      ],
+      "outcome": "Agreements reached and later collapsed; capability reductions were not durable.",
+      "xref": "[NKREA|006D-0077]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Congress possesses a number of tools to influence how the Administration pursues negotiations with North Korea, including oversight hearings, resolutions expressing congressional sentiment, restrictions and conditions on the use of funds for negotiations and diplomacy through the appropriations process, and legislation that attaches or relaxes conditions and requirements for implementation of agreements.",
+      "normalized": "Congress can influence Administration negotiations with North Korea via oversight hearings, sentiment resolutions, appropriations restrictions and conditions, and legislation adjusting conditions for implementing agreements.",
+      "operative_verb": [
+        "Act.Generic.influence",
+        "FinanceAndMarkets.Budgeting.appropriate"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "U.S. Congress",
+          "role": "Affector",
+          "subject_xref": "[NKREA|0078-0085]"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "Biden Administration",
+          "role": "Affectee",
+          "subject_xref": "[NKREA|007A-007C]"
+        }
+      ],
+      "outcome": "Congressional influence channels enumerated.",
+      "xref": "[NKREA|0078-0085]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Congress’s role, by way of appropriating funds, has been particularly significant in negotiations over the United States providing energy and humanitarian assistance to North Korea.",
+      "normalized": "Through appropriations, Congress has played a significant role in negotiations about U.S. energy and humanitarian assistance to North Korea.",
+      "operative_verb": [
+        "FinanceAndMarkets.Budgeting.appropriate",
+        "Act.Generic.provide"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "U.S. Congress",
+          "role": "Affector",
+          "subject_xref": "[NKREA|008B-0091]"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "United States",
+          "role": "Affectee",
+          "subject_xref": "[NKREA|008F-0091]"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "North Korea",
+          "role": "Beneficiary",
+          "subject_xref": "[NKREA|0090-0091]"
+        }
+      ],
+      "outcome": "Appropriations shaped assistance-related negotiations.",
+      "xref": "[NKREA|008B-0091]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Over the past decade, North Korea has made significant advances in its nuclear weapons and missile programs, dramatically raising the threat Pyongyang poses to the United States homeland, U.S. allies in East Asia, and U.S. interests.",
+      "normalized": "Over the past decade North Korea advanced nuclear and missile programs, increasing the threat to the U.S. homeland, U.S. allies in East Asia, and U.S. interests.",
+      "operative_verb": [
+        "Act.Generic.advance",
+        "SecurityAndProtection.Offense.threaten"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "North Korea",
+          "role": "Affector",
+          "subject_xref": "[NKREA|0101-0106]"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "United States",
+          "role": "Affectee",
+          "subject_xref": "[NKREA|0106-0109]"
+        }
+      ],
+      "outcome": "Threat level to U.S. and allies increased.",
+      "xref": "[NKREA|0101-0109]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In late April 2021, the Administration announced that it had completed its review, and that it will be a “calibrated, practical approach that is open to and will explore diplomacy with North Korea” to achieve eventually the “complete denuclearization of the Korean Peninsula” even as U.S. and international sanctions remain in place.",
+      "normalized": "In late April 2021 the Administration announced completion of its review and a calibrated, practical, diplomacy-open approach toward North Korea aimed at complete denuclearization while sanctions remain.",
+      "operative_verb": [
+        "Referencing.cite",
+        "CognitionAndDecision.DecisionMaking.decide",
+        "Negotiation.negotiate"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "Biden Administration",
+          "role": "Affector",
+          "subject_xref": "[NKREA|0117-0125]"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "North Korea",
+          "role": "Affectee",
+          "subject_xref": "[NKREA|0120-0123]"
+        }
+      ],
+      "outcome": "Policy review completed and approach declared.",
+      "xref": "[NKREA|0117-0128]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "President Biden has appointed Ambassador and former Deputy Assistant Secretary of State for Japan and the Koreas Sung Kim as a part-time Special Representative for North Korea Policy (he concurrently serves as U.S. Ambassador to Indonesia).",
+      "normalized": "President Biden appointed Ambassador Sung Kim as part-time Special Representative for North Korea Policy while he concurrently serves as U.S. Ambassador to Indonesia.",
+      "operative_verb": [
+        "LifecycleAndStatus.EventStatus.become",
+        "Act.Generic.appoint"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "President Joe Biden",
+          "role": "Affector",
+          "subject_xref": "[NKREA|0129-0131]"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "Ambassador Sung Kim",
+          "role": "Affectee",
+          "subject_xref": "[NKREA|0129-0131]"
+        }
+      ],
+      "outcome": "Special Representative role assigned to Sung Kim.",
+      "xref": "[NKREA|0129-0131]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Biden Administration officials say they have reached out to North Korea, offering to meet “without preconditions,” and that North Korea largely has ignored these offers, as well as offers of humanitarian aid from the United States and South Korea.",
+      "normalized": "Biden Administration officials offered meetings without preconditions and humanitarian aid, but report North Korea largely ignored them.",
+      "operative_verb": [
+        "Act.Generic.offer",
+        "CollaborationAndOrganization.Meetings.meet",
+        "LifecycleAndStatus.EventStatus.remain"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "Biden Administration",
+          "role": "Affector",
+          "subject_xref": "[NKREA|0132-013C]"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "North Korea",
+          "role": "Affectee",
+          "subject_xref": "[NKREA|0136-0138]"
+        }
+      ],
+      "outcome": "Outreach did not yield engagement.",
+      "xref": "[NKREA|0132-013C]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "The White House",
+      "description": "Executive Office of the President communications office cited for April 30, 2021 press gaggle",
+      "full_classification": "Entity > Collective > Agency",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|0141]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Jen Psaki",
+      "description": "White House Press Secretary referenced in the April 30, 2021 press gaggle",
+      "full_classification": "Entity > MaterialEntity > Person > Official",
+      "alias_list": [
+        "Press Secretary Jen Psaki"
+      ],
+      "xref": "[NKREA|013E-0141]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "George Stephanopoulos",
+      "description": "Journalist and host of ABC’s 'This Week'",
+      "full_classification": "Entity > MaterialEntity > Person > Journalist",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|0145]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "ABC’s This Week",
+      "description": "U.S. television news program referenced in State Department interview",
+      "full_classification": "Entity > InformationCarrier > BroadcastProgram",
+      "alias_list": [
+        "This Week"
+      ],
+      "xref": "[NKREA|0144-0146]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "U.S. Senate Committee on Foreign Relations",
+      "description": "Senate committee mentioned regarding nominations",
+      "full_classification": "Entity > Collective > GovernmentStructure > LegislatureCommittee",
+      "alias_list": [
+        "Senate Foreign Relations Committee",
+        "SFRC"
+      ],
+      "xref": "[NKREA|0152-0156]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "South Korea",
+      "description": "Republic of Korea; U.S. ally referenced as offering humanitarian aid to DPRK",
+      "full_classification": "Entity > Collective > GovernmentStructure > NationalGovernment",
+      "alias_list": [
+        "ROK",
+        "Republic of Korea"
+      ],
+      "xref": "[NKREA|013A-013C]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Japan Center for International Exchange",
+      "description": "Policy institute publishing East Asia Insights",
+      "full_classification": "Entity > Collective > NGO/ThinkTank",
+      "alias_list": [
+        "JCIE"
+      ],
+      "xref": "[NKREA|0166-0168]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "East Asia Insights",
+      "description": "Publication series of JCIE cited in the report",
+      "full_classification": "Entity > InformationCarrier > Periodical",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|0165-0168]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Australian Strategic Policy Institute",
+      "description": "Think tank publishing 'The Strategist'",
+      "full_classification": "Entity > Collective > NGO/ThinkTank",
+      "alias_list": [
+        "ASPI"
+      ],
+      "xref": "[NKREA|016D-016E]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "The Strategist",
+      "description": "ASPI’s commentary platform cited for 2019 article",
+      "full_classification": "Entity > InformationCarrier > WebPublication",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|016D-016E]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Hitoshi Tanaka",
+      "description": "Author cited in the JCIE East Asia Insights reference",
+      "full_classification": "Entity > MaterialEntity > Person > Scholar",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|0163-0169]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Kent Harrington",
+      "description": "Co-author of 'Trump’s North Korean Road to Nowhere'",
+      "full_classification": "Entity > MaterialEntity > Person > Journalist",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|016A-016E]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "John Walcott",
+      "description": "Co-author of 'Trump’s North Korean Road to Nowhere'",
+      "full_classification": "Entity > MaterialEntity > Person > Journalist",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|016A-016E]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "crsreports.congress.gov",
+      "description": "Official CRS reports website listed in the header",
+      "full_classification": "Entity > InformationCarrier > Website",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|0004]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Peter Baker",
+      "description": "Journalist cited for New York Times article on China, North Korea, and Donald Trump",
+      "full_classification": "Entity > MaterialEntity > Person > Journalist",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|016F-0174]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Zolan Kanno-Youngs",
+      "description": "Journalist cited for New York Times article on China, North Korea, and Donald Trump",
+      "full_classification": "Entity > MaterialEntity > Person > Journalist",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|0170-0174]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "New York Times",
+      "description": "U.S. newspaper cited for August 18, 2023 article",
+      "full_classification": "Entity > InformationCarrier > Newspaper",
+      "alias_list": [
+        "NYT",
+        "The New York Times"
+      ],
+      "xref": "[NKREA|0173-0174]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "This report summarizes past formal nuclear and missile negotiations between the United States and North Korea ... and highlights some of the lessons and implications that can be drawn from these efforts, particularly on the questions of utility, timing, scope, and goals of negotiating with the DPRK.",
+      "normalized": "The report reviews past U.S.–DPRK nuclear and missile negotiations and extracts lessons on utility, timing, scope, and goals.",
+      "operative_verb": [
+        "Communication.Describe.summarize",
+        "CognitionAndDecision.Learning.learn"
+      ],
+      "participants": [
+      ],
+      "outcome": "Scope and analytical focus of the report established.",
+      "xref": "[NKREA|0175-0185]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "During his presidency, Donald Trump adopted a previously untried approach to negotiating with North Korea.",
+      "normalized": "President Trump pursued an unprecedented approach to negotiations with North Korea.",
+      "operative_verb": [
+        "CognitionAndDecision.DecisionMaking.adopt",
+        "Negotiation.negotiate"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "Donald Trump",
+          "role": "Affector",
+          "subject_xref": "[NKREA|0186-0189]"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "North Korea",
+          "role": "Affectee",
+          "subject_xref": "[NKREA|0189-0191]"
+        }
+      ],
+      "outcome": "Set stage for top-down summitry.",
+      "xref": "[NKREA|0186-018A]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Eschewing the traditional practice of prioritizing working-level talks, Trump opted for a top-down style that led to three leader-to-leader meetings with North Korea’s Kim Jong Un between June 2018 and June 2019.",
+      "normalized": "Trump bypassed working-level talks and held three summits with Kim Jong Un (Jun 2018–Jun 2019).",
+      "operative_verb": [
+        "CollaborationAndOrganization.Meetings.meet",
+        "LifecycleAndStatus.EventQuantification.count"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "Donald Trump",
+          "role": "Participant",
+          "subject_xref": "[NKREA|018C-0190]"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "Kim Jong Un",
+          "role": "Participant",
+          "subject_xref": "[NKREA|0190-0192]"
+        }
+      ],
+      "outcome": "Three leader-level meetings occurred.",
+      "xref": "[NKREA|018B-0192]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Although tensions surrounding the Korean Peninsula ebbed during the leader-level rapprochement, President Trump’s approach did not produce reductions in North Korea’s nuclear or missile programs, which continued to advance, and led to criticism that he weakened U.S. alliance commitments to South Korea and Japan.",
+      "normalized": "Tensions eased during summitry, but DPRK programs advanced; critics said Trump weakened U.S. commitments to South Korea and Japan.",
+      "operative_verb": [
+        "LifecycleAndStatus.EventStatus.decrease",
+        "Act.Generic.advance",
+        "Communication.Criticism.criticize"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "Donald Trump",
+          "role": "Affector",
+          "subject_xref": "[NKREA|0196-019F]"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "North Korea",
+          "role": "Stimulus",
+          "subject_xref": "[NKREA|0199-019C]"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "South Korea",
+          "role": "Affectee",
+          "subject_xref": "[NKREA|019E-019F]"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "Japan",
+          "role": "Affectee",
+          "subject_xref": "[NKREA|019E-019F]"
+        }
+      ],
+      "outcome": "No program reductions; alliance concerns raised.",
+      "xref": "[NKREA|0193-01A0]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "During the 2020 presidential campaign, President Biden said he would emphasize alliance coordination in his North Korea approach.",
+      "normalized": "Biden pledged to prioritize alliance coordination on North Korea.",
+      "operative_verb": [
+        "Communication.Promise.promise",
+        "CollaborationAndOrganization.Cooperation.coordinate"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "President Joe Biden",
+          "role": "Speaker",
+          "subject_xref": "[NKREA|01A1-01A4]"
+        }
+      ],
+      "outcome": "Alliance-first policy signal.",
+      "xref": "[NKREA|01A0-01A4]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "He also criticized Trump’s decisions to meet with Kim without first obtaining more concrete commitments to denuclearize, if not actual reductions.",
+      "normalized": "Biden criticized Trump for meeting Kim without concrete denuclearization commitments or reductions.",
+      "operative_verb": [
+        "Communication.Criticism.criticize",
+        "CollaborationAndOrganization.Meetings.meet"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "President Joe Biden",
+          "role": "Critic",
+          "subject_xref": "[NKREA|01A5-01A9]"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "Donald Trump",
+          "role": "Target",
+          "subject_xref": "[NKREA|01A5-01A9]"
+        }
+      ],
+      "outcome": "Contrast in approaches highlighted.",
+      "xref": "[NKREA|01A5-01A9,01AA-01B0]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Interim National Security Strategic Guidance (March 2021)",
+      "description": "White House guidance emphasizing revitalizing alliances and partnerships",
+      "full_classification": "Entity > InformationCarrier > GovernmentDocument",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|01B9-01BC]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Upon assuming the presidency, Biden devoted considerable effort to “revitaliz[ing]” the United States’ network of alliances and partnerships, following the difficulties those relationships experienced during the Trump Presidency.",
+      "normalized": "After taking office, Biden worked to revitalize U.S. alliances and partnerships after strains under Trump.",
+      "operative_verb": [
+        "CollaborationAndOrganization.Cooperation.reinforce",
+        "LifecycleAndStatus.EventStatus.recover"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "President Joe Biden",
+          "role": "Affector",
+          "subject_xref": "[NKREA|01B1-01B8]"
+        }
+      ],
+      "outcome": "Alliance revitalization prioritized.",
+      "xref": "[NKREA|01B1-01BC]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "North Korea Sanctions and Policy Enhancement Act of 2016",
+      "description": "U.S. law establishing sanctions and related requirements on DPRK (P.L. 114-122)",
+      "full_classification": "Entity > ConventionalEntity > Law",
+      "alias_list": [
+        "P.L. 114-122"
+      ],
+      "xref": "[NKREA|01C7-01CB]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Korean Interdiction and Modernization of Sanctions Act",
+      "description": "Title III of the Countering America’s Adversaries Through Sanctions Act (CAATSA) (P.L. 115-44)",
+      "full_classification": "Entity > ConventionalEntity > Law",
+      "alias_list": [
+        "KIMS Act",
+        "CAATSA Title III",
+        "P.L. 115-44"
+      ],
+      "xref": "[NKREA|01CC-01D0]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Otto Warmbier North Korea Nuclear Sanctions and Enforcement Act of 2019",
+      "description": "Sanctions legislation enacted as part of the FY2020 NDAA (P.L. 116-92, Division F, Title LXXI, Sections 7101-7155)",
+      "full_classification": "Entity > ConventionalEntity > Law",
+      "alias_list": [
+        "P.L. 116-92 Division F Title LXXI"
+      ],
+      "xref": "[NKREA|01D1-01D8]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Since 2016 Congress has passed sanctions legislation establishing requirements that must be met before the president can suspend or terminate DPRK sanctions, as well as explicitly making some sanctions ineligible for temporary waivers.",
+      "normalized": "Post-2016 U.S. laws set conditions for suspending/terminating DPRK sanctions and exclude some from temporary waivers.",
+      "operative_verb": [
+        "Governance.Regulation.regulate",
+        "FinanceAndMarkets.Budgeting.authorize"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "U.S. Congress",
+          "role": "Affector",
+          "subject_xref": "[NKREA|01FE-0209]"
+        }
+      ],
+      "outcome": "Presidential flexibility constrained by statute.",
+      "xref": "[NKREA|01F9-0209]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Julie Hirschfield Davis",
+      "description": "Journalist cited for 2017 New York Times article",
+      "full_classification": "Entity > MaterialEntity > Person > Journalist",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|01DD-01E1]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Congress has tools to influence whether and how the Biden Administration pursues negotiations with North Korea, including oversight hearings, resolutions expressing congressional sentiment, restrictions on appropriations that fund negotiations and diplomacy, and legislation that attaches or relaxes conditions and requirements for implementation of agreements.",
+      "normalized": "Congress can shape Biden’s DPRK negotiations through oversight, resolutions, appropriations restrictions, and conditional legislation.",
+      "operative_verb": [
+        "Act.Generic.influence",
+        "FinanceAndMarkets.Budgeting.appropriate",
+        "Governance.Legislation.legislate"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "U.S. Congress",
+          "role": "Affector",
+          "subject_xref": "[NKREA|01E2-01ED]"
+        }
+      ],
+      "outcome": "Channels of congressional influence enumerated.",
+      "xref": "[NKREA|01E2-01ED]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Congress has influenced past U.S.-DPRK talks and in several cases affected the implementation of the negotiated agreements.",
+      "normalized": "Congress previously influenced talks and implementation of agreements with DPRK.",
+      "operative_verb": [
+        "Act.Generic.influence",
+        "LifecycleAndStatus.EventStatus.affect"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "U.S. Congress",
+          "role": "Affector",
+          "subject_xref": "[NKREA|01EE-01F3]"
+        }
+      ],
+      "outcome": "Historical impact acknowledged.",
+      "xref": "[NKREA|01EE-01F3]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Congress’s role has been particularly significant in shaping U.S. policy related to the provision of energy and humanitarian assistance to North Korea.",
+      "normalized": "Congress notably shaped policy on U.S. energy and humanitarian assistance for DPRK.",
+      "operative_verb": [
+        "FinanceAndMarkets.Budgeting.appropriate",
+        "Act.Generic.provide"
+      ],
+      "participants": [
+      ],
+      "outcome": "Assistance policy influenced by Congress.",
+      "xref": "[NKREA|01F4-01F8]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Since the early 1990s, successive U.S. Presidents have faced the question of whether and how to negotiate with the North Korean government to halt Pyongyang’s nuclear program and ambitions.",
+      "normalized": "From the early 1990s onward, U.S. presidents have weighed whether/how to negotiate to halt DPRK nuclear ambitions.",
+      "operative_verb": [
+        "CognitionAndDecision.DecisionMaking.consider",
+        "Negotiation.negotiate",
+        "SecurityAndProtection.Prevention.halt"
+      ],
+      "participants": [
+      ],
+      "outcome": "Recurring strategic dilemma identified.",
+      "xref": "[NKREA|020C-0213]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In general, the formula for these negotiations involved North Korea halting or dismantling its nuclear or missile programs in return for economic and diplomatic incentives.",
+      "normalized": "Typical bargaining: DPRK halts/dismantles programs in exchange for economic/diplomatic incentives.",
+      "operative_verb": [
+        "Act.Generic.halt",
+        "Act.Generic.dismantle",
+        "Negotiation.bargain"
+      ],
+      "participants": [
+      ],
+      "outcome": "Negotiation structure summarized.",
+      "xref": "[NKREA|0214-021A]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The United States and North Korea have engaged in five major sets of formal negotiations: Agreed Framework (1994–2002), bilateral missile negotiations (1996–2000), Six-Party Talks (2003–2009), Leap Day Deal (2012), and 2018–2019 leader-level meetings and letter exchanges.",
+      "normalized": "Five major U.S.–DPRK negotiation tracks identified spanning 1994–2019.",
+      "operative_verb": [
+        "Negotiation.negotiate",
+        "Communication.Correspondence.exchange_letters"
+      ],
+      "participants": [
+      ],
+      "outcome": "Main negotiation episodes listed.",
+      "xref": "[NKREA|021B-022A]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Agreed Framework (1994–2002)",
+      "description": "Bilateral agreement between the U.S. and DPRK established in 1994",
+      "full_classification": "Entity > ConventionalEntity > Diplomacy > TreatyInstrument",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|022B-022E]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Treaty on the Non-Proliferation of Nuclear Weapons",
+      "description": "International treaty to prevent the spread of nuclear weapons; DPRK joined as a non-nuclear-weapon state in 1985",
+      "full_classification": "Entity > ConventionalEntity > Treaty",
+      "alias_list": [
+        "NPT"
+      ],
+      "xref": "[NKREA|022E-0233]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "International Atomic Energy Agency",
+      "description": "UN-affiliated agency responsible for nuclear safeguards and inspections",
+      "full_classification": "Entity > Collective > InternationalOrganization",
+      "alias_list": [
+        "IAEA"
+      ],
+      "xref": "[NKREA|0235-0242,0261-0267,0272-0279]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Pyongyang joined the Nuclear Nonproliferation Treaty (NPT) as a nonnuclear weapon state in 1985, in response to Soviet pressure, and agreed to allow inspections of its nuclear facilities by the International Atomic Energy Agency (IAEA).",
+      "normalized": "Under Soviet pressure, DPRK acceded to the NPT in 1985 as a non-nuclear-weapon state and accepted IAEA inspections.",
+      "operative_verb": [
+        "Governance.Membership.join",
+        "SecurityAndProtection.Monitoring.inspect"
+      ],
+      "participants": [
+      ],
+      "outcome": "DPRK subject to IAEA safeguards.",
+      "xref": "[NKREA|022E-0236]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Evidence had surfaced in the 1980s that North Korea was engaged in a clandestine nuclear weapons development effort.",
+      "normalized": "1980s evidence indicated a covert DPRK nuclear weapons program.",
+      "operative_verb": [
+        "Perception.GeneralSensing.detect",
+        "Act.Generic.develop"
+      ],
+      "participants": [
+      ],
+      "outcome": "Concerns about clandestine program emerged.",
+      "xref": "[NKREA|0237-023B,0243-0248]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In 1992, the DPRK submitted its declaration of nuclear facilities and materials to the IAEA, which was to verify the statement’s accuracy and completeness.",
+      "normalized": "DPRK filed a 1992 nuclear declaration for IAEA verification.",
+      "operative_verb": [
+        "Communication.Documenting.declare",
+        "SecurityAndProtection.Monitoring.verify"
+      ],
+      "participants": [
+      ],
+      "outcome": "IAEA tasked with verifying DPRK declaration.",
+      "xref": "[NKREA|023C-0242]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The first nuclear crisis was triggered in February 1993, when the IAEA demanded inspections of two undeclared sites suspected to be nuclear waste storage depots. North Korea refused inspections and declared it would withdraw from the NPT, leading to over a year of negotiations.",
+      "normalized": "Feb 1993: IAEA sought inspections at two undeclared sites; DPRK refused and announced NPT withdrawal, prompting year-long talks.",
+      "operative_verb": [
+        "SecurityAndProtection.Monitoring.inspect",
+        "Governance.Membership.withdraw",
+        "Negotiation.negotiate"
+      ],
+      "participants": [
+      ],
+      "outcome": "Prolonged negotiations among DPRK, U.S., and IAEA.",
+      "xref": "[NKREA|0261-0271]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "These talks produced multiple joint statements and agreements, none of which held for more than several months, centering around DPRK allowing IAEA access in exchange for U.S. security assurances and possible civil-use energy assistance.",
+      "normalized": "Early 1990s talks yielded short-lived deals trading IAEA access for U.S. assurances and potential energy aid.",
+      "operative_verb": [
+        "Negotiation.agree",
+        "SecurityAndProtection.Defense.assure"
+      ],
+      "participants": [
+      ],
+      "outcome": "Temporary, fragile arrangements.",
+      "xref": "[NKREA|0272-027E]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "U.S. estimates say North Korea had separated enough plutonium for one or two bombs.",
+      "normalized": "U.S. estimates indicated DPRK had plutonium for 1–2 nuclear devices.",
+      "operative_verb": [
+        "Perception.Estimation.estimate",
+        "SecurityAndProtection.Offense.arm"
+      ],
+      "participants": [
+      ],
+      "outcome": "Perceived DPRK fissile material stockpile.",
+      "xref": "[NKREA|027F-0282,0249-0252]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "William J. Perry",
+      "description": "U.S. Secretary of Defense (1994–1997) cited for describing 'coercive diplomacy'",
+      "full_classification": "Entity > MaterialEntity > Person > Official",
+      "alias_list": [
+        "William Perry"
+      ],
+      "xref": "[NKREA|0283-028A,0253-025B,0256-025B]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Perry described the Clinton Administration policy as “coercive diplomacy,” with offers for talks backed with a very credible threat of military force.",
+      "normalized": "Perry characterized Clinton’s policy as coercive diplomacy backed by credible military threat.",
+      "operative_verb": [
+        "Communication.Quotation.quote",
+        "SecurityAndProtection.Threaten.threaten"
+      ],
+      "participants": [
+      ],
+      "outcome": "U.S. strategy framed as coercive diplomacy.",
+      "xref": "[NKREA|0283-028A]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Yongbyon nuclear facility",
+      "description": "Site of DPRK plutonium-based nuclear facilities considered for U.S. military strike",
+      "full_classification": "Entity > MaterialEntity > Facility > NuclearFacility",
+      "alias_list": [
+        "Yongbyon"
+      ],
+      "xref": "[NKREA|028D-0290]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Jimmy Carter",
+      "description": "Former U.S. President who traveled to Pyongyang in June 1993 to broker outlines of a deal",
+      "full_classification": "Entity > MaterialEntity > Person > Politician",
+      "alias_list": [
+        "Former President Jimmy Carter"
+      ],
+      "xref": "[NKREA|0292-0296]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The crisis was defused in June 1993, when former President Jimmy Carter traveled to Pyongyang and brokered the outlines of a deal with Kim Il-sung, backed by the Clinton Administration.",
+      "normalized": "June 1993: Jimmy Carter’s Pyongyang visit outlined a Clinton-backed deal with Kim Il-sung, easing the crisis.",
+      "operative_verb": [
+        "CollaborationAndOrganization.Mediation.mediate",
+        "LifecycleAndStatus.EventStatus.defuse"
+      ],
+      "participants": [
+      ],
+      "outcome": "Tensions reduced; framework for agreement set.",
+      "xref": "[NKREA|0291-0299]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Kim Il-sung",
+      "description": "North Korean leader until 1994; party to the early 1990s negotiations",
+      "full_classification": "Entity > MaterialEntity > Person > Politician",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|0298-0299,02A4-02A7]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "North Korea agreed to freeze its plutonium production program in exchange for a light-water nuclear power reactor to be provided by the United States, and a move toward normalized diplomatic and economic relations.",
+      "normalized": "DPRK agreed to freeze plutonium production for a U.S.-provided light-water reactor and steps toward normalization.",
+      "operative_verb": [
+        "Act.Generic.freeze",
+        "Negotiation.bargain",
+        "CollaborationAndOrganization.Diplomacy.normalize_relations"
+      ],
+      "participants": [
+      ],
+      "outcome": "Freeze-for-reactor understanding reached.",
+      "xref": "[NKREA|029A-02A3]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Kim Il-sung died in July 1994, but bilateral negotiations continued under his successor and son, Kim Jong-il.",
+      "normalized": "After Kim Il-sung’s July 1994 death, talks continued under Kim Jong-il.",
+      "operative_verb": [
+        "LifecycleAndStatus.BirthDeath.die",
+        "Negotiation.continue"
+      ],
+      "participants": [
+      ],
+      "outcome": "Negotiations persisted despite leadership change.",
+      "xref": "[NKREA|02A4-02A7]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Kim Jong-il",
+      "description": "Successor to Kim Il-sung; DPRK leader during continuation of early 1990s talks",
+      "full_classification": "Entity > MaterialEntity > Person > Politician",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|02A6-02A7,02D1-02D6]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The nuclear talks during the early 1990s took place against a backdrop of a worsened geopolitical and economic situation for Pyongyang.",
+      "normalized": "Early 1990s talks occurred amid deteriorating geopolitical and economic conditions for DPRK.",
+      "operative_verb": [
+        "LifecycleAndStatus.EventStatus.worsen",
+        "Context.Setting.background"
+      ],
+      "participants": [
+      ],
+      "outcome": "Contextual pressures on DPRK increased.",
+      "xref": "[NKREA|02A8-02AD]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Roh Tae-woo",
+      "description": "President of South Korea who pursued 'Nordpolitik' enabling ties with Moscow and Beijing",
+      "full_classification": "Entity > MaterialEntity > Person > Politician",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|02B2-02B4]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Nordpolitik",
+      "description": "South Korea’s ‘northern policy’ under President Roh Tae-woo",
+      "full_classification": "Entity > ConventionalEntity > Policy",
+      "alias_list": [
+        "Northern Policy"
+      ],
+      "xref": "[NKREA|02B3-02B4]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Soviet Union / Soviet bloc",
+      "description": "Former socialist state and allied bloc whose collapse affected DPRK’s geopolitics and economy",
+      "full_classification": "Entity > Collective > GovernmentStructure > NationalGovernment",
+      "alias_list": [
+        "USSR",
+        "Soviet bloc"
+      ],
+      "xref": "[NKREA|0231-0232,02AE-02B1,02B8-02BB]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "China",
+      "description": "People’s Republic of China; major DPRK partner whose reduced support contributed to DPRK hardship",
+      "full_classification": "Entity > Collective > GovernmentStructure > NationalGovernment",
+      "alias_list": [
+        "PRC",
+        "Beijing"
+      ],
+      "xref": "[NKREA|02B6-02B7,02B9-02BD]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Moscow",
+      "description": "Capital of Russia; referenced as part of ROK establishing relations in 1990",
+      "full_classification": "Entity > Location > City",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|02B5]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Beijing",
+      "description": "Capital of the People’s Republic of China; referenced as part of ROK establishing relations in 1992",
+      "full_classification": "Entity > Location > City",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|02B7]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "A collapse in economic support from the Soviet Union and China, which for decades had provided the DPRK with significant assistance and concessional trade, produced economic hardship inside North Korea that ultimately contributed to a massive famine later in the decade.",
+      "normalized": "Loss of Soviet and Chinese support caused DPRK economic hardship, contributing to a late-1990s famine.",
+      "operative_verb": [
+        "FinanceAndMarkets.Trade.trade",
+        "LifecycleAndStatus.EventStatus.collapse",
+        "LifecycleAndStatus.HealthStatus.starve"
+      ],
+      "participants": [
+      ],
+      "outcome": "Economic crisis and famine conditions emerged.",
+      "xref": "[NKREA|02B8-02C4]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The end of the Cold War led the United States to announce in 1991 that it would withdraw all of its land-based tactical nuclear weapons from overseas bases, including those in South Korea.",
+      "normalized": "In 1991 the U.S. announced withdrawal of all land-based tactical nuclear weapons from overseas, including South Korea.",
+      "operative_verb": [
+        "SecurityAndProtection.Disarmament.withdraw",
+        "Communication.Announcement.announce"
+      ],
+      "participants": [
+      ],
+      "outcome": "U.S. tactical nuclear weapons withdrawn from ROK bases.",
+      "xref": "[NKREA|02C5-02CD]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "These were among the factors that appear to have both pressured and encouraged Kim Il-sung and Kim Jong-il to seek a new and improved relationship with the West, including on nuclear issues.",
+      "normalized": "Combined pressures incentivized Kim Il-sung and Kim Jong-il to pursue improved ties with the West on nuclear matters.",
+      "operative_verb": [
+        "CognitionAndDecision.Motivation.motivate",
+        "CollaborationAndOrganization.Diplomacy.seek_relations"
+      ],
+      "participants": [
+      ],
+      "outcome": "Motivation for engagement increased.",
+      "xref": "[NKREA|02CE-02D6]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Joint Declaration of the Denuclearization of the Korean Peninsula (1992)",
+      "description": "North–South agreement pledging no testing, manufacture, production, receipt, possession, storage, deployment, or use of nuclear weapons and creating conditions for peaceful reunification",
+      "full_classification": "Entity > ConventionalEntity > Treaty",
+      "alias_list": [
+        "1992 Joint Denuclearization Declaration"
+      ],
+      "xref": "[NKREA|02D7-02E1]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Three months after Kim Il-sung’s death, U.S.-DPRK nuclear talks culminated in the October 1994 Agreed Framework, which committed North Korea to remain a party to the NPT, freeze its plutonium production programs, and eventually dismantle them under international inspection in return for energy assistance from the United States and other countries.",
+      "normalized": "Oct 1994 Agreed Framework: DPRK stays in NPT, freezes and later dismantles plutonium program under inspection in exchange for energy aid.",
+      "operative_verb": [
+        "Negotiation.agree",
+        "SecurityAndProtection.Monitoring.inspect",
+        "Act.Generic.freeze",
+        "Act.Generic.dismantle"
+      ],
+      "participants": [
+      ],
+      "outcome": "Agreed Framework concluded with verification and aid quid pro quo.",
+      "xref": "[NKREA|02E3-02EF]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Light-water reactors (LWRs) for DPRK",
+      "description": "Two nuclear-power LWRs to be supplied under the Agreed Framework",
+      "full_classification": "Entity > MaterialEntity > Facility > NuclearReactor",
+      "alias_list": [
+        "LWRs"
+      ],
+      "xref": "[NKREA|02F0-02F2]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "North Korea complied with the plutonium freeze terms of the Agreed Framework, allowing IAEA verification tools to be installed—including the “canning” of spent fuel rods at the Yongbyon reactor—and consented to permanent remote monitoring and inspectors at its nuclear facilities.",
+      "normalized": "DPRK allowed IAEA monitoring, canning of spent fuel at Yongbyon, and permanent remote monitoring/inspectors to implement the freeze.",
+      "operative_verb": [
+        "SecurityAndProtection.Monitoring.monitor",
+        "Act.Generic.install",
+        "Act.Generic.comply"
+      ],
+      "participants": [
+      ],
+      "outcome": "Verification measures implemented.",
+      "xref": "[NKREA|02F3-02FD]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The United States “will provide formal assurances to the DPRK against the threat or use of nuclear weapons by the U.S.” Both North Korea and the United States committed to political and economic normalization.",
+      "normalized": "U.S. offered negative security assurances; both sides pledged steps toward political and economic normalization.",
+      "operative_verb": [
+        "SecurityAndProtection.Defense.assure",
+        "CollaborationAndOrganization.Diplomacy.normalize_relations"
+      ],
+      "participants": [
+      ],
+      "outcome": "Assurances and normalization commitments recorded.",
+      "xref": "[NKREA|02FE-0309,031A-0320]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The Agreed Framework laid the groundwork for U.S. energy assistance and improved economic relations—including the easing of U.S. sanctions.",
+      "normalized": "Agreement enabled energy aid and potential easing of U.S. sanctions.",
+      "operative_verb": [
+        "FinanceAndMarkets.Aid.assist",
+        "Governance.Regulation.relax"
+      ],
+      "participants": [
+      ],
+      "outcome": "Path to assistance and sanctions easing.",
+      "xref": "[NKREA|030A-030F]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Korean Peninsula Energy Development Organization",
+      "description": "Consortium (U.S., Japan, ROK; broader membership/support) created to implement LWR project and HFO deliveries",
+      "full_classification": "Entity > Collective > InternationalOrganization",
+      "alias_list": [
+        "KEDO"
+      ],
+      "xref": "[NKREA|0321-032C,0324-0334,0355-0366]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "European Atomic Energy Community",
+      "description": "EAEC/Euratom; contributed financially to KEDO as an executive board member",
+      "full_classification": "Entity > Collective > InternationalOrganization",
+      "alias_list": [
+        "EAEC",
+        "Euratom"
+      ],
+      "xref": "[NKREA|0327,033C-033D]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "KEDO membership expanded to include multiple countries and it received material and financial support from nineteen other nonmember states.",
+      "normalized": "KEDO broadened membership and received support from numerous nonmembers.",
+      "operative_verb": [
+        "CollaborationAndOrganization.Organization.expand",
+        "FinanceAndMarkets.Funding.fund"
+      ],
+      "participants": [
+      ],
+      "outcome": "Wider international backing for KEDO.",
+      "xref": "[NKREA|0324-032C]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Over the ten years of KEDO’s operations, until it was shut down in December 2005, South Korea provided around 60% ($1.5B), Japan ~20% ($500M), the United States ~15% ($400M), and the EAEC ~5% ($120M).",
+      "normalized": "KEDO funding shares: ROK ~60% ($1.5B), Japan ~20% ($0.5B), U.S. ~15% ($0.4B), EAEC ~5% ($0.12B) before Dec 2005 shutdown.",
+      "operative_verb": [
+        "FinanceAndMarkets.Funding.contribute",
+        "LifecycleAndStatus.EventStatus.end"
+      ],
+      "participants": [
+      ],
+      "outcome": "Funding distribution and shutdown noted.",
+      "xref": "[NKREA|0331-033F]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "From 1995 to 2002, Congress appropriated funds for over $400 million in energy assistance to North Korea through KEDO; U.S. contributions covered heavy fuel oil shipments and KEDO administrative costs.",
+      "normalized": "1995–2002 U.S. appropriations >$400M to KEDO for HFO and administration.",
+      "operative_verb": [
+        "FinanceAndMarkets.Budgeting.appropriate",
+        "FinanceAndMarkets.Aid.assist"
+      ],
+      "participants": [
+      ],
+      "outcome": "U.S. financing of KEDO activities.",
+      "xref": "[NKREA|035F-0366]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Heavy fuel oil (HFO) deliveries",
+      "description": "500,000 metric tons annually to DPRK while LWRs were constructed, provided via KEDO",
+      "full_classification": "Entity > MaterialEntity > Resource > Fuel",
+      "alias_list": [
+        "HFO"
+      ],
+      "xref": "[NKREA|0355-035C]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Starting in 1998, Congress required the President to certify progress in nuclear and missile negotiations before allocating money to KEDO operations; the Administration viewed this conditionality as fatal to the Agreed Framework, causing repeated appropriations struggles.",
+      "normalized": "Post-1998 certification requirements tied KEDO funds to negotiation progress, prompting repeated funding clashes and undermining the Agreed Framework.",
+      "operative_verb": [
+        "Governance.Regulation.require",
+        "FinanceAndMarkets.Budgeting.condition",
+        "LifecycleAndStatus.EventStatus.hinder"
+      ],
+      "participants": [
+      ],
+      "outcome": "Conditionality strained the agreement and funding.",
+      "xref": "[NKREA|0340-0354,0370-0380]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In August 1998, when North Korea tested its first long-range ballistic missile over Japan, there were calls in Congress to end the Agreed Framework.",
+      "normalized": "Aug 1998 DPRK long-range missile test over Japan spurred congressional calls to end the Agreed Framework.",
+      "operative_verb": [
+        "SecurityAndProtection.Offense.launch",
+        "Communication.Request.request_end"
+      ],
+      "participants": [
+      ],
+      "outcome": "Political pressure rose to terminate the deal.",
+      "xref": "[NKREA|0381-0386]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Perry Policy Review (1999)",
+      "description": "William J. Perry’s review recommending retaining the Agreed Framework while negotiating broader constraints and incentives",
+      "full_classification": "Entity > InformationCarrier > GovernmentReport",
+      "alias_list": [
+        "Perry Review"
+      ],
+      "xref": "[NKREA|0387-03A1,03A2-03A9]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The review concluded the Agreed Framework had stopped plutonium production but the DPRK likely continued nuclear weapons-related work and developed/exported longer-range missiles; it recommended keeping the Framework and negotiating to end all nuclear activities and long-range missile programs in exchange for sanctions lifting, normalization, and a security guarantee.",
+      "normalized": "Findings: AF stopped plutonium, but DPRK pursued weapons work and long-range missiles; recommendation: retain AF, add negotiations exchanging comprehensive constraints for sanctions relief, normalization, and security guarantee.",
+      "operative_verb": [
+        "Perception.Assessment.assess",
+        "Negotiation.propose"
+      ],
+      "participants": [
+      ],
+      "outcome": "Broadened negotiation agenda proposed.",
+      "xref": "[NKREA|038C-03A1]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "DPRK missile export destinations (1990s)",
+      "description": "Reported recipients: Egypt, Iran, Libya, Pakistan, Syria, and the United Arab Emirates",
+      "full_classification": "Entity > Phenomenon > Trade > ArmsTrade",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|03AA-03B4]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Sunshine Policy",
+      "description": "ROK policy of engagement under Presidents Kim Dae-jung and Roh Moo-hyun leading to the June 2000 inter-Korean summit",
+      "full_classification": "Entity > ConventionalEntity > Policy",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|03BB-03C1]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "North and South Korea held their first-ever summit in June 2000 and began initiatives to improve relations; it was later revealed that South Korea arranged the transfer of hundreds of millions of dollars to North Korea before the summit.",
+      "normalized": "June 2000 inter-Korean summit launched détente; later disclosures indicated large ROK payments to DPRK beforehand.",
+      "operative_verb": [
+        "CollaborationAndOrganization.Meetings.meet",
+        "FinanceAndMarkets.Payment.pay"
+      ],
+      "participants": [
+      ],
+      "outcome": "Symbolic breakthrough with controversial payments.",
+      "xref": "[NKREA|03E7-03F4,03C2-03C8]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Beginning in 1996, the Clinton Administration pursued negotiations to curb the DPRK’s missile program and end missile exports, with North Korea agreeing in September 1999 to a moratorium on long-range missile testing in exchange for partial lifting of U.S. sanctions and continued talks.",
+      "normalized": "1996–1999 missile talks led to a Sept 1999 long-range test moratorium for partial sanctions relief and continued dialogue.",
+      "operative_verb": [
+        "Negotiation.negotiate",
+        "Governance.Regulation.sanction_relief",
+        "SecurityAndProtection.Offense.ceasefire"
+      ],
+      "participants": [
+      ],
+      "outcome": "Missile test moratorium established (held until July 2006).",
+      "xref": "[NKREA|03CD-03D6,03DA-03E3]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In December 1999, KEDO signed a contract to begin construction of two LWRs.",
+      "normalized": "Dec 1999: KEDO contracted to start two LWRs.",
+      "operative_verb": [
+        "Act.Generic.sign",
+        "Act.Generic.construct"
+      ],
+      "participants": [
+      ],
+      "outcome": "LWR project moved to contracting phase.",
+      "xref": "[NKREA|03E4-03E6]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Madeleine Albright",
+      "description": "U.S. Secretary of State who visited Pyongyang in October 2000 to finalize missile deal terms",
+      "full_classification": "Entity > MaterialEntity > Person > Official",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|03F5-03FB]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Albright visited Pyongyang in October 2000 to finalize a new agreement under which North Korea would end ballistic missile development and all missile exports in exchange for international assistance in launching North Korean satellites; a framework could have been signed by President Clinton and Kim Jong-il, but Clinton did not travel due in part to the disputed 2000 U.S. election, and talks were not held before he left office.",
+      "normalized": "Oct 2000: prospective deal—end DPRK missile development/exports for satellite-launch assistance; potential Clinton–Kim signing did not occur amid 2000 U.S. election dispute; talks lapsed.",
+      "operative_verb": [
+        "CollaborationAndOrganization.Meetings.visit",
+        "Negotiation.propose",
+        "LifecycleAndStatus.EventStatus.cancel"
+      ],
+      "participants": [
+      ],
+      "outcome": "Missile deal not finalized.",
+      "xref": "[NKREA|03F5-040E]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Shortly after President George W. Bush took office in January 2001, the Administration began a full review of U.S. policy toward North Korea, distancing itself from Clinton policies; the period featured both high-level outreach and difficulties implementing existing agreements.",
+      "normalized": "Early 2001: Bush Administration policy review pivoted from Clinton approach amid outreach and implementation problems.",
+      "operative_verb": [
+        "CognitionAndDecision.Review.review",
+        "LifecycleAndStatus.EventStatus.change"
+      ],
+      "participants": [
+      ],
+      "outcome": "Policy shift initiated.",
+      "xref": "[NKREA|0410-0420]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Key Administration members and some Members of Congress opposed continuing the Agreed Framework in its existing form; Pyongyang did not cooperate fully and the IAEA could not verify the completeness of North Korea’s report.",
+      "normalized": "Opposition to maintaining the Agreed Framework grew; DPRK noncooperation prevented IAEA verification of completeness.",
+      "operative_verb": [
+        "Communication.Criticism.oppose",
+        "SecurityAndProtection.Monitoring.verify_fail"
+      ],
+      "participants": [
+      ],
+      "outcome": "Erosion of support and verification impasse.",
+      "xref": "[NKREA|0421-042F]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In June 2001, the Administration announced it would pursue “comprehensive” negotiations including further sanctions lifting, humanitarian assistance, and other political steps if the North agreed to verifiable steps to reduce its conventional military posture toward South Korea, improved implementation of the Agreed Framework, and accepted verifiable constraints on its missile program and a ban on missile exports.",
+      "normalized": "June 2001: U.S. proposed comprehensive talks trading sanctions relief/aid/political steps for verifiable DPRK conventional reductions, better AF implementation, and verifiable missile constraints including export ban.",
+      "operative_verb": [
+        "Negotiation.propose",
+        "Governance.Regulation.sanction_relief",
+        "SecurityAndProtection.Monitoring.verify"
+      ],
+      "participants": [
+      ],
+      "outcome": "Comprehensive negotiation offer outlined.",
+      "xref": "[NKREA|0430-0446]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Washington Post",
+      "description": "U.S. newspaper cited for transcript of the 2002 State of the Union Address",
+      "full_classification": "Entity > InformationCarrier > Newspaper",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|0447-044A]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "The American Presidency Project (UCSB)",
+      "description": "Archive of U.S. presidential documents cited for Bush remarks at Dorasan Station",
+      "full_classification": "Entity > InformationCarrier > DigitalArchive",
+      "alias_list": [
+        "American Presidency Project",
+        "University of California, Santa Barbara"
+      ],
+      "xref": "[NKREA|044B-044F,0444-0446]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Dorasan Train Station (Seoul area)",
+      "description": "Site of President George W. Bush’s February 20, 2002 remarks in South Korea",
+      "full_classification": "Entity > Location > Facility > TrainStation",
+      "alias_list": [
+        "Dorasan Station"
+      ],
+      "xref": "[NKREA|044E-0450]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Kim Dae-jung",
+      "description": "President of South Korea associated with the 'sunshine policy'",
+      "full_classification": "Entity > MaterialEntity > Person > Politician",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|0453-0454,048C-048D]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Joint Declaration of the Denuclearization of the Korean Peninsula (1992)",
+      "description": "North–South commitment not to possess reprocessing or uranium enrichment facilities",
+      "full_classification": "Entity > ConventionalEntity > Treaty",
+      "alias_list": [
+        "1992 Joint Denuclearization Declaration"
+      ],
+      "xref": "[NKREA|04FC-0506]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Jack Pritchard",
+      "description": "U.S. representative to KEDO and special envoy for DPRK negotiations, present at August 2002 LWR foundation pour",
+      "full_classification": "Entity > MaterialEntity > Person > Diplomat",
+      "alias_list": [
+        "C. Kenneth 'Jack' Pritchard"
+      ],
+      "xref": "[NKREA|04A0-04A3]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Junichiro Koizumi",
+      "description": "Prime Minister of Japan who met Kim Jong-il at the September 2002 Japan–DPRK summit",
+      "full_classification": "Entity > MaterialEntity > Person > Politician",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|04C4-04C6]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "James A. Kelly",
+      "description": "U.S. Assistant Secretary of State for East Asian and Pacific Affairs who confronted DPRK with HEU evidence in Oct 2002",
+      "full_classification": "Entity > MaterialEntity > Person > Official",
+      "alias_list": [
+        "James Kelly"
+      ],
+      "xref": "[NKREA|04D2-04DA]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "KCNA",
+      "description": "Korean Central News Agency; cited for DPRK explanations on NPT withdrawal",
+      "full_classification": "Entity > InformationCarrier > NewsAgency",
+      "alias_list": [
+        "Korean Central News Agency"
+      ],
+      "xref": "[NKREA|0508-050A]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Banco Delta Asia (BDA)",
+      "description": "Bank in Macao designated as a primary money laundering concern by U.S. Treasury in 2005",
+      "full_classification": "Entity > Collective > Organization > Bank",
+      "alias_list": [
+        "BDA"
+      ],
+      "xref": "[NKREA|0587-059C]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Macao Monetary Authority",
+      "description": "Authority that took over BDA and froze DPRK-related accounts following U.S. designation",
+      "full_classification": "Entity > Collective > GovernmentStructure > FinancialRegulator",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|0597-059C]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Financial Crimes Enforcement Network (FinCEN)",
+      "description": "U.S. Treasury bureau authorized to impose special measures under 31 U.S.C. 5818A (as cited)",
+      "full_classification": "Entity > Collective > Agency",
+      "alias_list": [
+        "FinCEN"
+      ],
+      "xref": "[NKREA|05B4-05C0]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In his January 2002 State of the Union address ... President Bush grouped North Korea into an “axis of evil,” along with Iraq and Iran.",
+      "normalized": "Jan 2002: Bush labeled DPRK part of an 'axis of evil' alongside Iraq and Iran.",
+      "operative_verb": [
+        "Communication.Label.label",
+        "SecurityAndProtection.Threaten.warn"
+      ],
+      "participants": [
+      ],
+      "outcome": "Heightened rhetorical pressure on DPRK.",
+      "xref": "[NKREA|0473-047A,0447-044A]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In a February 2002 speech in Seoul, President Bush said the United States had no intention of invading North Korea and supported the South Korean President’s “sunshine policy” emphasizing engagement.",
+      "normalized": "Feb 2002: Bush disavowed plans to invade DPRK and voiced support for ROK 'sunshine policy.'",
+      "operative_verb": [
+        "Communication.Announcement.announce",
+        "CollaborationAndOrganization.Cooperation.support"
+      ],
+      "participants": [
+      ],
+      "outcome": "Assurances and support for engagement signaled.",
+      "xref": "[NKREA|0484-048D,044B-0454]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "U.S. and North Korea scheduled talks for summer 2002, but they were postponed after a June 29, 2002, naval skirmish between North and South Korea in which 19 South Korean troops were killed.",
+      "normalized": "Planned summer 2002 talks postponed due to June 29 naval clash that killed 19 ROK troops.",
+      "operative_verb": [
+        "LifecycleAndStatus.EventStatus.postpone",
+        "SecurityAndProtection.Conflict.combat"
+      ],
+      "participants": [
+      ],
+      "outcome": "Dialogue delayed by inter-Korean naval incident.",
+      "xref": "[NKREA|048E-0496]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The concrete foundation for the first LWR under KEDO was poured in August 2002, with U.S. representative Jack Pritchard present.",
+      "normalized": "Aug 2002: First KEDO LWR foundation poured; Jack Pritchard attended.",
+      "operative_verb": [
+        "Act.Generic.construct",
+        "CollaborationAndOrganization.Meetings.attend"
+      ],
+      "participants": [
+      ],
+      "outcome": "Visible progress on LWR project.",
+      "xref": "[NKREA|049A-04A3]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The United States urged DPRK to cooperate with the IAEA on verification, but DPRK said it would not do so for another three years and threatened to pull out of the Agreed Framework if reactor progress was not faster.",
+      "normalized": "U.S. pressed for IAEA verification; DPRK deferred cooperation (~3 years) and threatened to leave the Agreed Framework absent faster LWR progress.",
+      "operative_verb": [
+        "SecurityAndProtection.Monitoring.verify",
+        "Communication.Refusal.refuse",
+        "SecurityAndProtection.Threaten.threaten"
+      ],
+      "participants": [
+      ],
+      "outcome": "Verification standoff and exit threat.",
+      "xref": "[NKREA|04A4-04AF]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Construction of LWRs had begun in February 2000, but no nuclear components could be delivered until the IAEA verified completeness of DPRK’s declaration; delays in fundraising, organization, and contracting prevented meeting the 2003 target.",
+      "normalized": "LWR work started Feb 2000; delivery of nuclear components contingent on IAEA verification; logistical delays derailed the 2003 completion goal.",
+      "operative_verb": [
+        "SecurityAndProtection.Monitoring.verify",
+        "LifecycleAndStatus.EventStatus.delay"
+      ],
+      "participants": [
+      ],
+      "outcome": "Project timeline slipped beyond 2003.",
+      "xref": "[NKREA|04B0-04C2]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "A Japan–North Korea summit in September 2002 raised hopes; in a document with Koizumi, Kim renewed DPRK’s missile-testing moratorium ahead of a U.S. diplomatic visit.",
+      "normalized": "Sept 2002: Koizumi–Kim summit renewed DPRK missile test moratorium prior to high-level U.S. visit.",
+      "operative_verb": [
+        "CollaborationAndOrganization.Meetings.meet",
+        "SecurityAndProtection.Offense.ceasefire"
+      ],
+      "participants": [
+      ],
+      "outcome": "Optimism for progress increased.",
+      "xref": "[NKREA|04C3-04CF,0470-0472]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In October 2002, Assistant Secretary James A. Kelly presented evidence of a clandestine HEU program; according to the Bush Administration, DPRK confirmed the allegations and said the Agreed Framework was nullified.",
+      "normalized": "Oct 2002: U.S. confronted DPRK with HEU evidence; administration reported DPRK admission and claim AF was void.",
+      "operative_verb": [
+        "Perception.Evidence.present",
+        "Communication.Admission.admit",
+        "Governance.Agreement.nullify"
+      ],
+      "participants": [
+      ],
+      "outcome": "Crisis over alleged HEU program erupted.",
+      "xref": "[NKREA|04D0-04E5]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The U.S., Japan, and South Korea declared the undeclared enrichment program violated the Agreed Framework, NPT, DPRK’s safeguards, and the 1992 Joint Declaration.",
+      "normalized": "Trilateral statement found DPRK’s enrichment effort violated AF, NPT, IAEA safeguards, and 1992 North–South declaration.",
+      "operative_verb": [
+        "Governance.Judgement.violate",
+        "Communication.Announcement.announce"
+      ],
+      "participants": [
+      ],
+      "outcome": "International legal noncompliance asserted.",
+      "xref": "[NKREA|04E6-04F2,04F3-04FB]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "IAEA Board of Governors on Nov 29, 2002 called on DPRK to clarify enrichment reports and comply with safeguards, stating other covert nuclear activities would violate DPRK commitments.",
+      "normalized": "Nov 29, 2002 IAEA resolution demanded clarification/compliance; warned covert nuclear activity would breach commitments.",
+      "operative_verb": [
+        "SecurityAndProtection.Monitoring.request_clarification",
+        "Governance.Judgement.warn"
+      ],
+      "participants": [
+      ],
+      "outcome": "Formal IAEA pressure applied.",
+      "xref": "[NKREA|0520-0530,0506-0506]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "On Nov 14, 2002, KEDO halted heavy fuel oil shipments; DPRK responded by expelling IAEA inspectors, removing cameras and seals at Yongbyon, then announced NPT withdrawal effective Jan 11, 2003 and resumed plutonium production after an apparent eight-year freeze.",
+      "normalized": "Nov–Dec 2002: KEDO stops HFO; DPRK expels inspectors and disables monitoring; Jan 11, 2003: DPRK exits NPT and restarts plutonium production.",
+      "operative_verb": [
+        "FinanceAndMarkets.Aid.suspend",
+        "SecurityAndProtection.Monitoring.expel",
+        "Governance.Membership.withdraw",
+        "LifecycleAndStatus.EventStatus.resume"
+      ],
+      "participants": [
+      ],
+      "outcome": "Safeguards collapsed; nuclear activities resumed; hostility escalated.",
+      "xref": "[NKREA|0531-054F,054A-054E]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "To resolve the crisis, the Bush Administration sought multilateral talks; in 2003 China convened the Six-Party Talks (China, Japan, North Korea, Russia, South Korea, United States).",
+      "normalized": "2003: PRC hosted first Six-Party Talks among six regional actors at U.S. urging.",
+      "operative_verb": [
+        "CollaborationAndOrganization.Organization.convene",
+        "Negotiation.negotiate_multilateral"
+      ],
+      "participants": [
+      ],
+      "outcome": "Six-Party Talks launched.",
+      "xref": "[NKREA|0553-0565]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In 2005 after the fourth round, the six parties issued a joint statement with principles for verifiable denuclearization ('CVID'); DPRK agreed to abandon all nuclear weapons and existing programs; the statement sketched compromises on LWRs and energy aid, U.S. security guarantees, normalization with U.S. and Japan, and negotiating a peace treaty.",
+      "normalized": "Sept 2005 joint statement: CVID principles; DPRK to abandon weapons/programs; contours for LWRs/energy aid, U.S. guarantees, normalization with U.S./Japan, and peace treaty talks.",
+      "operative_verb": [
+        "Negotiation.agree",
+        "SecurityAndProtection.Disarmament.abandon",
+        "SecurityAndProtection.Monitoring.verify"
+      ],
+      "participants": [
+      ],
+      "outcome": "Framework for denuclearization and normalization articulated.",
+      "xref": "[NKREA|0566-0583,0510-0515,0570-0573]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Follow-up negotiations stalled after U.S. Treasury’s September 2005 designation of Banco Delta Asia as a primary money laundering concern due to suspected counterfeiting; Macao authorities froze North Korean accounts (~$25 million), and other banks exited BDA relationships, chilling the talks as DPRK demanded resolution first.",
+      "normalized": "Post-Sept 2005: BDA designation and resultant freezes (~$25M) caused a chill; DPRK insisted on financial issue resolution before nuclear concessions.",
+      "operative_verb": [
+        "Governance.Regulation.designate",
+        "FinanceAndMarkets.Banking.freeze",
+        "LifecycleAndStatus.EventStatus.stall"
+      ],
+      "participants": [
+      ],
+      "outcome": "Negotiations impeded by financial sanctions effects.",
+      "xref": "[NKREA|0584-05A7,0587-059C]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Under 31 U.S.C. 5818A, FinCEN can impose special measures ranging from recordkeeping/reporting of suspicious activity to prohibiting correspondent or payable-through accounts for a designated institution.",
+      "normalized": "FinCEN’s legal authority permits special measures up to banning correspondent/payable-through accounts for designated banks.",
+      "operative_verb": [
+        "Governance.Regulation.impose_measures"
+      ],
+      "participants": [
+      ],
+      "outcome": "Explains scope of U.S. financial countermeasures.",
+      "xref": "[NKREA|05B4-05C0]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Section 311 Special Measures",
+      "description": "Special measures under Section 311 of the USA PATRIOT Act authorizing actions against primary money-laundering concerns",
+      "full_classification": "Entity > ConventionalEntity > Regulation",
+      "alias_list": [
+        "311 Special Measures",
+        "PATRIOT Act §311"
+      ],
+      "xref": "[NKREA|05C1-05C9]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "USA PATRIOT Act (P.L. 107-56)",
+      "description": "Law that amended Title 31 U.S. Code to establish Section 311 authorities",
+      "full_classification": "Entity > ConventionalEntity > Law",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|05C5-05C9]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Banco Delta Asia was subject to the most stringent (5th) special measure.",
+      "normalized": "BDA received the fifth, most severe, Section 311 special measure.",
+      "operative_verb": [
+        "Governance.Regulation.designate",
+        "Governance.Regulation.enforce"
+      ],
+      "participants": [
+      ],
+      "outcome": "Maximum financial restrictions imposed.",
+      "xref": "[NKREA|05CA-05CC]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Stephen Haggard",
+      "description": "Economist/blogger cited discussing the BDA issue",
+      "full_classification": "Entity > MaterialEntity > Person > Scholar",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|05CD-05D1]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Witness to Transformation (PIIE blog)",
+      "description": "Blog at the Peterson Institute for International Economics",
+      "full_classification": "Entity > InformationCarrier > WebPublication",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|05CD-05D1]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Wall Street Journal",
+      "description": "Newspaper cited for 2007 article on U.S. use of a bank to punish DPRK",
+      "full_classification": "Entity > InformationCarrier > Newspaper",
+      "alias_list": [
+        "WSJ"
+      ],
+      "xref": "[NKREA|05D9-05DD]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "UN Security Council Resolution 1718 (2006)",
+      "description": "First UNSC sanctions resolution on DPRK after 2006 nuclear test",
+      "full_classification": "Entity > ConventionalEntity > InternationalResolution",
+      "alias_list": [
+        "UNSCR 1718"
+      ],
+      "xref": "[NKREA|05DE,0630-063B]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Denuclearization Action Plan (Feb 13, 2007)",
+      "description": "Six-Party Talks agreement to implement the 2005 Joint Statement’s initial steps",
+      "full_classification": "Entity > ConventionalEntity > Diplomacy > Agreement",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|05E0-05E9,05EF-05F5,063D-064F]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The February 2007 agreement ... focused on shutting down and disabling the key plutonium production facilities at Yongbyon; a third phase was expected to deal with all aspects of North Korea’s nuclear program.",
+      "normalized": "2007 Action Plan prioritized shutdown/disablement at Yongbyon; later phase to address full nuclear program.",
+      "operative_verb": [
+        "SecurityAndProtection.Monitoring.disable",
+        "LifecycleAndStatus.Planning.plan"
+      ],
+      "participants": [
+      ],
+      "outcome": "Phased denuclearization sequence established.",
+      "xref": "[NKREA|05E0-05EE]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Trading with the Enemy Act (TWEA)",
+      "description": "1917 statute used by Truman in 1950 to impose sanctions on DPRK and China",
+      "full_classification": "Entity > ConventionalEntity > Law",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|05F9-0606]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "On December 16, 1950, President Harry S. Truman declared a national emergency, citing TWEA, to impose economic sanctions on North Korea and China.",
+      "normalized": "Dec 16, 1950: Truman invoked TWEA to sanction DPRK and PRC.",
+      "operative_verb": [
+        "Governance.Sanctions.sanction",
+        "Communication.Announcement.announce"
+      ],
+      "participants": [
+      ],
+      "outcome": "Sanctions regime initiated under national emergency.",
+      "xref": "[NKREA|05F6-05FD,05FE-0606]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Executive Order 13466 (June 26, 2008)",
+      "description": "EO continuing certain restrictions with respect to North Korea and North Korean nationals",
+      "full_classification": "Entity > ConventionalEntity > ExecutiveOrder",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|061B-0620]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "31 C.F.R. Part 510",
+      "description": "U.S. Treasury sanctions regulations for North Korea",
+      "full_classification": "Entity > ConventionalEntity > Regulation",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|0621-0622]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Although President Bush delisted the government of North Korea as a state sponsor of international terrorism ... he replaced them with more circumscribed economic restrictions related to proliferation concerns.",
+      "normalized": "2008: DPRK removed from SST list; narrower proliferation-focused restrictions imposed via EO 13466 and regulations.",
+      "operative_verb": [
+        "Governance.Listing.delist",
+        "Governance.Regulation.impose"
+      ],
+      "participants": [
+      ],
+      "outcome": "Shift from terrorism-based to proliferation-based restrictions.",
+      "xref": "[NKREA|060D-0624]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "On October 9, 2006, North Korea tested a nuclear device for the first time.",
+      "normalized": "Oct 9, 2006: DPRK conducted its first nuclear test.",
+      "operative_verb": [
+        "SecurityAndProtection.Offense.test"
+      ],
+      "participants": [
+      ],
+      "outcome": "Triggered tougher stances and UNSC sanctions.",
+      "xref": "[NKREA|0627-062F]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Within a week, the UNSC passed Resolution 1718 ... calling on North Korea to abandon its nuclear weapons in a complete, verifiable, and irreversible manner and requiring member states to impose international sanctions.",
+      "normalized": "UNSCR 1718 demanded CVID and mandated sanctions.",
+      "operative_verb": [
+        "Governance.Resolution.resolve",
+        "SecurityAndProtection.Disarmament.require"
+      ],
+      "participants": [
+      ],
+      "outcome": "International sanctions framework established.",
+      "xref": "[NKREA|0630-063B,0636-0639]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In February 2007, the Six-Party Talks reached an agreement to begin the initial 60-day phase to implement the 2005 Joint Statement ... DPRK agreed to disable all nuclear facilities and provide a 'complete and correct' declaration in exchange for HFO deliveries and removal of TWEA and State Sponsors of Terrorism designations.",
+      "normalized": "Feb 2007: Initial implementation—disablement and full declaration for energy aid and delisting/removal of TWEA/SST restrictions.",
+      "operative_verb": [
+        "Negotiation.agree",
+        "SecurityAndProtection.Monitoring.disable",
+        "Communication.Documenting.declare"
+      ],
+      "participants": [
+      ],
+      "outcome": "Reciprocal steps defined for initial phase.",
+      "xref": "[NKREA|063D-064F]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The United States assured North Korea that it would return frozen North Korean funds to North Korea, which it did later that year.",
+      "normalized": "U.S. facilitated return of frozen DPRK funds in 2007.",
+      "operative_verb": [
+        "FinanceAndMarkets.Banking.transfer",
+        "Communication.Promise.fulfill"
+      ],
+      "participants": [
+      ],
+      "outcome": "Funds repatriated as confidence-building step.",
+      "xref": "[NKREA|0650-0655,0664-0670]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "IAEA inspectors returned to North Korea in July 2007 to monitor and verify the shutdown ... and had a continuous presence there until mid-April 2009.",
+      "normalized": "IAEA maintained on-site monitoring at Yongbyon from Jul 2007 to mid-Apr 2009.",
+      "operative_verb": [
+        "SecurityAndProtection.Monitoring.verify",
+        "LifecycleAndStatus.EventDuration.span"
+      ],
+      "participants": [
+      ],
+      "outcome": "Verification presence established then ended.",
+      "xref": "[NKREA|065B-0663,067E-0681]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Japan did not provide its share of energy assistance because North Korea had not resolved the issue of Japanese citizens abducted during the 1970s and 1980s.",
+      "normalized": "Japan withheld its portion of energy aid pending resolution of abductee issue.",
+      "operative_verb": [
+        "FinanceAndMarkets.Aid.withhold",
+        "Communication.Demand.demand"
+      ],
+      "participants": [
+      ],
+      "outcome": "Uneven burden-sharing among parties.",
+      "xref": "[NKREA|0674-067D]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Siegfried S. Hecker",
+      "description": "Nuclear expert cited regarding DPRK nuclear program trajectory",
+      "full_classification": "Entity > MaterialEntity > Person > Scientist",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|0694-0698]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Bill Richardson",
+      "description": "Former U.S. Ambassador to the UN and New Mexico governor; reported DPRK willingness for IAEA access in Dec 2010",
+      "full_classification": "Entity > MaterialEntity > Person > Politician",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|0699-06A6]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "During this nearly two-year period, agreement on verification measures was elusive—North Korea refused to allow IAEA inspectors access to its facilities, which was followed by a slowing of benefits from the other countries. This led to growing tensions.",
+      "normalized": "Verification impasse (late 2007–2008) prompted reduced benefits and heightened tensions.",
+      "operative_verb": [
+        "Communication.Refusal.refuse",
+        "LifecycleAndStatus.EventStatus.escalate"
+      ],
+      "participants": [
+      ],
+      "outcome": "Talks deadlocked over verification.",
+      "xref": "[NKREA|06A7-06B6]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In 2009, North Korea shifted its policy away from the Six-Party Talks toward developing its nuclear weapons capability ... following an April 2009 long-range rocket launch, a UNSC condemnation, DPRK withdrew from talks, expelled monitors, restarted reprocessing, and conducted a second nuclear test.",
+      "normalized": "2009: DPRK exited Six-Party Talks and advanced nuclear program—rocket launch, UNSC censure, withdrawal, expulsion of monitors, reprocessing restart, second test.",
+      "operative_verb": [
+        "SecurityAndProtection.Offense.launch",
+        "Governance.Membership.withdraw",
+        "SecurityAndProtection.Monitoring.expel",
+        "SecurityAndProtection.Offense.test"
+      ],
+      "participants": [
+      ],
+      "outcome": "Multilateral process collapsed; nuclear advancement accelerated.",
+      "xref": "[NKREA|06B7-06E3]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "North Korea subsequently restored its disabled plutonium production facilities and reactor, and built a uranium enrichment plant at Yongbyon; in November 2009, it invited former high-level U.S. officials to tour a pilot enrichment plant.",
+      "normalized": "Post-2009: DPRK reactivated plutonium assets and unveiled uranium enrichment at Yongbyon via invited tour.",
+      "operative_verb": [
+        "LifecycleAndStatus.Restore.restore",
+        "Act.Generic.build",
+        "Communication.Demonstrate.demonstrate"
+      ],
+      "participants": [
+      ],
+      "outcome": "Demonstrated parallel plutonium and uranium pathways.",
+      "xref": "[NKREA|06E4-06F1]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Two North Korean attacks on South Korea in 2010 ... the Cheonan sinking in March (46 killed) and the November artillery attack on Yeonpyeong Island (four killed, dozens wounded).",
+      "normalized": "2010: Cheonan sinking and Yeonpyeong shelling escalated tensions; significant casualties.",
+      "operative_verb": [
+        "SecurityAndProtection.Conflict.attack",
+        "SecurityAndProtection.Conflict.sink",
+        "SecurityAndProtection.Conflict.shell"
+      ],
+      "participants": [
+      ],
+      "outcome": "Environment for talks deteriorated sharply.",
+      "xref": "[NKREA|06F2-0705]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Thereafter, the Obama Administration adopted what has been dubbed a strategy of “strategic patience,” focusing on coordination with allies and insisting DPRK first change aggressive behavior toward the South before talks could commence.",
+      "normalized": "U.S. pursued 'strategic patience'—ally coordination and preconditioned talks on DPRK behavior change.",
+      "operative_verb": [
+        "CollaborationAndOrganization.Cooperation.coordinate",
+        "CognitionAndDecision.Policy.adopt"
+      ],
+      "participants": [
+      ],
+      "outcome": "Talks conditioned on DPRK conduct.",
+      "xref": "[NKREA|0706-0711]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "U.S. food assistance to DPRK (1996–2009)",
+      "description": "Period when the U.S. was among the largest food aid providers to North Korea",
+      "full_classification": "Entity > Phenomenon > HumanitarianAid",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|0712-0718]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "1990s North Korean famine",
+      "description": "Mass famine in DPRK during the 1990s causing an estimated 5–10% population loss",
+      "full_classification": "Entity > Phenomenon > HumanitarianCrisis",
+      "alias_list": [
+        "Arduous March"
+      ],
+      "xref": "[NKREA|0719-071E]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Under the George W. Bush Administration, the aid continued but at lower levels and less consistently than under the Clinton Administration.",
+      "normalized": "Bush era maintained but reduced and less consistent U.S. food aid compared with Clinton era.",
+      "operative_verb": [
+        "FinanceAndMarkets.Aid.reduce",
+        "LifecycleAndStatus.EventStatus.continue"
+      ],
+      "participants": [
+      ],
+      "outcome": "Aid volumes declined and became intermittent.",
+      "xref": "[NKREA|071F-0723]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "U.S. officially stated policy was to delink food and humanitarian aid from strategic interests.",
+      "normalized": "Official U.S. stance under Clinton and Bush: humanitarian aid not linked to strategic concessions.",
+      "operative_verb": [
+        "Communication.Policy.state"
+      ],
+      "participants": [
+      ],
+      "outcome": "Declared humanitarian–security separation.",
+      "xref": "[NKREA|0724-0729]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Many observers contended that from 1996 to 2001, the Clinton Administration used food aid to secure DPRK participation and cooperation in security-related negotiations.",
+      "normalized": "Analysts argue Clinton leveraged food aid (1996–2001) to elicit DPRK engagement on security issues.",
+      "operative_verb": [
+        "Negotiation.incentivize",
+        "FinanceAndMarkets.Aid.link"
+      ],
+      "participants": [
+      ],
+      "outcome": "Perceived aid–security linkage under Clinton.",
+      "xref": "[NKREA|072A-0731]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The George W. Bush Administration arguably weakened the linkage by making improved monitoring and access one of three explicit conditions for providing food aid.",
+      "normalized": "Bush conditioned aid on need, competing needs, and monitoring/access, weakening aid–security linkage.",
+      "operative_verb": [
+        "Governance.Regulation.condition",
+        "SecurityAndProtection.Monitoring.require"
+      ],
+      "participants": [
+      ],
+      "outcome": "Aid delivered based on humanitarian criteria and oversight.",
+      "xref": "[NKREA|0732-073F]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "U.S. humanitarian aid conditions (Bush era)",
+      "description": "Three conditions: need in DPRK, competing U.S. needs, and monitoring/access",
+      "full_classification": "Entity > ConventionalEntity > Policy",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|073C-073F]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The Obama Administration’s February 2012 understanding appeared to reverse this shift by directly linking aid to concessions on the nuclear issue.",
+      "normalized": "Feb 2012: Obama linked nutritional aid to DPRK nuclear concessions.",
+      "operative_verb": [
+        "Negotiation.link",
+        "FinanceAndMarkets.Aid.offer"
+      ],
+      "participants": [
+      ],
+      "outcome": "Conditionality reintroduced tying aid to nuclear steps.",
+      "xref": "[NKREA|0740-0749]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The United States has not provided food aid to North Korea since early 2009.",
+      "normalized": "U.S. food aid to DPRK halted from early 2009 onward.",
+      "operative_verb": [
+        "FinanceAndMarkets.Aid.suspend"
+      ],
+      "participants": [
+      ],
+      "outcome": "Food assistance ceased.",
+      "xref": "[NKREA|074A-074D]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Leap Day Deal (Feb 29, 2012)",
+      "description": "U.S.–DPRK parallel announcements establishing moratoria and nutritional aid framework",
+      "full_classification": "Entity > ConventionalEntity > Diplomacy > Agreement",
+      "alias_list": [
+        "2012 Leap Day Agreement"
+      ],
+      "xref": "[NKREA|0767-0784,0785-079F]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "North Korea committed to a long-range missile testing moratorium; a nuclear testing moratorium; a moratorium on nuclear activities including uranium enrichment at Yongbyon; and a return of IAEA inspectors.",
+      "normalized": "DPRK pledged moratoria on long-range missiles, nuclear tests, Yongbyon nuclear activities (incl. enrichment), and IAEA return.",
+      "operative_verb": [
+        "SecurityAndProtection.Offense.ceasefire",
+        "SecurityAndProtection.Monitoring.allow"
+      ],
+      "participants": [
+      ],
+      "outcome": "Confidence-building commitments specified.",
+      "xref": "[NKREA|0785-078F]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The United States announced an initial 240,000 metric tons of nutritional assistance with the prospect of additional aid based on need, alongside commitments to the 1953 armistice and people-to-people contacts.",
+      "normalized": "U.S. outlined 240k MT nutritional aid (needs-based), reaffirmed 1953 armistice, and sought more people-to-people ties.",
+      "operative_verb": [
+        "FinanceAndMarkets.Aid.commit",
+        "CollaborationAndOrganization.Diplomacy.reaffirm"
+      ],
+      "participants": [
+      ],
+      "outcome": "Aid package and political assurances announced.",
+      "xref": "[NKREA|0790-07A4]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In March 2012, DPRK announced it would launch an 'earth observation satellite.' The United States suspended its portion of the Leap Day arrangement, citing UNSC sanctions.",
+      "normalized": "Mar 2012: DPRK satellite launch plan prompted U.S. suspension of Leap Day aid, citing missile-related UNSC bans.",
+      "operative_verb": [
+        "SecurityAndProtection.Offense.launch_plan",
+        "FinanceAndMarkets.Aid.suspend"
+      ],
+      "participants": [
+      ],
+      "outcome": "Deal effectively unraveled.",
+      "xref": "[NKREA|07A8-07B3]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The April 2012 launch failed and was condemned by the UNSC as a serious violation; in May 2012 DPRK’s constitution declared the country a 'nuclear-armed state.'",
+      "normalized": "Apr 2012 failed launch drew UNSC censure; May 2012 DPRK constitutional claim of 'nuclear-armed state.'",
+      "operative_verb": [
+        "SecurityAndProtection.Offense.launch",
+        "Governance.Resolution.condemn",
+        "Communication.Declare.declare"
+      ],
+      "participants": [
+      ],
+      "outcome": "International backlash; domestic nuclear status assertion.",
+      "xref": "[NKREA|07B4-07C1,07C5-07C6]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "2016–2017 DPRK testing campaign",
+      "description": "Scores of missile tests and three nuclear tests demonstrating reach to CONUS",
+      "full_classification": "Entity > EventSeries > WeaponsTesting",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|07E5-07ED]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Obama expanded international and unilateral sanctions, including two new UNSC resolutions broadening sanctions to sectoral bans like coal exports.",
+      "normalized": "Obama era tightened sanctions with sectoral UNSC measures (e.g., coal).",
+      "operative_verb": [
+        "Governance.Sanctions.expand"
+      ],
+      "participants": [
+      ],
+      "outcome": "Sanctions scope widened beyond WMD-linked items.",
+      "xref": "[NKREA|07EE-07FC]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The Trump Administration adopted 'maximum pressure,' leading the UNSC to pass four new resolutions; six combined (2016–2017) banned over 75% of DPRK exports and many imports except basic needs.",
+      "normalized": "2017: Trump-led push secured four UNSC sanctions; total six in 2016–2017 cut >75% of exports and many imports.",
+      "operative_verb": [
+        "Governance.Resolution.pass",
+        "Governance.Sanctions.restrict"
+      ],
+      "participants": [
+      ],
+      "outcome": "Severe multilateral economic isolation.",
+      "xref": "[NKREA|0814-0824]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Trump emphasized the option of launching a preventive military strike and began preparations, while exchanging bellicose insults with Kim; he warned of 'fire and fury' on August 8, 2017.",
+      "normalized": "2017: U.S. signaled possible preventive strike; rhetoric escalated including 'fire and fury' threat.",
+      "operative_verb": [
+        "SecurityAndProtection.Threaten.threaten",
+        "CognitionAndDecision.Planning.plan"
+      ],
+      "participants": [
+      ],
+      "outcome": "Acute crisis atmosphere.",
+      "xref": "[NKREA|082B-083F,07DE-07E2]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "James Mattis (2017 reflections)",
+      "description": "Then-SECDEF reportedly sought spiritual guidance amid high war risk with DPRK",
+      "full_classification": "Entity > MaterialEntity > Person > Official",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|07CC-07DA]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In February 2017, North Korean agents were implicated in the VX assassination of Kim Jong Un’s half-brother at Kuala Lumpur International Airport.",
+      "normalized": "Feb 2017: VX nerve agent used to kill Kim Jong Nam in Malaysia, attributed to DPRK agents.",
+      "operative_verb": [
+        "SecurityAndProtection.Offense.assassinate",
+        "SecurityAndProtection.CBRN.use"
+      ],
+      "participants": [
+      ],
+      "outcome": "International outrage and further tensions.",
+      "xref": "[NKREA|0845-0854,086F-087A]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "After Moon Jae-in’s May 2017 election, DPRK ignored proposals for dialogue such as hotlines, humanitarian aid, and family reunions.",
+      "normalized": "2017: DPRK rebuffed ROK President Moon’s engagement overtures.",
+      "operative_verb": [
+        "Communication.Refusal.ignore",
+        "CollaborationAndOrganization.Cooperation.propose"
+      ],
+      "participants": [
+      ],
+      "outcome": "Inter-Korean outreach stalled.",
+      "xref": "[NKREA|084D-0859]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Otto Warmbier was repatriated in June 2017 after a year-and-a-half imprisonment in a coma and died a week later.",
+      "normalized": "June 2017: Otto Warmbier returned to U.S. in coma; died shortly after.",
+      "operative_verb": [
+        "CollaborationAndOrganization.Transfer.repatriate",
+        "LifecycleAndStatus.EventStatus.death"
+      ],
+      "participants": [
+      ],
+      "outcome": "Human rights concerns heightened worldwide.",
+      "xref": "[NKREA|085A-086E]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Both the Obama and Trump Administrations pushed countries to reduce or eliminate ties to North Korea.",
+      "normalized": "U.S. diplomacy under Obama and Trump sought global rollback of DPRK ties.",
+      "operative_verb": [
+        "CollaborationAndOrganization.Diplomacy.pressure"
+      ],
+      "participants": [
+      ],
+      "outcome": "Broader international isolation of DPRK.",
+      "xref": "[NKREA|0825-082A]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In a departure from previous administrations, the Trump Administration emphasized the option of launching a preventive military strike against North Korea and began making preparations for a military conflict, significantly increasing tensions on the Korean Peninsula.",
+      "normalized": "2017: U.S. signaled potential preventive strike on DPRK and prepared for conflict, heightening tensions.",
+      "operative_verb": [
+        "CognitionAndDecision.Planning.plan",
+        "SecurityAndProtection.Threaten.signal_force"
+      ],
+      "participants": [
+      ],
+      "outcome": "Crisis atmosphere intensified on the peninsula.",
+      "xref": "[NKREA|082B-0834]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "President Trump and North Korean leader Kim Jong Un exchanged bellicose public insults, with Trump in August 2017 saying “North Korea best not make any more threats to the United States. They will be met with fire and fury like the world has never seen.”",
+      "normalized": "Aug 2017: Trump warned DPRK of 'fire and fury' amid hostile exchanges with Kim.",
+      "operative_verb": [
+        "SecurityAndProtection.Threaten.threaten",
+        "Communication.Insult.insult"
+      ],
+      "participants": [
+      ],
+      "outcome": "Rhetorical escalation between leaders.",
+      "xref": "[NKREA|0835-083F,07DE-07E2]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In addition to its nuclear and missile tests in the 2016-2017 period, North Korea escalated tension in other ways.",
+      "normalized": "2016–2017: DPRK escalated tensions beyond testing activities.",
+      "operative_verb": [
+        "SecurityAndProtection.Offense.escalate"
+      ],
+      "participants": [
+      ],
+      "outcome": "Broader pattern of provocation.",
+      "xref": "[NKREA|0840-0844]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In February 2017, North Korean agents were implicated in the use of the toxic chemical nerve agent VX to assassinate Kim Jong Un’s half-brother in the Kuala Lumpur International Airport.",
+      "normalized": "Feb 2017: DPRK agents implicated in VX assassination of Kim Jong Nam at KLIA.",
+      "operative_verb": [
+        "SecurityAndProtection.CBRN.use",
+        "SecurityAndProtection.Offense.assassinate"
+      ],
+      "participants": [
+      ],
+      "outcome": "International condemnation and heightened scrutiny.",
+      "xref": "[NKREA|0845-0854]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In the months after South Korea’s election of longtime engagement proponent Moon Jae-in to the Presidency in May 2017, North Korea essentially ignored Moon’s proposals for dialogue and engagement such as restoring a military hotline, providing small-scale humanitarian assistance, and resuming programs to temporarily reunite families separated since the Korean War.",
+      "normalized": "Mid–2017: DPRK ignored ROK President Moon’s dialogue and humanitarian overtures.",
+      "operative_verb": [
+        "Communication.Refusal.ignore",
+        "CollaborationAndOrganization.Cooperation.propose"
+      ],
+      "participants": [
+      ],
+      "outcome": "Inter-Korean engagement stalled.",
+      "xref": "[NKREA|084D-0859]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Meanwhile, in July that same year, U.S. and global attention was focused on the Kim regime’s human rights abuses when North Korea allowed the Trump Administration to repatriate Otto Warmbier, a U.S. college student who had lapsed into a coma during a year-and-a-half of imprisonment. Warmbier ... died a week after his return to the United States.",
+      "normalized": "June–July 2017: Otto Warmbier repatriated to U.S. in coma; died one week later.",
+      "operative_verb": [
+        "CollaborationAndOrganization.Transfer.repatriate",
+        "LifecycleAndStatus.EventStatus.death"
+      ],
+      "participants": [
+      ],
+      "outcome": "Human rights concerns intensified worldwide.",
+      "xref": "[NKREA|085A-086E]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Chemical and Biological Weapons Control and Warfare Elimination Act of 1991",
+      "description": "Statutory basis for U.S. determinations regarding DPRK’s use of chemical weapons (VX case).",
+      "full_classification": "Entity > ConventionalEntity > Law",
+      "alias_list": [
+        "CBW Act of 1991"
+      ],
+      "xref": "[NKREA|086F-087A]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "State Department ... Determinations Regarding Use of Chemical Weapons by North Korea under the Chemical and Biological Weapons Control and Warfare Elimination Act of 1991.",
+      "normalized": "Mar 5, 2018: U.S. determined DPRK used chemical weapons under CBW Act authorities.",
+      "operative_verb": [
+        "Governance.Sanctions.determine",
+        "Governance.Regulation.enforce"
+      ],
+      "participants": [
+      ],
+      "outcome": "Legal basis for punitive measures affirmed.",
+      "xref": "[NKREA|086F-087A]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "CRS Report R46349",
+      "description": "Chronology of North Korea–related events from 2016 to 2020.",
+      "full_classification": "Entity > InformationCarrier > GovernmentReport",
+      "alias_list": [
+        "North Korea: A Chronology of Events from 2016 to 2020"
+      ],
+      "xref": "[NKREA|087B-0883]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Chung Eui-yong",
+      "description": "Republic of Korea National Security Advisor who briefed on Kim Jong Un meetings and conveyed invitation to President Trump",
+      "full_classification": "Entity > MaterialEntity > Person > Official",
+      "alias_list": [
+        "Chung Eui-Yong"
+      ],
+      "xref": "[NKREA|088A-088D,08E4-08E8]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "On January 1, 2018, ... Kim Jong Un used his annual New Year’s speech to accept an invitation from ROK President Moon Jae-in to participate in the February 2018 Winter Olympics in PyeongChang, South Korea.",
+      "normalized": "Jan 1, 2018: Kim accepted Moon’s invite for DPRK participation in PyeongChang Winter Olympics.",
+      "operative_verb": [
+        "Communication.Accept.accept",
+        "CollaborationAndOrganization.Sports.participate"
+      ],
+      "participants": [
+      ],
+      "outcome": "Opened path for inter-Korean engagement at Olympics.",
+      "xref": "[NKREA|089A-08A5]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The United States and South Korea agreed to delay annual joint military drills until after the Olympics and appeared to work together to ensure that North Korea’s participation did not violate sanctions.",
+      "normalized": "U.S. and ROK postponed joint drills until after Olympics and coordinated to avoid sanctions violations.",
+      "operative_verb": [
+        "CognitionAndDecision.Planning.postpone",
+        "CollaborationAndOrganization.Cooperation.coordinate"
+      ],
+      "participants": [
+      ],
+      "outcome": "De-escalation during Olympic period.",
+      "xref": "[NKREA|08A6-08B0]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Kim Yo Jong",
+      "description": "Sister of Kim Jong Un who attended the PyeongChang Olympics and conveyed message supporting positive inter-Korean relations",
+      "full_classification": "Entity > MaterialEntity > Person > Official",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|08B1-08B8]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "South Korean delegates reported that Kim said the DPRK would have no reason to possess nuclear weapons if military threats were dissolved and regime security guaranteed, and indicated willingness for open-ended dialogue with the United States.",
+      "normalized": "Kim signaled conditional denuclearization tied to threat reduction and security guarantees; willing to hold open-ended U.S.–DPRK dialogue.",
+      "operative_verb": [
+        "Communication.State.state",
+        "CollaborationAndOrganization.Diplomacy.offer"
+      ],
+      "participants": [
+      ],
+      "outcome": "Set terms framework for talks.",
+      "xref": "[NKREA|08BF-08CF]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Pyongyang would freeze nuclear and missile tests if dialogue resumed, and Kim understood routine U.S.-ROK exercises would continue.",
+      "normalized": "DPRK offered testing freeze upon resumption of talks; acknowledged continuation of routine U.S.–ROK drills.",
+      "operative_verb": [
+        "SecurityAndProtection.Offense.ceasefire",
+        "CognitionAndDecision.Understanding.understand"
+      ],
+      "participants": [
+      ],
+      "outcome": "Confidence-building measures proposed.",
+      "xref": "[NKREA|08D0-08D7]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The two Koreas agreed to hold a leaders’ summit in April 2018 in Panmunjom, located in the DMZ.",
+      "normalized": "ROK and DPRK planned April 2018 leaders’ summit at Panmunjom in the DMZ.",
+      "operative_verb": [
+        "CollaborationAndOrganization.Diplomacy.schedule"
+      ],
+      "participants": [
+      ],
+      "outcome": "Inter-Korean summit set.",
+      "xref": "[NKREA|08DC-08E3]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Three days later, President Trump unexpectedly accepted an invitation, delivered by Chung, to meet with Kim.",
+      "normalized": "March 2018: Trump accepted invitation to meet Kim.",
+      "operative_verb": [
+        "Communication.Accept.accept",
+        "CollaborationAndOrganization.Diplomacy.meet"
+      ],
+      "participants": [
+      ],
+      "outcome": "Set stage for U.S.–DPRK summitry.",
+      "xref": "[NKREA|08E4-08E8]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Panmunjom Declaration (April 27, 2018)",
+      "description": "Inter-Korean declaration committing to denuclearization, a declaration to end the Korean War in 2018, and expanded inter-Korean cooperation",
+      "full_classification": "Entity > ConventionalEntity > Diplomacy > Agreement",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|0909-0919,091A-091E]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Moon and Kim issued the Panmunjom Declaration, pledging to realize through complete denuclearization a nuclear-free Korean Peninsula, to issue a declaration ending the Korean War by end of 2018, and to open a range of inter-Korean dialogues and cooperation projects.",
+      "normalized": "Apr 27, 2018: Inter-Korean leaders pledged denuclearization, end-of-war declaration in 2018, and broader cooperation.",
+      "operative_verb": [
+        "Communication.Declare.declare",
+        "CollaborationAndOrganization.Diplomacy.commit"
+      ],
+      "participants": [
+      ],
+      "outcome": "Roadmap for inter-Korean détente announced.",
+      "xref": "[NKREA|0909-0919]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Other events in April and May included two North Korea–China summits, U.S. summits with South Korea and Japan, and two meetings in Pyongyang between then–CIA Director/Secretary of State nominee Mike Pompeo and Kim Jong Un.",
+      "normalized": "Spring 2018 saw DPRK–China summits, U.S. meetings with ROK/Japan, and Pompeo–Kim talks in Pyongyang.",
+      "operative_verb": [
+        "CollaborationAndOrganization.Diplomacy.meet"
+      ],
+      "participants": [
+      ],
+      "outcome": "High-tempo pre-summit diplomacy.",
+      "xref": "[NKREA|0959-0962,091F-0925]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Punggye-ri nuclear test site",
+      "description": "DPRK underground nuclear test facility that Kim announced would be dismantled; questions remain about irreversibility",
+      "full_classification": "Entity > Location > Facility",
+      "alias_list": [
+        "Pyunggye-ri",
+        "Punggye- ri"
+      ],
+      "xref": "[NKREA|097B-097D,092C-0937,0938-094E,0945-094E]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Kim declared victory in developing nuclear weapons and ICBMs and said no further nuclear or ballistic rocket test-fires were necessary; he announced the country would dismantle its Punggye-ri nuclear testing site and shift to a strategic line focused on economic construction.",
+      "normalized": "Apr 2018: Kim claimed nuclear/ICBM milestones, halted tests, pledged Punggye-ri dismantlement, and pivoted focus to economic construction.",
+      "operative_verb": [
+        "Communication.Declare.declare",
+        "SecurityAndProtection.Offense.ceasefire",
+        "LifecycleAndStatus.Decommission.decommission",
+        "CognitionAndDecision.Policy.shift"
+      ],
+      "participants": [
+      ],
+      "outcome": "Testing pause and economic emphasis announced.",
+      "xref": "[NKREA|096B-0985]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Absent verification, it remains difficult to determine the extent and irreversibility of North Korea’s subsequent steps to close the Punggye-ri test site; U.S. and ROK sources said DPRK could reverse disablement steps, and reports note the site’s maintenance.",
+      "normalized": "2018–2020 assessments questioned the permanence of Punggye-ri closure; capability to reverse disablement likely retained.",
+      "operative_verb": [
+        "SecurityAndProtection.Monitoring.verify",
+        "LifecycleAndStatus.Restore.potential"
+      ],
+      "participants": [
+      ],
+      "outcome": "Irreversibility uncertain; site upkeep observed.",
+      "xref": "[NKREA|092C-094E,0945-094E]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Singapore Summit Joint Statement (June 12, 2018)",
+      "description": "Trump–Kim joint statement outlining principles on normalization, peace regime, denuclearization, and POW/MIA remains",
+      "full_classification": "Entity > ConventionalEntity > Diplomacy > Agreement",
+      "alias_list": [
+        "Singapore Joint Statement"
+      ],
+      "xref": "[NKREA|0986-099D,0959-0958]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Trump committed to provide security guarantees to the DPRK, and Kim reaffirmed his firm and unwavering commitment to complete denuclearization of the Korean Peninsula.",
+      "normalized": "At Singapore, U.S. offered security guarantees; DPRK reiterated commitment to complete denuclearization.",
+      "operative_verb": [
+        "CollaborationAndOrganization.Diplomacy.commit",
+        "Communication.Reaffirm.reaffirm"
+      ],
+      "participants": [
+      ],
+      "outcome": "Principles restated without detailed steps.",
+      "xref": "[NKREA|098D-0996]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The document set out four areas: establish new relations, build a lasting and stable peace regime, work toward complete denuclearization of the Korean Peninsula, and cooperate on POW/MIA remains recovery.",
+      "normalized": "Singapore principles: normalization, peace regime, denuclearization, and remains recovery cooperation.",
+      "operative_verb": [
+        "CollaborationAndOrganization.Diplomacy.framework"
+      ],
+      "participants": [
+      ],
+      "outcome": "Framework agreed without timelines or verification.",
+      "xref": "[NKREA|099E-09B2]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Defense POW/MIA Accounting Agency (DPAA) figures",
+      "description": "Nearly 7,700 unaccounted-for U.S. personnel from Korean War, ~5,300 believed lost in Korea",
+      "full_classification": "Entity > InformationCarrier > GovernmentStatistic",
+      "alias_list": [
+        "DPAA"
+      ],
+      "xref": "[NKREA|09B3-09BB]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Trump added that the move ... to cancel exercises would save a tremendous amount of money; DoD announced cancellation of Ulchi Freedom Guardian exercises scheduled for August.",
+      "normalized": "Post-summit, U.S. canceled August Ulchi Freedom Guardian exercises, with Trump citing cost savings.",
+      "operative_verb": [
+        "CognitionAndDecision.Planning.cancel",
+        "FinanceAndMarkets.Expenditure.save"
+      ],
+      "participants": [
+      ],
+      "outcome": "Major joint exercise suspended.",
+      "xref": "[NKREA|09BC-09CD,09BF-09C6]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Ulchi Freedom Guardian",
+      "description": "Annual large-scale U.S.–ROK military exercises canceled after Singapore summit",
+      "full_classification": "Entity > Event > MilitaryExercise",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|09C9-09CD]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "John Bolton, 'The Room Where It Happened'",
+      "description": "Memoir cited for Singapore summit context and internal deliberations",
+      "full_classification": "Entity > InformationCarrier > Book",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|09CE-09D2]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Trump Administration officials asserted that North Korean “denuclearization” would include dismantling chemical and biological weapons programs; it is unclear whether North Korea agreed with this inclusion.",
+      "normalized": "U.S. defined denuclearization to include CBW dismantlement; DPRK acceptance of this scope uncertain.",
+      "operative_verb": [
+        "Communication.Define.define",
+        "CognitionAndDecision.Uncertainty.uncertain"
+      ],
+      "participants": [
+      ],
+      "outcome": "Scope ambiguity persisted.",
+      "xref": "[NKREA|09D3-09E5]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Mike Pompeo Senate testimony (July 25, 2018)",
+      "description": "Statement outlining U.S. expectations for comprehensive WMD dismantlement under 'denuclearization'",
+      "full_classification": "Entity > InformationCarrier > GovernmentTestimony",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|09D9-09E1]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The two sides agreed to conduct follow-on negotiations.",
+      "normalized": "U.S. and DPRK agreed to continue talks after Singapore.",
+      "operative_verb": [
+        "CollaborationAndOrganization.Diplomacy.negotiate"
+      ],
+      "participants": [
+      ],
+      "outcome": "Process to operationalize principles initiated.",
+      "xref": "[NKREA|09E9-09EA]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In a solo press conference after his meeting with Kim, Trump announced that the United States would suspend annual U.S.-South Korea military exercises, which Trump called “war games,” “unless and until we see the future negotiation is not going along like it should.”",
+      "normalized": "June 2018: Trump said U.S. would suspend U.S.–ROK joint exercises, pending negotiation progress.",
+      "operative_verb": [
+        "CognitionAndDecision.Planning.suspend"
+      ],
+      "participants": [
+      ],
+      "outcome": "Major exercises paused conditionally.",
+      "xref": "[NKREA|09EB-09F6,09BC-09CD]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Then-National Security Advisor John Bolton later revealed that Kim asked Trump to scale back or eliminate the exercises, to which Trump reportedly replied that the exercises were “provocative and a waste of time and money.”",
+      "normalized": "Bolton: Kim requested curbs on drills; Trump viewed them as provocative and wasteful.",
+      "operative_verb": [
+        "Communication.Request.request",
+        "CognitionAndDecision.Judgment.judge"
+      ],
+      "participants": [
+      ],
+      "outcome": "Rationale for suspension described.",
+      "xref": "[NKREA|09F7-0A05,09CE-09D2]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The Singapore Declaration made no mention of the DPRK’s ballistic missile program. It also did not contain a timeframe for implementation or any reference to verification mechanisms for the denuclearization process.",
+      "normalized": "Singapore statement omitted missiles, timelines, and verification provisions.",
+      "operative_verb": [
+        "Communication.Omit.omit"
+      ],
+      "participants": [
+      ],
+      "outcome": "Ambiguity in agreement scope and process.",
+      "xref": "[NKREA|0A06-0A0F]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The definition of denuclearization, as well as the sequencing of the process of denuclearizing, establishing a peace regime, removing economic restrictions, and normalizing diplomatic ties were left unstated.",
+      "normalized": "Key definitions and sequencing left unspecified.",
+      "operative_verb": [
+        "Communication.Omit.omit"
+      ],
+      "participants": [
+      ],
+      "outcome": "Divergent interpretations likely.",
+      "xref": "[NKREA|0A10-0A18]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "This vagueness may have contributed to the subsequent lack of progress in implementing most aspects of the agreement.",
+      "normalized": "Ambiguity hindered follow-through on the Singapore commitments.",
+      "operative_verb": [
+        "CognitionAndDecision.Explain.explain"
+      ],
+      "participants": [
+      ],
+      "outcome": "Limited implementation.",
+      "xref": "[NKREA|0A19-0A1E]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In the weeks following the summit, it appeared that North Korea was looking for the United States to take tangible steps to establish a new relationship and a peace regime. Meanwhile, the United States was looking for North Korea to take concrete denuclearization steps before moving ahead with other actions.",
+      "normalized": "Post-summit: DPRK sought peace/relationship steps first; U.S. sought denuclearization steps first.",
+      "operative_verb": [
+        "CognitionAndDecision.Preference.prefer"
+      ],
+      "participants": [
+      ],
+      "outcome": "Sequencing gap stalled diplomacy.",
+      "xref": "[NKREA|0A1F-0A2C]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "For months, U.S.-DPRK diplomacy largely appeared to stall. The only tangible public step toward implementing the Singapore Declaration was the July 2018 North Korean delivery of 55 cases of remains of possible U.S. armed services members missing in the Korean War.",
+      "normalized": "Mid–2018: Talks stalled; DPRK returned 55 cases of possible U.S. war remains.",
+      "operative_verb": [
+        "CollaborationAndOrganization.Transfer.return"
+      ],
+      "participants": [
+      ],
+      "outcome": "POW/MIA remains repatriation achieved.",
+      "xref": "[NKREA|0A2D-0A36]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Despite continued professions of personal respect and goodwill between Trump and Kim, including the exchange of effusive personal letters between the leaders, the two sides did not publicly hold official working-level talks regarding denuclearization until January 2019.",
+      "normalized": "2018: Leader correspondence continued, but working-level denuclearization talks did not resume until Jan 2019.",
+      "operative_verb": [
+        "Communication.Exchange.exchange",
+        "CollaborationAndOrganization.Diplomacy.delay"
+      ],
+      "participants": [
+      ],
+      "outcome": "Prolonged pause at working level.",
+      "xref": "[NKREA|0A37-0A46,0A41-0A53,0A3E-0A40]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In September 2018, the Department of the Treasury’s Office of Terrorism and Financial Intelligence reportedly called executives in charge of compliance at seven South Korean banks ... to issue reminders about U.N. and U.S. sanctions.",
+      "normalized": "Sept 2018: U.S. Treasury warned South Korean banks to observe DPRK sanctions amid inter-Korean plans.",
+      "operative_verb": [
+        "Governance.Regulation.warn"
+      ],
+      "participants": [
+      ],
+      "outcome": "Reinforced sanctions compliance pressure.",
+      "xref": "[NKREA|0A54-0A64]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Comprehensive Military Agreement (CMA)",
+      "description": "Inter-Korean 2018 military de-escalation agreement; collapsed in Nov 2023 amid satellite launch dispute.",
+      "full_classification": "Entity > ConventionalEntity > Diplomacy > Agreement",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|0A65-0A7F]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In November 2023, the Comprehensive Military Agreement appeared to collapse. Following North Korea’s launch of a spy satellite that month, South Korea announced it was suspending its adherence to the agreement’s prohibition on conducting aerial surveillance of the DMZ. North Korea responded by announcing it would no longer abide by the agreement in its totality.",
+      "normalized": "Nov 2023: ROK suspended CMA aerial provisions after DPRK satellite launch; DPRK then abandoned CMA entirely.",
+      "operative_verb": [
+        "CognitionAndDecision.Policy.suspend",
+        "CognitionAndDecision.Policy.withdraw"
+      ],
+      "participants": [
+      ],
+      "outcome": "Key de-escalation pact unraveled.",
+      "xref": "[NKREA|0A65-0A7A,0A70-0A74]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In June 2020, North Korea detonated the building hosting an inter-Korean liaison office following a private South Korean group launching balloons containing anti-Kim propaganda leaflets across the DMZ.",
+      "normalized": "June 2020: DPRK destroyed inter-Korean liaison office after leaflet incident.",
+      "operative_verb": [
+        "SecurityAndProtection.Offense.destroy"
+      ],
+      "participants": [
+      ],
+      "outcome": "Inter-Korean channel severed.",
+      "xref": "[NKREA|0A80-0A8F]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "It is unclear to what extent the Trump Administration factored into its approach the restrictions that U.S. law imposes on the President’s ability to suspend or terminate—and in some cases waive—sanctions against North Korea.",
+      "normalized": "Unclear if legal limits on DPRK sanctions relief were fully weighed in U.S. approach.",
+      "operative_verb": [
+        "CognitionAndDecision.Uncertainty.uncertain"
+      ],
+      "participants": [
+      ],
+      "outcome": "Constraints could impede concessions.",
+      "xref": "[NKREA|0A90-0A9E]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Pyongyang Declaration (Sept 2018)",
+      "description": "Moon–Kim pledge on denuclearization, inter-Korean relations, and military confidence-building; included CMA.",
+      "full_classification": "Entity > ConventionalEntity > Diplomacy > Agreement",
+      "alias_list": [
+      ],
+      "xref": "[NKREA|0AA8-0AC6]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Moon and Kim held another summit, their third, in Pyongyang in September 2018. The two leaders signed the Pyongyang Declaration ... and a Comprehensive Military Agreement ...",
+      "normalized": "Sept 2018: Third Moon–Kim summit produced Pyongyang Declaration and CMA.",
+      "operative_verb": [
+        "CollaborationAndOrganization.Diplomacy.sign"
+      ],
+      "participants": [
+      ],
+      "outcome": "Expanded détente commitments.",
+      "xref": "[NKREA|0AA8-0AC6]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Moon’s pre- and post-summit attempts to accelerate various inter-Korean projects appeared to cause tensions with many U.S. officials, who expressed concerns that they would violate the spirit and even the letter of U.N. and U.S. sanctions.",
+      "normalized": "U.S. officials cautioned that accelerating inter-Korean projects risked breaching sanctions.",
+      "operative_verb": [
+        "Governance.Regulation.warn"
+      ],
+      "participants": [
+      ],
+      "outcome": "Alliance friction over sanctions compliance.",
+      "xref": "[NKREA|0AC7-0AD0,0A54-0A64]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "After months with scant progress in U.S.-DPRK negotiations, momentum built toward a second Trump-Kim summit ... The summit ended without an agreement due to disagreements about the timing and sequencing of concessions, specifically DPRK denuclearization measures in exchange for sanctions relief.",
+      "normalized": "Feb 2019 Hanoi summit ended without deal over sequencing of denuclearization and sanctions relief.",
+      "operative_verb": [
+        "CollaborationAndOrganization.Diplomacy.fail"
+      ],
+      "participants": [
+      ],
+      "outcome": "Talks collapsed in Hanoi.",
+      "xref": "[NKREA|0AD1-0AE0]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "North Korean officials said they had offered to shut down fissile material production facilities at the Yongbyon nuclear complex and proposed that U.S. technical inspectors come to monitor the shuttering.",
+      "normalized": "DPRK offered Yongbyon shutdown with U.S. technical inspection.",
+      "operative_verb": [
+        "CollaborationAndOrganization.Diplomacy.offer"
+      ],
+      "participants": [
+      ],
+      "outcome": "Partial denuclearization proposal tabled.",
+      "xref": "[NKREA|0AE1-0AE8,0AA0-0AA2]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "U.S. intelligence community reports have said there are additional uranium enrichment plants outside of Yongbyon.",
+      "normalized": "U.S. assessed additional enrichment sites beyond Yongbyon (e.g., Kangson).",
+      "operative_verb": [
+        "Knowledge.Report.report"
+      ],
+      "participants": [
+      ],
+      "outcome": "Raised verification/scope concerns.",
+      "xref": "[NKREA|0AE9-0AFF,0AEE-0AF5,0AF6-0AF9]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Special Representative Stephen Biegun said that disclosure of enrichment sites other than Yongbyon was to be a key part of negotiations. President Trump in his post-summit remarks referred to a lack of agreement on North Korean disclosure of a second uranium enrichment plant.",
+      "normalized": "Biegun underscored need for non-Yongbyon site disclosure; Trump cited disagreement over a second enrichment site.",
+      "operative_verb": [
+        "Communication.Require.require",
+        "Communication.State.state"
+      ],
+      "participants": [
+      ],
+      "outcome": "Disclosure issue became a sticking point.",
+      "xref": "[NKREA|0B34-0B40,0B02-0B06,0B07-0B07]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "A few days later, the Administration announced it would permanently halt large-scale U.S.-South Korean military exercises, due to their expense, and instead hold smaller, lower-profile exercises.",
+      "normalized": "Early Mar 2019: U.S. permanently ended large-scale U.S.–ROK drills, replacing them with smaller exercises.",
+      "operative_verb": [
+        "CognitionAndDecision.Planning.cancel",
+        "CognitionAndDecision.Planning.replace"
+      ],
+      "participants": [
+      ],
+      "outcome": "Exercise posture downgraded.",
+      "xref": "[NKREA|0B28-0B2E]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Prior to Trump’s original suspension of the exercises, U.S. defense officials said that the annual large-scale exercises were critical to maintaining military readiness.",
+      "normalized": "Defense officials argued large-scale drills were vital for readiness.",
+      "operative_verb": [
+        "Communication.Assess.assess"
+      ],
+      "participants": [
+      ],
+      "outcome": "Readiness concerns highlighted.",
+      "xref": "[NKREA|0B29-0B33]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The two sides appeared to be particularly far apart on the issue of sanctions relief.",
+      "normalized": "U.S. and DPRK remained far apart on scope and timing of sanctions relief.",
+      "operative_verb": [
+        "CollaborationAndOrganization.Diplomacy.disagree"
+      ],
+      "participants": [
+      ],
+      "outcome": "Core impasse persisted.",
+      "xref": "[NKREA|0B41-0B44]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "North Korea asked for relief from the UNSC sanctions imposed since 2016 that target its export of coal, iron, textiles, seafood, and other minerals; imports of petroleum; and other restrictions on economic interactions with North Korean industries.",
+      "normalized": "DPRK requested rollback of post-2016 UNSC sectoral sanctions (exports, petroleum caps, broader economic restrictions).",
+      "operative_verb": [
+        "Communication.Request.request"
+      ],
+      "participants": [
+      ],
+      "outcome": "Broad sanctions relief sought.",
+      "xref": "[NKREA|0B45-0B4D]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The United States rejected this proposal, which would have left in place only sanctions that restrict imports of arms, dual-use items, and luxury goods.",
+      "normalized": "U.S. rejected DPRK proposal that would retain only arms/dual-use/luxury-goods sanctions.",
+      "operative_verb": [
+        "CognitionAndDecision.Judgment.reject"
+      ],
+      "participants": [
+      ],
+      "outcome": "No agreement on sanctions relief scope.",
+      "xref": "[NKREA|0B4E-0B54]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Bolton reports that Kim rejected Trump’s suggestion that North Korea receive a percentage reduction in the sanctions, rather than their near-complete removal.",
+      "normalized": "Kim rejected partial (percentage) sanctions easing proposal per Bolton.",
+      "operative_verb": [
+        "CollaborationAndOrganization.Diplomacy.reject"
+      ],
+      "participants": [
+      ],
+      "outcome": "Easing modality disputed.",
+      "xref": "[NKREA|0B55-0B59,0B0A-0B13]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "There are also questions about the unity of and coordination among top Trump Administration officials participating in the negotiations. In his memoir, Bolton describes his opposition to the summit process as well as the ways he attempted to derail what he called the “unhealthy negotiation path.”",
+      "normalized": "Internal divisions: Bolton opposed summitry and sought to steer Trump toward walking away.",
+      "operative_verb": [
+        "Communication.Reveal.reveal",
+        "CognitionAndDecision.Influence.influence"
+      ],
+      "participants": [
+      ],
+      "outcome": "Negotiation cohesion questioned.",
+      "xref": "[NKREA|0B5A-0B6E]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Following the breakdown of the summit, Pompeo and other U.S. officials said that the two sides made progress at Hanoi on other issues.",
+      "normalized": "Despite no deal, U.S. officials cited progress on liaison offices, peace declaration, remains recovery, and Korean-American family contacts.",
+      "operative_verb": [
+        "Communication.State.state"
+      ],
+      "participants": [
+      ],
+      "outcome": "Side-channel proposals advanced but unfinalized.",
+      "xref": "[NKREA|0B6F-0B7F]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "None of these apparent points of agreement, however, was finalized, in part due to a U.S. decision that progress in these areas must move “in parallel” with progress in denuclearization talks.",
+      "normalized": "U.S. required parallel movement with denuclearization; side issues remained unsealed.",
+      "operative_verb": [
+        "CognitionAndDecision.Policy.require"
+      ],
+      "participants": [
+      ],
+      "outcome": "No follow-through on auxiliary measures.",
+      "xref": "[NKREA|0B80-0B87,0B19-0B27]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "According to Trump and Pompeo, Kim promised to maintain the unilateral moratorium on nuclear and missile tests ... In turn, Trump promised to continue suspending U.S.-South Korean military exercises.",
+      "normalized": "Post-Hanoi: DPRK pledged to maintain test moratorium; U.S. to keep large-scale drills suspended.",
+      "operative_verb": [
+        "CollaborationAndOrganization.Diplomacy.promise"
+      ],
+      "participants": [
+      ],
+      "outcome": "Mutual informal understandings restated.",
+      "xref": "[NKREA|0B88-0B95]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "According to then-commander of U.S. forces in South Korea, in the months following the Singapore summit, North Korea continued to hold its own military exercises “on a scale consistent with recent years.”",
+      "normalized": "USFK commander: DPRK continued routine-scale exercises despite U.S.–ROK suspensions.",
+      "operative_verb": [
+        "Knowledge.Report.report"
+      ],
+      "participants": [
+      ],
+      "outcome": "Asymmetric military postures persisted.",
+      "xref": "[NKREA|0B96-0BA6]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Several countries, particularly China and Russia, are less robustly enforcing U.N.-required sanctions than before the rapprochement. In May 2022, China and Russia vetoed U.S.-led efforts at the UNSC to adopt stricter sanctions on Pyongyang after the DPRK’s intercontinental ballistic missile tests. The U.N. has documented North Korea’s growing successes in evading sanctions.",
+      "normalized": "Sanctions enforcement eroded: PRC/Russia vetoed tighter UNSC measures (May 2022); UN reports increased DPRK evasion.",
+      "operative_verb": [
+        "Governance.Sanction.veto",
+        "Knowledge.Report.report"
+      ],
+      "participants": [
+      ],
+      "outcome": "International pressure diluted; evasion expanded.",
+      "xref": "[NKREA|0BB5-0BC4,0BC5-0BCC]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The Hanoi summit marked a turning point in U.S.-DPRK negotiations. Thereafter, North Korea’s stance hardened significantly ... Perhaps most important, North Korea did not receive promises of sanctions relief.",
+      "normalized": "After Hanoi, DPRK hardened stance, citing lack of relationship gains and no sanctions relief.",
+      "operative_verb": [
+        "CognitionAndDecision.Judgment.harden"
+      ],
+      "participants": [
+      ],
+      "outcome": "Diplomatic momentum reversed.",
+      "xref": "[NKREA|0BDF-0BF0]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In May 2019, North Korea resumed testing short-range ballistic missiles (SRBM), conducting over a dozen such tests in 2019, 2020, and 2021, in violation of U.N. prohibitions. The tests likely have advanced the reliability and precision of North Korea’s missile forces and improved its capabilities to defeat regional missile defense systems.",
+      "normalized": "2019–2021: DPRK conducted >12 SRBM tests, enhancing accuracy and defense-evasion.",
+      "operative_verb": [
+        "SecurityAndProtection.Offense.test"
+      ],
+      "participants": [
+      ],
+      "outcome": "Regional threat capabilities improved.",
+      "xref": "[NKREA|0BF1-0BFE]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In late December 2019, Kim announced that ... “there is no ground” for North Korea to continue to maintain its nuclear and missile testing moratorium ... and warned that “the world will witness a new strategic weapon.”",
+      "normalized": "Dec 2019: Kim declared moratorium no longer justified; promised a new strategic weapon.",
+      "operative_verb": [
+        "Communication.Threaten.threaten",
+        "CognitionAndDecision.Policy.end"
+      ],
+      "participants": [
+      ],
+      "outcome": "Return to weapons development signaled.",
+      "xref": "[NKREA|0BFF-0C12]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Aside from a one-hour, quickly arranged June 2019 meeting between Trump and Kim in Panmunjom, the United States and North Korea have held one round of official talks since the Hanoi summit, in October 2019. Trump Administration officials say their North Korean counterparts refused to engage in additional negotiations.",
+      "normalized": "Only brief DMZ meeting (Jun 2019) and one Oct 2019 working-level round occurred; DPRK declined further talks per U.S.",
+      "operative_verb": [
+        "CollaborationAndOrganization.Diplomacy.meet",
+        "CollaborationAndOrganization.Diplomacy.refuse"
+      ],
+      "participants": [
+      ],
+      "outcome": "Dialogue stalled.",
+      "xref": "[NKREA|0C13-0C21]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "North Korea also halted virtually all forms of cooperation with South Korea. The Trump Administration continued to issue sanctions designations and, to some extent, pushed back on PRC, Russian, and South Korean proposals to ease sanctions. Throughout the remainder of its term, however, the Administration refrained from aggressively using available sanctions authorities ... continued its halt of large-scale joint military exercises with South Korea, and did not issue high-profile criticism of DPRK human rights violations.",
+      "normalized": "DPRK froze inter-Korean cooperation; U.S. maintained selective designations, kept exercises halted, and muted human-rights criticism; limited third-country sanctions enforcement.",
+      "operative_verb": [
+        "CognitionAndDecision.Policy.maintain",
+        "Governance.Sanction.designate"
+      ],
+      "participants": [
+      ],
+      "outcome": "Pressure posture softened in practice.",
+      "xref": "[NKREA|0C22-0C36]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In late March 2021, the Biden Administration disclosed that U.S. officials had reached out to North Korea through several channels starting in mid-February but had not received a response, a dynamic officials say has continued throughout its Administration.",
+      "normalized": "2021–2023: U.S. outreach under Biden received no DPRK response.",
+      "operative_verb": [
+        "Communication.Contact.contact",
+        "CollaborationAndOrganization.Diplomacy.refuse"
+      ],
+      "participants": [
+      ],
+      "outcome": "No engagement under Biden to date.",
+      "xref": "[NKREA|0C3D-0C47,0BCD-0BDA]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In July 2023, [Travis] King fled to North Korea. North Korea released him in September. Following King’s release, U.S. officials stated they had “been reaching out” to North Korea “through multiple channels,” including “at the United Nations and through our United Nations Command.” It appears that much of the communication ... occurred via the Swedish government, which acts as the United States’ protecting power in North Korea. As of early December 2023, King’s release does not appear to have opened the door to U.S.-DPRK engagement.",
+      "normalized": "Travis King case (Jul–Sep 2023) handled via UN/UNC and Swedish protecting power; did not catalyze broader U.S.–DPRK talks.",
+      "operative_verb": [
+        "SecurityAndProtection.Custody.release",
+        "Communication.Mediate.mediate"
+      ],
+      "participants": [
+      ],
+      "outcome": "Isolated consular resolution only.",
+      "xref": "[NKREA|0C48-0C69,0C5F-0C65]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The Biden Administration has indicated that the United States could build on the 2018 agreements ... along with prior agreements negotiated with Pyongyang.",
+      "normalized": "Biden team signals willingness to build on 2018 and earlier agreements.",
+      "operative_verb": [
+        "CognitionAndDecision.Planning.plan"
+      ],
+      "participants": [
+      ],
+      "outcome": "Framework continuity possible.",
+      "xref": "[NKREA|0C71-0C81]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Pursuant to the North Korea Sanctions and Policy Enhancement Act of 2016, later amended by the Otto Warmbier North Korea Nuclear Sanctions and Enforcement Act of 2019, the President is authorized to suspend or terminate many sanctions ... if he or she certifies that North Korea has made progress in a number of areas, including in human rights and in the abandonment of its nuclear and missile programs.",
+      "normalized": "U.S. law permits sanctions suspension/termination upon presidential certification of DPRK progress (nuclear/missiles, human rights, etc.).",
+      "operative_verb": [
+        "Governance.Law.authorize"
+      ],
+      "participants": [
+      ],
+      "outcome": "Legal conditions constrain sanctions relief.",
+      "xref": "[NKREA|0C83-0C9A]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "P.L. 114-122",
+      "description": "A U.S. public law imposing sanctions on North Korea",
+      "full_classification": "Entity > ConventionalEntity > Legal > SanctionsRegime",
+      "alias_list": [
+        "Public Law 114-122"
+      ],
+      "xref": "[NKREA|0C9C-0C9D]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "President of the United States",
+      "description": "The head of state and government of the United States",
+      "full_classification": "Entity > Collective > GovernmentStructure > ExecutiveOffice",
+      "alias_list": [
+        "President",
+        "U.S. President"
+      ],
+      "xref": "[NKREA|0C9F]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The President may waive the application of many sanctions if he or she certifies either that a waiver is “vital” to U.S. national security interests or that a) North Korea has committed to suspend its proliferation and testing of WMD and b) has agreed to engage in multilateral talks to limit its WMD programs.",
+      "normalized": "The President may waive the application of many sanctions if he or she certifies either that a waiver is “vital” to U.S. national security interests or that a) North Korea has committed to suspend its proliferation and testing of WMD and b) has agreed to engage in multilateral talks to limit its WMD programs.",
+      "operative_verb": [
+        "ComplianceAndLegal.Compliance.waive",
+        "CognitionAndDecision.DecisionMaking.certify"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "President of the United States",
+          "role": "Affector"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "North Korea",
+          "role": "Affectee"
+        }
+      ],
+      "outcome": "Sanctions may be waived under specified conditions",
+      "xref": "[NKREA|0C9F-0CF6]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "North Korea",
+      "description": "A country in East Asia, officially the Democratic People's Republic of Korea",
+      "full_classification": "Entity > Collective > NationalGovernment",
+      "alias_list": [
+        "DPRK",
+        "Democratic People's Republic of Korea"
+      ],
+      "xref": "[NKREA|0CF0]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "U.S. national security interests",
+      "description": "Strategic priorities safeguarding the United States",
+      "full_classification": "Entity > ConventionalEntity > Frameworks > Policy",
+      "alias_list": [
+        "national security interests"
+      ],
+      "xref": "[NKREA|0CF0]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "WMD",
+      "description": "Weapons of mass destruction",
+      "full_classification": "Entity > MaterialEntity > Weapon > MissileSystem",
+      "alias_list": [
+        "weapons of mass destruction"
+      ],
+      "xref": "[NKREA|0CF1-0CF2]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Multilateral talks",
+      "description": "Diplomatic negotiations involving multiple countries",
+      "full_classification": "Entity > ConventionalEntity > Diplomacy > NegotiationProcess",
+      "alias_list": [
+        "multilateral negotiations"
+      ],
+      "xref": "[NKREA|0CF4-0CF5]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Humanitarian activities",
+      "description": "Assistance efforts aimed at alleviating human suffering",
+      "full_classification": "Entity > Phenomenon > Process > HumanitarianOperation",
+      "alias_list": [
+        "humanitarian aid"
+      ],
+      "xref": "[NKREA|0CFA]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "U.S. Congress",
+      "description": "The legislative branch of the United States federal government",
+      "full_classification": "Entity > Collective > GovernmentStructure > Legislature",
+      "alias_list": [
+        "Congress"
+      ],
+      "xref": "[NKREA|0CDC]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "President Obama",
+      "description": "44th President of the United States",
+      "full_classification": "Entity > MaterialEntity > Person > Politician",
+      "alias_list": [
+        "Barack Obama"
+      ],
+      "xref": "[NKREA|0CDD]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "President Trump",
+      "description": "45th President of the United States",
+      "full_classification": "Entity > MaterialEntity > Person > Politician",
+      "alias_list": [
+        "Donald Trump"
+      ],
+      "xref": "[NKREA|0CDE]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "U.S. sanctions on North Korea",
+      "description": "Economic and legal restrictions imposed by the United States on North Korea",
+      "full_classification": "Entity > ConventionalEntity > Legal > SanctionsRegime",
+      "alias_list": [
+        "U.S. economic sanctions"
+      ],
+      "xref": "[NKREA|0CE9-0CEE]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "UNSC",
+      "description": "United Nations Security Council",
+      "full_classification": "Entity > Collective > IntergovernmentalOrganization",
+      "alias_list": [
+        "United Nations Security Council"
+      ],
+      "xref": "[NKREA|0D53-0D57]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Pyongyang",
+      "description": "Capital city of North Korea",
+      "full_classification": "Entity > Site > PhysicalSite > Urban",
+      "alias_list": [
+        "Pyongyang"
+      ],
+      "xref": "[NKREA|0D2A]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "China",
+      "description": "A country in East Asia, officially the People's Republic of China",
+      "full_classification": "Entity > Collective > NationalGovernment",
+      "alias_list": [
+        "PRC",
+        "People's Republic of China"
+      ],
+      "xref": "[NKREA|0D35]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Russia",
+      "description": "A country in Eurasia, officially the Russian Federation",
+      "full_classification": "Entity > Collective > NationalGovernment",
+      "alias_list": [
+        "Russian Federation"
+      ],
+      "xref": "[NKREA|0D36]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "South Korea",
+      "description": "A country in East Asia, officially the Republic of Korea",
+      "full_classification": "Entity > Collective > NationalGovernment",
+      "alias_list": [
+        "ROK",
+        "Republic of Korea"
+      ],
+      "xref": "[NKREA|0D37]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Vladimir Putin",
+      "description": "President of Russia",
+      "full_classification": "Entity > MaterialEntity > Person > Politician",
+      "alias_list": [
+        "Putin"
+      ],
+      "xref": "[NKREA|0D67]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Kim Jong Un",
+      "description": "Supreme Leader of North Korea",
+      "full_classification": "Entity > MaterialEntity > Person > Politician",
+      "alias_list": [
+        "Kim"
+      ],
+      "xref": "[NKREA|0DA1]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Ukraine",
+      "description": "A country in Eastern Europe",
+      "full_classification": "Entity > Collective > NationalGovernment",
+      "alias_list": [
+        "Ukraine"
+      ],
+      "xref": "[NKREA|0D44]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "U.S. Intelligence Community",
+      "description": "A federation of 16 U.S. government agencies that work separately and together to conduct intelligence activities",
+      "full_classification": "Entity > Collective > Agency > IntelligenceAgency",
+      "alias_list": [
+        "ODNI",
+        "Office of the Director of National Intelligence"
+      ],
+      "xref": "[NKREA|0DD4-0DD7]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "National Intelligence Council",
+      "description": "A center of strategic thinking within the U.S. Intelligence Community",
+      "full_classification": "Entity > Collective > Agency > IntelligenceAgency",
+      "alias_list": [
+        "NIC"
+      ],
+      "xref": "[NKREA|0D20-0D24]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "CRS",
+      "description": "Congressional Research Service, a public policy research institute of the U.S. Congress",
+      "full_classification": "Entity > Collective > Agency > ResearchInstitute",
+      "alias_list": [
+        "Congressional Research Service"
+      ],
+      "xref": "[NKREA|0DAD-0DB0]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "New York Times",
+      "description": "A major American newspaper",
+      "full_classification": "Entity > Collective > Organization > MediaCompany",
+      "alias_list": [
+        "NYT"
+      ],
+      "xref": "[NKREA|0DB4-0DB5]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Washington Post",
+      "description": "A major American newspaper",
+      "full_classification": "Entity > Collective > Organization > MediaCompany",
+      "alias_list": [
+        "WaPo"
+      ],
+      "xref": "[NKREA|0DBA-0DBC]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "National Review",
+      "description": "A conservative American magazine",
+      "full_classification": "Entity > Collective > Organization > MediaCompany",
+      "alias_list": [
+        "National Review"
+      ],
+      "xref": "[NKREA|0DB6-0DB9]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Hankyoreh",
+      "description": "A South Korean newspaper",
+      "full_classification": "Entity > Collective > Organization > MediaCompany",
+      "alias_list": [
+        "Hankyoreh"
+      ],
+      "xref": "[NKREA|0DC0-0DC3]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "38 North",
+      "description": "A web journal providing analysis on North Korea",
+      "full_classification": "Entity > Collective > Organization > ThinkTank",
+      "alias_list": [
+        "38 North"
+      ],
+      "xref": "[NKREA|0DC4-0DC6]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Quincy Institute",
+      "description": "A think tank focused on foreign policy",
+      "full_classification": "Entity > Collective > Organization > ThinkTank",
+      "alias_list": [
+        "Quincy Institute for Responsible Statecraft"
+      ],
+      "xref": "[NKREA|0DC7-0DCE]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "North Korea has conducted more than 100 ballistic missile tests in that time, in violation of UNSC requirements.",
+      "normalized": "North Korea has conducted more than 100 ballistic missile tests in that time, in violation of UNSC requirements.",
+      "operative_verb": [
+        "MilitaryOperations.Kinetics.test"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "North Korea",
+          "role": "Affector"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "UNSC",
+          "role": "Inhibitor"
+        }
+      ],
+      "outcome": "Violation of UNSC requirements",
+      "xref": "[NKREA|0D7A-0D7D]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "North Korea also is believed to have made advances in its nuclear weapons development and has issued statements that it will not relinquish such weapons.",
+      "normalized": "North Korea also is believed to have made advances in its nuclear weapons development and has issued statements that it will not relinquish such weapons.",
+      "operative_verb": [
+        "CognitionAndDecision.DecisionMaking.advance",
+        "Diplomacy.Relations.issue"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "North Korea",
+          "role": "Affector"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "Nuclear weapons",
+          "role": "Instrument"
+        }
+      ],
+      "outcome": "Advances in nuclear weapons development and refusal to relinquish",
+      "xref": "[NKREA|0D7E-0D84]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Nuclear weapons",
+      "description": "Weapons deriving destructive force from nuclear reactions",
+      "full_classification": "Entity > MaterialEntity > Weapon > MissileSystem",
+      "alias_list": [
+        "nukes"
+      ],
+      "xref": "[NKREA|0D80-0D81]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "U.S. officials also have voiced concerns about Pyongyang’s improving cyber capabilities, which the regime could use for retaliation, coercion, espionage, or sabotage, in addition to the estimated hundreds of millions of dollars it reportedly has stolen by way of cybertheft.",
+      "normalized": "U.S. officials also have voiced concerns about Pyongyang’s improving cyber capabilities, which the regime could use for retaliation, coercion, espionage, or sabotage, in addition to the estimated hundreds of millions of dollars it reportedly has stolen by way of cybertheft.",
+      "operative_verb": [
+        "CognitionAndDecision.DecisionMaking.voice",
+        "CyberOperations.SecurityResponse.steal"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "U.S. officials",
+          "role": "Affector"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "Pyongyang",
+          "role": "Affectee"
+        }
+      ],
+      "outcome": "Concerns voiced over cyber capabilities and theft",
+      "xref": "[NKREA|0D8B-0D95]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "U.S. officials",
+      "description": "Representatives of the U.S. government",
+      "full_classification": "Entity > Collective > Agency > GovernmentStructure",
+      "alias_list": [
+        "U.S. government officials"
+      ],
+      "xref": "[NKREA|0D8B]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Pyongyang",
+      "description": "Capital city and metonym for the North Korean regime",
+      "full_classification": "Entity > Collective > NationalGovernment",
+      "alias_list": [
+        "North Korean regime"
+      ],
+      "xref": "[NKREA|0D8C]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "North Korea’s end to its self-imposed isolation in 2023 removes a logistical obstacle to dialogue, should Kim Jong Un decide to engage.",
+      "normalized": "North Korea’s end to its self-imposed isolation in 2023 removes a logistical obstacle to dialogue, should Kim Jong Un decide to engage.",
+      "operative_verb": [
+        "LifecycleAndStatus.EventStatus.end",
+        "CollaborationAndOrganization.engage"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "North Korea",
+          "role": "Affector"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "Kim Jong Un",
+          "role": "Affector"
+        }
+      ],
+      "outcome": "Removal of logistical obstacle to dialogue",
+      "xref": "[NKREA|0D9E-0DA2]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "In the past, North Korea has pivoted to diplomatic outreach following periods of tension.",
+      "normalized": "In the past, North Korea has pivoted to diplomatic outreach following periods of tension.",
+      "operative_verb": [
+        "Diplomacy.Relations.pivot"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "North Korea",
+          "role": "Affector"
+        }
+      ],
+      "outcome": "Historical pattern of diplomatic outreach after tension",
+      "xref": "[NKREA|0DA3-0DA5]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "As discussed below, many observers see little value in further negotiations, as they doubt that North Korea will be willing to accept any limits on its nuclear and missile programs.",
+      "normalized": "As discussed below, many observers see little value in further negotiations, as they doubt that North Korea will be willing to accept any limits on its nuclear and missile programs.",
+      "operative_verb": [
+        "CognitionAndDecision.DecisionMaking.doubt"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "Observers",
+          "role": "Affector"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "North Korea",
+          "role": "Affectee"
+        }
+      ],
+      "outcome": "Skepticism over value of negotiations",
+      "xref": "[NKREA|0DA6-0DAC]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Observers",
+      "description": "Analysts and experts commenting on North Korea policy",
+      "full_classification": "Entity > Collective > SocialGroup > Audience",
+      "alias_list": [
+        "analysts",
+        "experts"
+      ],
+      "xref": "[NKREA|0DA7]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Analysts",
+      "description": "Experts and scholars analyzing North Korea policy",
+      "full_classification": "Entity > Collective > SocialGroup > Audience",
+      "alias_list": [
+        "experts",
+        "scholars"
+      ],
+      "xref": "[NKREA|0DF0]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Some analysts argue that it is a “delusion” to believe that direct negotiations with Pyongyang will lead the Kim regime to voluntarily denuclearize.",
+      "normalized": "Some analysts argue that it is a “delusion” to believe that direct negotiations with Pyongyang will lead the Kim regime to voluntarily denuclearize.",
+      "operative_verb": [
+        "CognitionAndDecision.Reasoning.argue"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "Analysts",
+          "role": "Affector"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "Pyongyang",
+          "role": "Affectee"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "Kim regime",
+          "role": "Affectee"
+        }
+      ],
+      "outcome": "Skepticism about voluntary denuclearization through negotiations",
+      "xref": "[NKREA|0DF0-0DF4]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Pyongyang",
+      "description": "Capital city and metonym for the North Korean regime",
+      "full_classification": "Entity > Collective > NationalGovernment",
+      "alias_list": [
+        "North Korean regime"
+      ],
+      "xref": "[NKREA|0DF2]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Kim regime",
+      "description": "The ruling government of North Korea under Kim Jong Un",
+      "full_classification": "Entity > Collective > NationalGovernment",
+      "alias_list": [
+        "North Korean leadership"
+      ],
+      "xref": "[NKREA|0DF4]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Others contend not only that negotiations are necessary to reduce the chances of conflict, but also that they are feasible, because Kim Jong Un’s “real goal is economic development.”",
+      "normalized": "Others contend not only that negotiations are necessary to reduce the chances of conflict, but also that they are feasible, because Kim Jong Un’s “real goal is economic development.”",
+      "operative_verb": [
+        "CognitionAndDecision.Reasoning.contend"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "Others",
+          "role": "Affector"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "Kim Jong Un",
+          "role": "Affector"
+        }
+      ],
+      "outcome": "Support for negotiations based on economic motivations",
+      "xref": "[NKREA|0DF5-0DFD]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Kim Jong Un",
+      "description": "Supreme Leader of North Korea",
+      "full_classification": "Entity > MaterialEntity > Person > Politician",
+      "alias_list": [
+        "Kim"
+      ],
+      "xref": "[NKREA|0DFB]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Others posit that North Korea’s WMD programs are motivated in large measure by the threat Pyongyang perceives from the United States’ “hostile policy,” and therefore U.S. measures to reduce the threat—such as declaring an end to the Korean War and signing a peace treaty—and build bilateral trust and confidence are necessary.",
+      "normalized": "Others posit that North Korea’s WMD programs are motivated in large measure by the threat Pyongyang perceives from the United States’ “hostile policy,” and therefore U.S. measures to reduce the threat—such as declaring an end to the Korean War and signing a peace treaty—and build bilateral trust and confidence are necessary.",
+      "operative_verb": [
+        "CognitionAndDecision.Reasoning.posit"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "Others",
+          "role": "Affector"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "North Korea",
+          "role": "Affector"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "United States",
+          "role": "Affectee"
+        }
+      ],
+      "outcome": "Argument for threat reduction and trust-building measures",
+      "xref": "[NKREA|0DFE-0E09]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "North Korea",
+      "description": "A country in East Asia, officially the Democratic People's Republic of Korea",
+      "full_classification": "Entity > Collective > NationalGovernment",
+      "alias_list": [
+        "DPRK",
+        "Democratic People's Republic of Korea"
+      ],
+      "xref": "[NKREA|0DFE]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "United States",
+      "description": "A country in North America, officially the United States of America",
+      "full_classification": "Entity > Collective > NationalGovernment",
+      "alias_list": [
+        "USA",
+        "U.S.",
+        "America"
+      ],
+      "xref": "[NKREA|0E01-0E02]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Korean War",
+      "description": "A war on the Korean Peninsula from 1950 to 1953",
+      "full_classification": "Entity > Phenomenon > Event > ArmedConflict",
+      "alias_list": [
+        "Korean Conflict"
+      ],
+      "xref": "[NKREA|0E05-0E06]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Peace treaty",
+      "description": "A formal agreement to end a state of war",
+      "full_classification": "Entity > ConventionalEntity > Diplomacy > TreatyInstrument",
+      "alias_list": [
+        "peace agreement"
+      ],
+      "xref": "[NKREA|0E07]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Implied in this is the concept of a basic bargain of economic benefits, sanctions easing, and security assurances in exchange for nuclear weapons and missile limitations or dismantlement.",
+      "normalized": "Implied in this is the concept of a basic bargain of economic benefits, sanctions easing, and security assurances in exchange for nuclear weapons and missile limitations or dismantlement.",
+      "operative_verb": [
+        "Negotiation.negotiate.bargain"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "United States",
+          "role": "Affector"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "North Korea",
+          "role": "Affectee"
+        }
+      ],
+      "outcome": "Proposed exchange of benefits for weapons limitations",
+      "xref": "[NKREA|0E0A-0E11]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Economic benefits",
+      "description": "Material advantages provided to induce cooperation",
+      "full_classification": "Entity > ConventionalEntity > Economy > Incentive",
+      "alias_list": [
+        "economic incentives"
+      ],
+      "xref": "[NKREA|0E0D]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Sanctions easing",
+      "description": "Reduction of economic sanctions",
+      "full_classification": "Entity > ConventionalEntity > Legal > SanctionsRegime",
+      "alias_list": [
+        "sanctions relief"
+      ],
+      "xref": "[NKREA|0E0D]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Security assurances",
+      "description": "Guarantees provided to ensure safety and deterrence",
+      "full_classification": "Entity > ConventionalEntity > Diplomacy > Assurance",
+      "alias_list": [
+        "security guarantees"
+      ],
+      "xref": "[NKREA|0E0D]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Nuclear weapons",
+      "description": "Weapons deriving destructive force from nuclear reactions",
+      "full_classification": "Entity > MaterialEntity > Weapon > MissileSystem",
+      "alias_list": [
+        "nukes"
+      ],
+      "xref": "[NKREA|0E0F]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Missile limitations",
+      "description": "Restrictions on missile development or deployment",
+      "full_classification": "Entity > ConventionalEntity > Legal > ExportControlList",
+      "alias_list": [
+        "missile caps"
+      ],
+      "xref": "[NKREA|0E10]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "However, statutory conditions placed upon the President’s ability to suspend or terminate—and in some cases waive—sanctions impose constraints on the U.S. scope for action in this regard.",
+      "normalized": "However, statutory conditions placed upon the President’s ability to suspend or terminate—and in some cases waive—sanctions impose constraints on the U.S. scope for action in this regard.",
+      "operative_verb": [
+        "ComplianceAndLegal.Compliance.impose"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "Statutory conditions",
+          "role": "Affector"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "President of the United States",
+          "role": "Affectee"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "United States",
+          "role": "Affectee"
+        }
+      ],
+      "outcome": "Constraints on U.S. action regarding sanctions",
+      "xref": "[NKREA|0E12-0E18]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Statutory conditions",
+      "description": "Legal requirements limiting presidential discretion",
+      "full_classification": "Entity > ConventionalEntity > Legal > RegulationScheme",
+      "alias_list": [
+        "legal constraints"
+      ],
+      "xref": "[NKREA|0E12-0E14]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "President of the United States",
+      "description": "The head of state and government of the United States",
+      "full_classification": "Entity > Collective > GovernmentStructure > ExecutiveOffice",
+      "alias_list": [
+        "President",
+        "U.S. President"
+      ],
+      "xref": "[NKREA|0E14]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The prevailing view among U.S. North Korea watchers is that the North Korean regime, regardless of inducements, will not voluntarily give up its nuclear weapons capability.",
+      "normalized": "The prevailing view among U.S. North Korea watchers is that the North Korean regime, regardless of inducements, will not voluntarily give up its nuclear weapons capability.",
+      "operative_verb": [
+        "CognitionAndDecision.Reasoning.view"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "U.S. North Korea watchers",
+          "role": "Affector"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "North Korean regime",
+          "role": "Affectee"
+        }
+      ],
+      "outcome": "Skepticism about voluntary denuclearization",
+      "xref": "[NKREA|0E19-0E1E]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "U.S. North Korea watchers",
+      "description": "Analysts and experts monitoring North Korea in the United States",
+      "full_classification": "Entity > Collective > SocialGroup > Audience",
+      "alias_list": [
+        "North Korea analysts"
+      ],
+      "xref": "[NKREA|0E19]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "North Korean regime",
+      "description": "The ruling government of North Korea",
+      "full_classification": "Entity > Collective > NationalGovernment",
+      "alias_list": [
+        "DPRK regime"
+      ],
+      "xref": "[NKREA|0E1B]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Since the breakdown of the Trump-Kim diplomacy in 2019, Kim has issued statements that he will not relinquish such weapons.",
+      "normalized": "Since the breakdown of the Trump-Kim diplomacy in 2019, Kim has issued statements that he will not relinquish such weapons.",
+      "operative_verb": [
+        "Diplomacy.Relations.issue"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "Kim Jong Un",
+          "role": "Affector"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "Nuclear weapons",
+          "role": "Instrument"
+        }
+      ],
+      "outcome": "Refusal to relinquish nuclear weapons",
+      "xref": "[NKREA|0E1F-0E24]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Trump-Kim diplomacy",
+      "description": "Diplomatic interactions between President Trump and Kim Jong Un",
+      "full_classification": "Entity > Phenomenon > Process > Diplomacy",
+      "alias_list": [
+        "Trump-Kim talks"
+      ],
+      "xref": "[NKREA|0E20]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "The U.S. intelligence community concurs with this assessment, stating in 2023 that “Kim almost certainly views nuclear weapons and ICBMs as the ultimate guarantor of his autocratic rule and has no intention of abandoning those programs, believing that over time he will gain international acceptance as a nuclear power.”",
+      "normalized": "The U.S. intelligence community concurs with this assessment, stating in 2023 that “Kim almost certainly views nuclear weapons and ICBMs as the ultimate guarantor of his autocratic rule and has no intention of abandoning those programs, believing that over time he will gain international acceptance as a nuclear power.”",
+      "operative_verb": [
+        "CognitionAndDecision.Reasoning.view"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "U.S. intelligence community",
+          "role": "Affector"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "Kim Jong Un",
+          "role": "Affectee"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "Nuclear weapons",
+          "role": "Instrument"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "ICBMs",
+          "role": "Instrument"
+        }
+      ],
+      "outcome": "Concurrence that Kim will not abandon nuclear programs",
+      "xref": "[NKREA|0E24-0E31]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "U.S. intelligence community",
+      "description": "A federation of 16 U.S. government agencies that conduct intelligence activities",
+      "full_classification": "Entity > Collective > Agency > IntelligenceAgency",
+      "alias_list": [
+        "ODNI",
+        "Office of the Director of National Intelligence"
+      ],
+      "xref": "[NKREA|0E24]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "ICBMs",
+      "description": "Intercontinental ballistic missiles",
+      "full_classification": "Entity > MaterialEntity > Weapon > MissileSystem",
+      "alias_list": [
+        "intercontinental ballistic missiles"
+      ],
+      "xref": "[NKREA|0E29]"
+    }
+  },
+  {
+    "actuality": {
+      "verbatim": "Some North Korea analysts believe that the DPRK may calculate that acquiring the ability to strike U.S. territory with nuclear-tipped ICBMs will increase Pyongyang’s chances of achieving its ultimate goal of reunifying the Korean Peninsula.",
+      "normalized": "Some North Korea analysts believe that the DPRK may calculate that acquiring the ability to strike U.S. territory with nuclear-tipped ICBMs will increase Pyongyang’s chances of achieving its ultimate goal of reunifying the Korean Peninsula.",
+      "operative_verb": [
+        "CognitionAndDecision.Reasoning.believe"
+      ],
+      "participants": [
+        {
+          "subject_type": "entity",
+          "subject_reference": "North Korea analysts",
+          "role": "Affector"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "DPRK",
+          "role": "Affector"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "U.S. territory",
+          "role": "Affectee"
+        },
+        {
+          "subject_type": "entity",
+          "subject_reference": "Korean Peninsula",
+          "role": "Destination"
+        }
+      ],
+      "outcome": "Belief that nuclear ICBMs support reunification goal",
+      "xref": "[NKREA|0E3A-0E42]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "North Korea analysts",
+      "description": "Experts analyzing North Korea's strategy and motivations",
+      "full_classification": "Entity > Collective > SocialGroup > Audience",
+      "alias_list": [
+        "DPRK analysts"
+      ],
+      "xref": "[NKREA|0E3A]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "DPRK",
+      "description": "Democratic People's Republic of Korea, officially North Korea",
+      "full_classification": "Entity > Collective > NationalGovernment",
+      "alias_list": [
+        "North Korea"
+      ],
+      "xref": "[NKREA|0E3B]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "U.S. territory",
+      "description": "Land under the jurisdiction of the United States",
+      "full_classification": "Entity > Site > PhysicalSite > Territory",
+      "alias_list": [
+        "American soil"
+      ],
+      "xref": "[NKREA|0E3D]"
+    }
+  },
+  {
+    "entity": {
+      "primary_reference": "Korean Peninsula",
+      "description": "A peninsula in East Asia comprising North and South Korea",
+      "full_classification": "Entity > Site > PhysicalSite > Land",
+      "alias_list": [
+        "Korea"
+      ],
+      "xref": "[NKREA|0E42]"
+    }
+  }
+]
