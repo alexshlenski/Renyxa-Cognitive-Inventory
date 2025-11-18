@@ -3,7 +3,7 @@
 ### *Fully Automated Analytical Intelligence at Machine Speed*
 
 ---
-[![PDF](https://img.shields.io/badge/View-RCI%20Overview-blue?logo=adobeacrobatreader)](./RCI-overview.pdf)
+[![PDF](https://img.shields.io/badge/View-RCI%20Overview-blue?logo=adobeacrobatreader)](./docs/RCI-overview.pdf)
 [![Interpreter](https://img.shields.io/badge/View-RCI%20Interpreter-green?logo=readthedocs)](./docs/RCI-interpreter.pdf)
 [![FAQ](https://img.shields.io/badge/View-RCI%20FAQ-orange?logo=bookstack)](./docs/RCI-FAQ.pdf)
 ---
