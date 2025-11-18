@@ -3,10 +3,10 @@
 ### *Fully Automated Analytical Intelligence at Machine Speed*
 
 ---
-### For quick evaluation go to [RCI Interpreter](https://github.com/alexshlenski/Renyxa-Cognitive-Inventory/blob/main/docs/RCI-interpreter.pdf)
-### Also visit the [FAQ Page](https://github.com/alexshlenski/Renyxa-Cognitive-Inventory/blob/main/docs/RCI-FAQ.pdf)
+[![PDF](https://img.shields.io/badge/View-RCI%20Overview-blue?logo=adobeacrobatreader)](./RCI-overview.pdf)
+[![Interpreter](https://img.shields.io/badge/View-RCI%20Interpreter-green?logo=readthedocs)](./docs/RCI-interpreter.pdf)
+[![FAQ](https://img.shields.io/badge/View-RCI%20FAQ-orange?logo=bookstack)](./docs/RCI-FAQ.pdf)
 ---
-
 
 ## 🔹 What is RCI?
 
