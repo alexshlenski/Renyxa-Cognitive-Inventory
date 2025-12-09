@@ -20,7 +20,7 @@ Explore what FAAP can autonomously generate from unstructured text—complex tim
   <img src="https://img.shields.io/badge/View%20Causal%20Intervention%20Graph-%23ff8800?style=for-the-badge" />
 </a>
 
-<a href="https://raw.githubusercontent.com/alexshlenski/Frege-Automated-Analytical-Platform/main/deliverables/network-connections.png">
+<a href="https://github.com/alexshlenski/Frege-Automated-Analytical-Platform/blob/main/demo/GENESIS/deliverables/network-connections.png">
   <img src="https://img.shields.io/badge/View%20Actor%20Network%20Map-%23973cff?style=for-the-badge" />
 </a>
 
