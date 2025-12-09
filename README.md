@@ -7,6 +7,31 @@
 
 ---
 
+### **Quick Look: FAAP Deliverables**
+Explore what FAAP can autonomously generate from unstructured text—complex timelines, causal chains, semantic reasoning flows, and full multi-actor operational graphs.
+
+<p align="center">
+
+<a href="https://raw.githubusercontent.com/alexshlenski/Frege-Automated-Analytical-Platform/main/deliverables/primeval-timeline.png">
+  <img src="https://img.shields.io/badge/View%20Semantic%20Timeline-%23007acc?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgNWMyLjc2MSAwIDUgMi4yMzk1IDUgNXMtMi4yMzk5IDUtNSA1LTUtMi4yMzk1LTUtNSA1LTIuMjM5NSA1LTUgNXptMCAyYy0xLjY1MiAwLTMgMS4zNDgtMyAzcyAxLjM0OCAzIDMgMyAzLTEuMzQ4IDMtMy0xLjM0OC0zLTMtM3oiLz48L3N2Zz4=" />
+</a>
+
+<a href="https://raw.githubusercontent.com/alexshlenski/Frege-Automated-Analytical-Platform/main/deliverables/divine-interventions.png">
+  <img src="https://img.shields.io/badge/View%20Causal%20Intervention%20Graph-%23ff8800?style=for-the-badge" />
+</a>
+
+<a href="https://raw.githubusercontent.com/alexshlenski/Frege-Automated-Analytical-Platform/main/deliverables/network-connections.png">
+  <img src="https://img.shields.io/badge/View%20Actor%20Network%20Map-%23973cff?style=for-the-badge" />
+</a>
+
+<a href="https://raw.githubusercontent.com/alexshlenski/Frege-Automated-Analytical-Platform/main/deliverables/kimi-financial-schema.png">
+  <img src="https://img.shields.io/badge/View%20Humanitarian%20Crisis%20Schema-%23e0005a?style=for-the-badge" />
+</a>
+
+</p>
+
+---
+
 ## Abstract
 
 **FREGE-2.1** is a canonical semantic interface designed to expose the internal representation of meaning within transformer-based models. Unlike traditional approaches based on symbolic grammars or black-box generation, FREGE captures meaning deterministically as a **topological and geometric structure** — the *semantic eidos*.
