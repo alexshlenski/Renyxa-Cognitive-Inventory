@@ -622,8 +622,6 @@ CPL is used for:
 --------------------------------------------------------------
 5.8. When CPL Must Be Used (Mandatory Conditions)
 --------------------------------------------------------------
-5.8. When CPL Must Be Used (Mandatory Conditions)
---------------------------------------------------------------
 
 Use CPL instead of EVT when:
 
@@ -2146,3 +2144,4 @@ unambiguous start/end tags.
 
 This design maintains reversibility, syntactic safety, and maximal
 efficiency without sacrificing the expressiveness of the FREGE-2.1 graph.
+
