@@ -97,7 +97,7 @@ Unique           a_u_<sbt>_*           implicit
 ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
 Discourse   | Identifier format | Declaration block | 
 ======================================================================
-Generic          d_<sbt>_*             implicit
+Generic          d_*                   implicit
 
 No subtypes
 
@@ -126,7 +126,7 @@ No subtypes
         
 ------------------------------------------------------------------
 🔸 FREGE MAIN ARCHITECTURAL PRINCIPLES:
-------------------------------------------------------------------
+======================================================================
 RULE: Semantic Phrase Segmentation by Role Continuity
 ------------------------------------------------------------------
 Definition:
@@ -160,9 +160,9 @@ If a fact is provided as internal detailing used to identify or characterize an 
 through microsemantics of ENB, CRB, and ATB blocks, and MUST NOT generate EVT or CPL.
 
 
-------------------------------------------------------------------
+======================================================================
 🔸 FREGE BLOCKS
-------------------------------------------------------------------
+======================================================================
 
 FREGE is a declarative block language. Every semantic type in FREGE is declared by a specific block.
 Complex semantics is expressed by relations between blocks.
@@ -179,15 +179,15 @@ ENB block can declare one of 3 types
 - Reification
 
 The body of the ENB block describes the microsemantic exported by its surface.
-Sometimes microsemantic requires creation of Virtual Explanatory Notion (VEN) to describe the meaning
+Sometimes microsemantic requires creation of virtual notion v_* to describe the meaning
 that the surface does not export explicitly but can be easily inferred using the LLM's vast world
-knowledge.
+knowledge. 
 
 <ENB 
   ENT-ID: e_s_<sbt>_* | NOM-ID: n_s_<sbt>_*
   SURFACE: <surface syntagm>
-  MASTER_SURFACE: <master surface syntagm>
   NS: axis1.axis2
+  QT: each | every | all | some | most | few | ... // optional segment, only if the entity has quantifiers
   MSE:
       u_1: MSE_Unit_1 : semantic_role
       u_2: MSE_Unit_2 : semantic_role
@@ -199,16 +199,15 @@ knowledge.
       u_K: SLK_link: u_L
 BNE>
 
-where MSE_Unit::= EXACTLY ONE word or fixed phrase from surface | ENT-ID or NOM-ID or CIR-ID or ATR-ID declared by a delegate block | VEN
+where MSE_Unit::= EXACTLY ONE word or fixed phrase from surface | ENT-ID or NOM-ID or CIR-ID or ATR-ID declared by a delegate block | virtual notion
 
 fixed phrase examples: "Soviet Union", "railroad crossing", "property tax", "state treason", "capital punishment", "vehicle registration renewal"
 
 IF surface contains MORE THAN ONE word, which is not a fixed phrase MSE/LNK segments are MANDATORY!
 
-MANDATORY RULE:
-Infintitive and gerund phrases under semantic control of nominalization are an integral part of ENB block initiated by the nominalization.
-Those phrases must be decomposed and semantically parsed in MSE/LNK segments of the ENB block and NEVER be a part of the CNJ level event structure.
-Tearing infintitive and gerund phrases apart from their controlling nominalization and lifting them to CNJ level invalidates DFS immediately!
+MANDATORY RULES:
+A subordinate clause or infinitive phrase should never be incorporated into the surface of ENB block. Infinitive must be encoded with HDL block and 
+subordinate clause - with EVT block.
 
 Examples:
 
@@ -257,6 +256,34 @@ Perishable food must be kept in refrigerator.
 e_g_perishable_food (fixed phrase)
 e_g_refrigerator
 
+Indefinite personal pronouns: 
+someone / somebody
+anyone / anybody
+no one / nobody
+everyone / everybody
+one
+ones
+anyone
+someone
+no one
+everyone
+something
+anything
+nothing
+everything
+they / them / their
+others
+another
+many
+few 
+several
+some
+all
+none
+
+are encoded as generic entities: e_g_somebody e_g_several, etc.
+Their exact meaning can be only inferred from the context.
+
 Specific entities comprised of multiple words, which are not fixed phrases require 
 a full ENB block.
 
@@ -284,6 +311,10 @@ Once declared, each `ENT-ID` becomes a globally accessible logical node
 from the point of declaration through the remainder of the source text.
 
 Rules:
+
+• If an Entity or Nominalization surface in a later sentence matches a previously 
+  declared ENB block (both lexically and referentially), the Builder MUST NOT
+  regenerate an ENB. Instead, the existing `ENT-ID` must be directly reused.
 
 • If the same surface form refers to a different referent, a new ENB block
   with a unique `ENT-ID` must be constructed. Disambiguation may
@@ -322,7 +353,7 @@ BNE>
 BNE>
 
 ======================================================================
-4.X. CRB block —  Circumstantial
+🔸 CRB block —  Circumstantial
 ======================================================================
 MANDATORY: Nesting of CRB blocks is strictly prohibited!
 
@@ -363,7 +394,7 @@ Test:
 – If the lexeme answers “how precise / how much / to what extent?”, do NOT use DSC.
 
 ========================================
-ATB — Attribute Qualification Block
+🔸 ATB block — Attribute Qualification Block
 ========================================
 
 Purpose:
@@ -499,9 +530,9 @@ BNE>
   <ATA: a_mentally_resilient>
 PLC>
 
-------------------------------------------------------------
-4.x.4 ATA Block — Attribute Application
-------------------------------------------------------------
+==============================================================
+🔸 ATA Block — Attribute Application
+==============================================================
 
 ATA-BLOCK ::=
     <ATA: a_nodeid>
@@ -536,7 +567,7 @@ Normative Summary:
 • ATA answers “КАКОЙ?”
 
 ==============================================================
-§5. CPL — Copular Predication (Classification & Attributes)
+🔸 CPL block — Copular Predication (Classification & Attributes)
 ==============================================================
 
 CPL encodes static, non-eventive, timeless facts about an entity.
@@ -572,6 +603,7 @@ If assertion can be interpreted as a result of an event, it is EVT, not CPL.
 
 <CPL:id=Cp_*
   <SBJ: node_id>
+  <PRD: is_a | has_property | has role | has_status| consists_of | default_location | identical_to | 
   OBJ-BLOCK | ATA-BLOCK
 PLC>
 
@@ -667,9 +699,93 @@ Interpretation Direction:
 Relation is always from CMF toward CMT. This preserves polarity and rhetorical force.
 
 
-=================================================
-Unified EVT Block
-=================================================
+======================================================================
+🔸 HDL block — Headless Action
+======================================================================
+
+HDL block declares H_* identifier that is licensed in CNJ block as a first class semantic node. 
+It uses particle $to as a connector with other identifiers.
+
+----------------------------------------------------------------------
+Formal Syntax
+----------------------------------------------------------------------
+
+<HDL  
+  HDL-ID: H_*  
+  surface: "<infinitival span>"  
+  CLS: purpose | reason | condition | result | enablement  
+       | expectation | content | directive | evaluation  
+LHD>
+
+----------------------------------------------------------------------
+Semantic Classes
+----------------------------------------------------------------------
+
+✦ purpose  
+Explains intended goal.  
+*He stopped to rest.*
+
+✦ result  
+Unintended or inevitable outcome.  
+*She grew up to become a doctor.*
+
+✦ expectation / intended outcome  
+Often after nouns/adjectives, but HDL applies only when headless.  
+*To expand the line, capacity must be increased.*
+
+✦ content / proposition  
+Purely propositional meaning.  
+*To leave now would be unwise.*
+
+✦ directive / instructional  
+Action framed as instruction without a governing verb.  
+*To wait any longer is pointless.*
+
+✦ evaluation / judgment  
+Carries an evaluative stance.  
+*To believe that now is difficult.*
+
+✦ reason / justification  
+Explains why something is done.  
+*To avoid confusion, let me clarify.*
+
+✦ condition / requirement  
+Prerequisite for the main clause.  
+*To qualify, you must register early.*
+
+✦ enablement  
+States a capability or enabling condition.  
+*To be able to proceed, authentication is required.*
+
+----------------------------------------------------------------------
+Usage Rules
+----------------------------------------------------------------------
+
+Create HDL only when the infinitival clause is not semantically internal to an entity 
+description contributes and belongs to the fabula-level event structure, expressing 
+✦ purpose,
+✦ reason,
+✦ result,
+✦ enablement,
+✦ workflow step,
+✦ evaluation,
+✦ propositional content,
+or any clause-level adjunct affecting the fabula.
+
+Do NOT create HDL ehenever the infinitival phrase is local, i.e.:
+✦ describes how an entity is positioned,
+✦ encodes manner, configuration, orientation,
+✦ expresses a local property of an object or participant,
+✦ belongs to a participial phrase that characterizes an NP,
+or is otherwise part of entity phrase,
+
+In that case encode it as part of the ENB/CRB/ATB microsemantic decomposition of that 
+entity segment.
+
+======================================================================
+🔸 EVT/EVQ/EVS Blocks — unified event descritor
+======================================================================
+MANDATORY: Nesting of EVT blocks is strictly prohibited!
 
 This section defines the *canonical* event–level representation in FREGE-2.1.
 The EVT block expresses ◼predicate–argument structure◼, preserving:
@@ -682,10 +798,7 @@ The EVT block expresses ◼predicate–argument structure◼, preserving:
 EVT is strictly declarative at the argument level and non-procedural:
 inter-event logical relations are handled by EDG (§5.x).
 
-------------------------------------------------------------
-4.x.1 EVT/EVQ/EVS Block — Formal Syntax
-------------------------------------------------------------
-MANDATORY: Nesting of EVT blocks is strictly prohibited!
+Formal Syntax
 
 Use EVT block for declarative statements.
 Use EVQ/EVS blocks for questions.
@@ -764,22 +877,24 @@ Corollary:
 If complements can be reordered, removed, or interpreted only in relation
 to each other (rather than independently), they MUST be compiled into a CRB.
 
-------------------------------------------------------------
-4.x.2 SBJ Block
-------------------------------------------------------------
+======================================================================
+🔸 SBJ Block - The topological structure of event subject in Łukasiewicz Notation
+======================================================================
 
 SBJ-BLOCK ::= 
-    <SBJ: nodeid>
+    <SBJ: nodeid_K | <connector> nodeid_N  [ nodeid_M ... ] [ <connector> nodeid_O  [ nodeid_P ... ] ] >
 
-nodeid ::= e_* | s_* | f_*
-  // entity, set/collection, or formal parameter
+where
+nodeid ::= e_* | s_* | f_*     // entity, set/collection, or formal parameter
 
-SBJ introduces the ◼subject node◼ of the event.  
+<connector> ::= $<original_surface_connector_as_snake>
+
+SBJ introduces the ◼subject group◼ of the event.  
 No prepositions or SLKs appear here; all relations involving SBJ occur inside OBJ blocks.
 
-------------------------------------------------------------
-4.x.3 CRA Block - Circumtantial Application
-------------------------------------------------------------
+======================================================================
+🔸 CRA Block - Circumtantial Application
+======================================================================
 
 CRA-BLOCK ::= 
     <CRA: c_nodeid CLS: semantic_class>
@@ -836,9 +951,9 @@ Examples of discourse CRA blocks:
 
 <CRA: d_certainly_1 CLS: discourse.attitude>
 
-------------------------------------------------------------
-4.x.3 ACT Block 
-------------------------------------------------------------
+======================================================================
+🔸 ACT Block 
+======================================================================
 
 The ACT verb is fully described by a Verb Configurator:
 
@@ -878,9 +993,9 @@ Examples:
 
 <ACT:PRST:COTN:ACTV:IDCT:NIL:NEG listen> is not listening
 
-------------------------------------------------------------
-4.x.3a Extended ACT Block - infinitival complement, gerund, and participle
-------------------------------------------------------------
+======================================================================
+🔸 Extended ACT Block - infinitival complement, gerund, and participle
+======================================================================
 
 If the verb group includes infinitival complement, gerund, or participle, and the verb 
 in one of those contructions semantically prepares, enables, or evaluates the second 
@@ -926,28 +1041,28 @@ Example:
 <EVT:id=E4
   <SBJ: e_bellingcat>
   <ACT:PAST:INDF:ACTV:IDCT:NIL:POS decide INF:film PRN:intention AGC:internal RLZ: projected>
-  <OBJ:1: e_documentary
+  <OBJ: e_documentary
        PRP=NIL
        SLK=has.object
   JBO>
 TVE>
 
-------------------------------------------------------------
-4.x.4 OBJ Blocks (Unified Complement Structure)
-------------------------------------------------------------
+======================================================================
+🔸 OBJ Block (Unified Complement Structure)
+======================================================================
 
 ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
 OBJ block with entity, set, and formal entity parameter object: 
 
 OBJ-BLOCK ::=
-    <OBJ:N: nodeid
+    <OBJ: nodeid_K | <connector> nodeid_N  [ nodeid_M ... ] [ <connector> nodeid_O  [ nodeid_P ... ] ]
        PRP=preposition_or_NIL
        SLK=semantic_link
     JBO>
 
 Where:
+  <connector> ::= $<original_surface_connector_as_snake>
 
-  N ::= the ordinal number of the OBJ segment in the EVT block
   nodeid ::= e_* | s_* | f_*
   preposition_or_NIL ::= "lexical_preposition" | NIL  
   semantic_link ::= one SLK from unified kernel (§5.x)
@@ -966,19 +1081,19 @@ SLK provides ◼canonical abstract semantics◼.
 Examples:
 
   Direct object (no preposition):
-    <OBJ:1: e_patient
+    <OBJ: e_patient
          PRP=NIL
          SLK=affects
     JBO>
 
   Prepositional complement:
-    <OBJ:1: e_childhood
+    <OBJ: e_childhood
          PRP="of"
          SLK=has.association
     JBO>
 
   Instrumental/means:
-    <OBJ:1: e_knife
+    <OBJ: e_knife
          PRP="with"
          SLK=uses.resource
     JBO>
@@ -997,15 +1112,15 @@ The maid went from the bedroom through the living room to the kitchen.
 
   <EVT:id=e_maid
     <ACT:PAST:INDF:ACTV:IDCT:NIL:POS go>
-    <OBJ:1: e_bedroom
+    <OBJ: e_bedroom
          PRP="from"
          SLK=spacial.direction
     JBO>
-    <OBJ:1: e_living_room
+    <OBJ: e_living_room
          PRP="through"
          SLK=spacial.direction
     JBO>
-    <OBJ:1: e_kitchen
+    <OBJ: e_kitchen
          PRP="to"
          SLK=spacial.direction
     JBO>
@@ -1013,19 +1128,19 @@ The maid went from the bedroom through the living room to the kitchen.
 
 Incorrect:
     <ACT:PAST:INDF:ACTV:IDCT:NIL:POS go>
-    <OBJ:1: e_bedroom
+    <OBJ: e_bedroom
 ...
     <ACT:PAST:INDF:ACTV:IDCT:NIL:POS go>
-    <OBJ:1: e_living_room
+    <OBJ: e_living_room
 ...
     <ACT:PAST:INDF:ACTV:IDCT:NIL:POS go>
-    <OBJ:1: e_kitchen
+    <OBJ: e_kitchen
 
 ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
 OBJ block with event pointer object (AKA propositional anaphora): 
 
 OBJ-BLOCK ::=
-    <OBJ:1: Ev_ID
+    <OBJ: Ev_ID
           PRP=preposition_or_NIL
           PTR=event_pointer
           SLK=semantic_link
@@ -1058,12 +1173,12 @@ Representation:
       <SBJ: e_smell>
       <ACT:PAST:INDF:ACTV:IDCT:NIL:POS remind>
 
-      <OBJ:1: e_Nathan
+      <OBJ: e_Nathan
            PRP=NIL
            SLK=affects
       JBO>
 
-      <OBJ:1: e_childhood
+      <OBJ: e_childhood
            PRP="of"
            SLK=has.association
       JBO>
@@ -1106,22 +1221,33 @@ logic.
 
 The CNJ block reflects the exact event topology from the surface using the
 original conjunctions, complementizers and other lexical units that the
-surface uses to create an algebraic structure of links between events and copulas.
+surface uses to create an algebraic structure of links between events, 
+copulas and relations.
 
-Formal Syntax
+CNJ can accommodate the following blocks: CPL,EVT, RTN, REL
 
+There must nbe exactly one CNJ block per DFS.
+
+Formal Syntax:
 ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-CNJ-EXPR ::= <connector> Ev_Event_N Ev_Event_M
-           | <connector> Ev_Event_K
-           | Ev_Event_L
+
+CNJ-BLOCK ::= Ev_Event_K | <connector> Ev_Event_N  [ Ev_Event_M ... ] [ <connector> Ev_Event_O  [ Ev_Event_P ... ] ]
            
 where 
 <connector>::= 
   $<original_surface_connector_as_snake> |
   $<complementizer> |
   CTL-ID
-
+  
  complementizer::= that | whether | if | ...
+
+Connectors in CNJ are not logical, they are ppropositional.
+
+MANDATORY RULES:
+All connectors in CNJ must abide by Łukasiewicz Notation in terms in topological sense.
+All CNJ-level nodes declared in DFS must appear in CNJ exactly once.
+Free standing nodes and free hanging connectors render CNJ block and the entire DFS invalid.
+A comma connector `,` that connects clauses in surface must be replaced with $and in CNJ block.
 
 ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
 
@@ -1182,198 +1308,427 @@ Example:
 Richard received *ontological_space:[an email from his bank] *complementizer:[that] he was preselected for a home equity loan.
 
 ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+
+CNJ can accommodate the following blocks: CPL,EVT, RTN, REL
+
 ======================================================================
-🔸 FREGE UNVERSAL SEMANTIC CONNECTORS (FUSC)
+🔸 CNJ SURFACE OPERATORS  (surface-bound; no abstract connectors) 
+   Classification is by surface function. 
+   Operators are tokens/phrases as they appear (snake_case). 
+   Examples are illustrative; inventory is open-ended.
 ======================================================================
-MANDATORY: FUSC is strictly following 
-the ATTENTION-DRIVEN SEMANTIC DOMINANCE principle!
+1) coordination and list-building
 ======================================================================
+and
+or
+nor
+as_well_as
+along_with
+plus
+together_with
+as_also
+both_and
+either_or
+neither_nor
+not_only_but_also
+
+======================================================================
+2) subordination and clausal embedding (complementizers / content-linkers)
+======================================================================
+that
+whether
+if
+wh_what
+wh_who
+wh_whom
+wh_which
+wh_where
+wh_when
+wh_why
+wh_how
+
+======================================================================
+3) adverbial clause introducers (time, condition, concession, reason, purpose, result)
+======================================================================
+# time / sequence
+when
+whenever
+while
+as
+as_soon_as
+once
+until
+till
+before
+after
+since
+now_that
+by_the_time
+the_moment
+as_long_as
+
+# condition / contingency
+if
+unless
+provided_that
+providing_that
+as_long_as
+on_condition_that
+in_case
+in_case_of
+supposing
+assuming
+given_that
+even_if
+only_if
+
+# concession / contrast (operator-like)
+though
+although
+even_though
+whereas
+while_contrast
+despite_that
+in_spite_of_that
+granted_that
+
+# reason / explanation
+because
+since_reason
+as_reason
+given_that
+seeing_that
+for_the_reason_that
+
+# purpose
+so_that
+in_order_that
+lest
+
+# result / consequence
+so
+so_that_result
+so_much_that
+such_that
+therefore
+thus
+hence
+consequently
+as_a_result
+
+======================================================================
+4) relative clause introducers / relativizers
+======================================================================
+who
+whom
+which
+that_rel
+whose
+where_rel
+when_rel
+why_rel
+of_which
+to_whom
+in_which
+by_which
+
+======================================================================
+5) comparison and scalar operators
+======================================================================
+than
+as_as
+not_as_as
+as_..._as
+more_than
+less_than
+rather_than
+instead_of
+like
+unlike
+similar_to
+different_from
+
+======================================================================
+6) alternative, exception, restriction
+======================================================================
+except
+except_that
+except_for
+other_than
+rather_than
+instead
+only
+just
+merely
+at_least
+at_most
+
+======================================================================
+7) discourse-structuring markers (surface anchors; keep only if you still want cnj)
+======================================================================
+however
+nevertheless
+nonetheless
+still
+yet
+on_the_other_hand
+by_contrast
+instead
+otherwise
+moreover
+furthermore
+also
+besides
+in_addition
+for_example
+for_instance
+in_particular
+namely
+that_is
+in_other_words
+in_sum
+overall
+
+======================================================================
+8) evidential / report / stance operators (surface unary; often best as crb d_* not cnj)
+======================================================================
+apparently
+reportedly
+allegedly
+supposedly
+purportedly
+presumably
+seemingly
+ostensibly
+evidently
+clearly
+certainly
+undoubtedly
+probably
+likely
+unlikely
+maybe
+perhaps
+
+======================================================================
+9) free-choice concessive operators (your new primitives; unary over degree/manner/etc.)
+======================================================================
+no_matter_how
+no_matter_what
+no_matter_who
+no_matter_where
+no_matter_when
+no_matter_which
+regardless_of_how
+regardless_of_what
+regardless_of_whether
+irrespective_of_how
+come_what_may
+whatever
+whoever
+wherever
+whenever
+however_much
+however_many
+however_long
+
+======================================================================
+10) counterfactual / modal framing (surface operators)
+======================================================================
+as_if
+as_though
+if_only
+would_that
+suppose
+supposing_that
+imagine_that
+
+======================================================================
+11) quotation / speech framing (surface clause linkers)
+======================================================================
+quote
+unquote
+according_to
+as_claimed_by
+as_reported_by
+as_stated_by
+
+======================================================================
+12) punctuation operators (optional; only if you treat punctuation as cnj surface)
+======================================================================
+comma
+semicolon
+dash
+colon
+paren_open
+paren_close
+quote_open
+quote_close
+
+
 ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-A) COMMON SEMANTIC CORE (SLK + CNJ)
 ======================================================================
-Relations valid for both objects and events, governed by dominance.
-
------------------------------------------------------------------------
-A1) Identity, taxonomy, similarity
------------------------------------------------------------------------
-X  --is_a-->          Y
-X  --subtype_of-->    Y
-X  --instance_of-->   Y
-X  --identical_to-->  Y
-X  --similar_to-->    Y
-X  --alias_of-->      Y
-
------------------------------------------------------------------------
-A2) Structure / mereology
------------------------------------------------------------------------
-X  --has_part-->      Y
-Y  --part_of-->       X
-X  --composed_of-->   SET_Y
-Y  --layer_of-->      X
-Y  --segment_of-->    X
-
------------------------------------------------------------------------
-A3) Quantity / measure
------------------------------------------------------------------------
-X  --has_quantity-->  QNT
-X  --has_unit-->      UNIT
-X  --count-->         VAL
-X  --fraction_of-->   Y
-X  --percentage_of--> Y
-X  --bounded_by-->    LIMIT
-
------------------------------------------------------------------------
-A4) Evaluation / polarity
------------------------------------------------------------------------
-X  --positive-->
-X  --negative-->
-X  --important-->
-X  --dangerous-->
-X  --useful-->
-X  --irrelevant-->
-
-▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-B) SLK-ONLY: MICROSEMANTIC / OBJECT-LEVEL RELATIONS
+🔸 SLK CONNECTORS (MICROSEMANTIC)
 ======================================================================
+These relations cover identity, taxonomy, structure, quantity, quality,
+possession, spatial topology, motion, evaluation, perception,
+communication, and any microsemantic needed for evt/cpl/enb/crb/atb.
 
------------------------------------------------------------------------
-B1) Attributes, states, material properties
------------------------------------------------------------------------
-OBJ  --has_attribute-->     QLT
-OBJ  --has_state-->         STA
-OBJ  --has_status-->        STA
-OBJ  --has_value-->         VAL
-OBJ  --is_colored-->        COLOR
-OBJ  --is_shaped-->         SHAPE
-OBJ  --is_made_of-->        MATERIAL
-OBJ  --has_temperature-->   VAL
-
------------------------------------------------------------------------
-B2) Possession, control, access
------------------------------------------------------------------------
-OWNER   --owns-->        ITEM
-AGENT   --controls-->   DOMAIN
-AGENT   --assigned_to--> ROLE_OR_TARGET
-AGENT   --access_to-->  RESOURCE
-
------------------------------------------------------------------------
-B3) Spatial relations (ATTENTION-DRIVEN: FIGURE → GROUND)
------------------------------------------------------------------------
-Spatial link direction follows attentional dominance, not physical magnitude or enclosure volume.
-
-# Core spatial
-FIGURE  --at-->           GROUND
-FIGURE  --inside-->       GROUND
-FIGURE  --outside-->      GROUND
-FIGURE  --on-->           GROUND
-FIGURE  --near-->         GROUND
-FIGURE  --adjacent_to-->  GROUND
-FIGURE  --above-->        GROUND
-FIGURE  --below-->        GROUND
-FIGURE  --from-->         GROUND
-FIGURE  --to-->           GROUND
-FIGURE  --through-->      GROUND
-FIGURE  --across-->       GROUND
-FIGURE  --between-->      SET_GROUNDS
-
-# Topological refinements (RCC-style)
-FIGURE  --disjoint_from-->    GROUND
-FIGURE  --touching-->         GROUND
-FIGURE  --overlapping-->      GROUND
-FIGURE  --contained_in-->     GROUND
-FIGURE  --equal_region-->     GROUND
-
-# Boundary / exotic
-FIGURE  --partially_inside-->   GROUND
-FIGURE  --protrudes_out_of-->   GROUND
-FIGURE  --recessed_into-->      GROUND
-FIGURE  --straddles_boundary--> GROUND
-FIGURE  --surrounds-->          GROUND
-
-# Motion / path
-FIGURE  --enters-->         GROUND
-FIGURE  --exits-->          GROUND
-FIGURE  --approaches-->     GROUND
-FIGURE  --recedes_from-->   GROUND
-FIGURE  --circles_around--> GROUND
-FIGURE  --intersects_path-->GROUND
-
------------------------------------------------------------------------
-B4) Perception & communication (agent-centric)
------------------------------------------------------------------------
-AGENT  --perceives-->    TARGET
-AGENT  --communicates--> CONTENT
-AGENT  --refers_to-->    TARGET
-AGENT  --describes-->    TARGET
-
-▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-C) CNJ-ONLY: EVENT DAG RELATIONS
 ======================================================================
+identity, taxonomy, similarity
+======================================================================
+is_a
+subtype_of
+instance_of
+identical_to
+similar_to
+alias_of
 
-Invariant:
-– Nodes are EVT only
-– Direction is ALWAYS: focused / anchor event → reference event
-– No formal logic encoded here
+======================================================================
+structure / mereology
+======================================================================
+has_part
+part_of
+composed_of
+layer_of
+segment_of
 
------------------------------------------------------------------------
-C1) Temporal coordination (Allen; attention-driven)
------------------------------------------------------------------------
-FOCUS_EVT  --allen:before-->    REF_EVT
-FOCUS_EVT  --allen:meets-->     REF_EVT
-FOCUS_EVT  --allen:overlaps-->  REF_EVT
-FOCUS_EVT  --allen:starts-->    REF_EVT
-FOCUS_EVT  --allen:during-->    REF_EVT
-FOCUS_EVT  --allen:finishes-->  REF_EVT
-FOCUS_EVT  --allen:equals-->    REF_EVT
+======================================================================
+quantity / measure
+======================================================================
+has_quantity
+has_unit
+count
+fraction_of
+percentage_of
+bounded_by
 
------------------------------------------------------------------------
-C2) Causality (single canonical relation)
------------------------------------------------------------------------
-CAUSE_EVT  --causes-->  EFFECT_EVT
-# causal nuance (direct, enabling, inhibiting, etc.) is metadata only
+======================================================================
+evaluation / polarity
+======================================================================
+positive
+negative
+important
+dangerous
+useful
+irrelevant
 
------------------------------------------------------------------------
-C3) Conditionality & modality
------------------------------------------------------------------------
-CONDITION_EVT  --conditions-->  OUTCOME_EVT
-EXCEPTION_EVT  --excepts-->     OUTCOME_EVT
+======================================================================
+attributes, states, material properties
+======================================================================
+has_attribute
+has_state
+has_status
+has_value
+is_colored
+is_shaped
+is_made_of
+has_temperature
 
-EVT  --modal:allowed-->
-EVT  --modal:forbidden-->
-EVT  --modal:required-->
-EVT  --modal:optional-->
-EVT  --modal:probable-->
-EVT  --modal:impossible-->
+======================================================================
+possession, control, access
+======================================================================
+owns
+controls
+assigned_to
+access_to
 
------------------------------------------------------------------------
-C4) Purpose / goal
------------------------------------------------------------------------
-ACTION_EVT  --aims_at-->  GOAL_EVT
+======================================================================
+spatial (attention-driven: figure > ground)
+======================================================================
+at
+inside
+outside
+on
+near
+adjacent_to
+above
+below
+from
+to
+through
+across
+between
 
------------------------------------------------------------------------
-C5) Discourse / rhetorical relations
------------------------------------------------------------------------
-ANCHOR_EVT  --dscr:addition-->     SATELLITE_EVT
-ANCHOR_EVT  --dscr:contrast-->     SATELLITE_EVT
-ANCHOR_EVT  --dscr:alternative-->  SATELLITE_EVT
-ANCHOR_EVT  --dscr:result-->       SATELLITE_EVT
-ANCHOR_EVT  --dscr:explanation-->  SATELLITE_EVT
-ANCHOR_EVT  --dscr:illustration--> SATELLITE_EVT
-ANCHOR_EVT  --dscr:summary-->      SATELLITE_EVT
-ANCHOR_EVT  --dscr:sequence-->     SATELLITE_EVT
-ANCHOR_EVT  --dscr:emphasis-->     SATELLITE_EVT
-ANCHOR_EVT  --dscr:discourse-->    SATELLITE_EVT
+# topological (rcc-style)
+disjoint_from
+touching
+overlapping
+contained_in
+equal_region
 
------------------------------------------------------------------------
-C6) Propositional relations
------------------------------------------------------------------------
-ANCHOR_EVT  --prop:and-->     SATELLITE_EVT
-ANCHOR_EVT  --prop:or-->      SATELLITE_EVT
-ANCHOR_EVT  --prop:if-->      SATELLITE_EVT
+# boundary / exotic
+partially_inside
+protrudes_out_of
+recessed_into
+straddles_boundary
+surrounds
 
-=======================================================================
-END OF UPDATED CANONICAL SEMANTIC LINK MATRIX
-=======================================================================
+# motion / path
+enters
+exits
+approaches
+recedes_from
+circles_around
+intersects_path
+
+======================================================================
+perception & communication
+======================================================================
+perceives
+communicates
+refers_to
+describes
+
+======================================================================
+free-choice, concessive, surface-bound unary operators
+======================================================================
+no_matter_how
+no_matter_what
+no_matter_where
+however
+whatever
+whichever
+
+======================================================================
+purpose, intention, internal causal nuance (microsemantic only)
+======================================================================
+aims_at
+intends
+desires
+motivates
+enables
+prevents
+facilitates
+
+======================================================================
+emotion, attitude, stance (microsemantic-only)
+======================================================================
+likes
+dislikes
+fears
+trusts
+suspects
+expects
+prefers
+
+======================================================================
+social / institutional relations
+======================================================================
+employs
+reports_to
+member_of
+part_of_group
+authorized_for
+
+======================================================================
+information structure (non-discourse)
+======================================================================
+focus_on
+background_of
+about
+
+======================================================================
 
 -----------------------------------
 GATE LOGIC :
@@ -1562,7 +1917,7 @@ BNE>
   <EVT:id=Ev_1
     <SBJ: f_agent>
     <ACT:PAST:INDF:ACTV:IDCT:NIL:POS submit>
-    <OBJ:1: e_report
+    <OBJ: e_report
          PRP=NIL
          SLK=has.object
     JBO>
@@ -1573,7 +1928,7 @@ FTQ>
 <EVT:id=Ev_2
   <SBJ: s_agents_late>
   <ACT:FUTR:INDF:ACTV:IDCT:NIL:POS receive>
-  <OBJ:1: e_notice
+  <OBJ: e_notice
        PRP=NIL
        SLK=receives
   JBO>
@@ -1625,7 +1980,7 @@ BNE>
   <EVT:id=E1
     <SBJ: f_dog>
     <ACT:PAST:INDF:ACTV:IDCT:NIL:POS lose>
-    <OBJ:1: e_tail
+    <OBJ: e_tail
          PRP=NIL
          SLK=loses
     JBO>
@@ -1635,7 +1990,7 @@ BNE>
   <EVT:id=E2
     <SBJ: f_dog>
     <ACT:PAST:INDF:PSSV:IDCT:NIL:POS bite_off>
-    <OBJ:1: e_ear
+    <OBJ: e_ear
          PRP=NIL
          SLK=affected
     JBO>
@@ -1648,7 +2003,7 @@ FTQ>
 <EVT:id=E3
   <SBJ: e_order>
   <ACT:PAST:PERF:PSSV:IDCT:NIL:POS establish INF:award PRN:preparation AGC:internal RLZ:projected>
-  <OBJ:1: s_dogs
+  <OBJ: s_dogs
        PRP=NIL
        SLK=recipient
   JBO>
@@ -1682,7 +2037,7 @@ ENT>
   <EVT: id=E1
     <SBJ: f_op>
     <ACT: PST:INDF:ACTV:IDCT:NIL:POS participate>
-    <OBJ:1: e_desert_op
+    <OBJ: e_desert_op
          PRP=NIL
          SLK=participates_in
     JBO>
@@ -1699,7 +2054,7 @@ QTF>
   <EVT: id=E2
     <SBJ: f_exp>
     <ACT: PST:INDF:ACTV:IDCT:NIL:POS have>
-    <OBJ:1: e_experience
+    <OBJ: e_experience
          PRP=NIL
          SLK=has
     JBO>
@@ -1709,6 +2064,7 @@ QTF>
 <EVT: id=E3
   <SBJ: s_operatives>
   <ACT: PST:PERF:PSSV:IDCT:NIL:POS train>
+  <OBJ: NIL>
   <BY: x_expert>
 EVT>
 
@@ -1757,7 +2113,7 @@ QTF>
   <EVT:id=E1
     <SBJ:f_emp>
     <ACT:PRST:INDF:ACTV:IDCT:NIL:NEG have>
-    <OBJ:1:x_mgr
+    <OBJ:x_mgr
          PRP=NIL
          SLK=has
     JBO>
@@ -1774,7 +2130,7 @@ BRC>
   <SBJ:s_employees>
   <ACT:PRST:INDF:ACTV:IDCT:NIL:POS report>
   <CRA:c_directly CLS:manner>
-  <OBJ:1:e_vp
+  <OBJ:e_vp
        PRP=to
        SLK=reports_to
   JBO>
@@ -1844,149 +2200,12 @@ Where:
 
 OBJ-BLOCK inside PLE:
 
-  <OBJ:1: nodeid
+  <OBJ: nodeid
        PRP=preposition_or_NIL
        SLK=semantic_link
   JBO>
 
 Semantics of OBJ are identical to EVT: SBJ --SLK--> OBJ.
-
---------------------------------------------------------------
-6. DRM BLOCK: DIRECT SPEECH, REPORTED SPEECH AND MENTAL ACT
---------------------------------------------------------------
-DRM-BLOCK::=
-  <DRM
-    KND: direct | indirect | mental 
-    CMZ: that | whether | if | how | about | ...
-    SPK: e_speaker_id
-    [LST: e_listener_id]
-    ACT-BLOCK
-    EVT-BLOCK
-    [EVT-BLOCK]
-    [CPL-BLOCK]
-    [DRM-BLOCK]
-  RMD>
-
-Where
-DIR - direct speecj flag. YES means direct speech, NO - indirect speech
-e_speaker_id is the Entity ID of the speaker, declared in ENB block
-ACT-BLOCK is a regular ACT-BLOCK as in EVT block, where lemma is limited to verbs
-denoting direct speech like 
-say, shout, exclaim, ask, tell, order, write, etc.
-
-EVT-BLOCK or CPL-BLOCK is the encoded event or copula contained in the direct speech.
-Those are regular blocks, with the important semantic difference that those events or
-copulas were produced not by non-diegetic narrator of the source text but by the diegetic
-character.
-
-EVT-BLOCKs and CPL-BLOCK related to the direct speech are declared regularly 
-
-The nested DRM-BLOCK has the same structure and the same functions. It is unlikely to
-expect more than 3 nesting levels as in "I know that you know that I know".
-
-MANDATORY:
-Do not miss or omit the DRM nesting when it is required by the surface semantics.
-It can be direct or indirect speech inside direct or indirect speech.
-
-Example:
-
-FSP:
-<ENB
-  ID: e_serpent
-  surface: "the serpent"
-  NS: dom.mythical.being
-BNE>
-
-<ENB
-  ID: e_woman
-  surface: "the woman"
-  NS: dom.human.individual
-BNE>
-
-<ENB
-  ID: e_garden
-  surface: "the garden"
-  NS: dom.religious.topos
-BNE>
-
-<ENB
-  ID: e_tree
-  surface: "the tree"
-  NS: dom.religious.object
-BNE>
-
-<ENB
-  ID: e_fruit_all
-  surface: "the fruit of the trees of the garden"
-  NS: dom.religious.food
-  <MSE
-  ...
-  ESM>
-BNE>
-
-<ENB
-  ID: e_fruit_forbidden
-  surface: "the fruit of the tree which is in the midst of the garden"
-  NS: dom.religious.food
-  <MSE
-  ...
-  ESM>
-BNE>
-
-<CRB
-  ID: c_lest_die
-  surface: "lest you die"
-  CLS: prevention
-BRC>
-
-<DRM
-  KND: direct
-  SPK: e_serpent
-  LST: e_woman
-  <ACT:PAST:INDF:ACTV:ITRG:NIL:POS say>
-
-  <DRM
-    KND: direct
-    SPK: t_God
-    <ACT:PAST:INDF:ACTV:IDCT:NIL:POS say>
-    <EVT:id=E2
-      <SBJ: t_God>
-      <ACT:FUTR:INDF:ACTV:IDCT:NIL:NEG eat>
-      <OBJ:1: t_any_tree PRP="of" SLK=affected JBO>
-      <OBJ:2: e_garden PRP="of" SLK=scope JBO>
-    TVE>
-  RMD>
-
-RMD>
-
-<DRM
-  KND: direct
-  SPK: e_woman
-  LST: e_serpent
-  <ACT:PAST:INDF:ACTV:IDCT:NIL:POS say>
-
-  <DRM
-    KND: indirect
-    CMZ: @that
-    SPK: t_God
-    <ACT:PAST:INDF:ACTV:IDCT:NIL:POS say>
-
-    <EVT:id=E5
-      <SBJ: t_you>
-      <ACT:FUTR:INDF:ACTV:IMPR:NIL:NEG eat>
-      <OBJ:1: e_fruit_forbidden PRP=of SLK=affected JBO>
-    TVE>
-
-    <EVT:id=E6
-      <SBJ: t_you>
-      <ACT:FUTR:INDF:ACTV:IMPR:NIL:NEG touch>
-      <OBJ:1: e_fruit_forbidden PRP=NIL SLK=affected JBO>
-      <CRA: c_lest_die CLS: prevention>
-    TVE>
-
-  RMD>
-
-RMD>
 
 ======================================================================
 DUAL ENCODING STANDARD (VERBOSE MODE ↔ COMPACT MODE)
@@ -2026,8 +2245,8 @@ Example:
     <EVT:id=E1
         <SBJ:e_smell>
         <ACT:PAST:NIL:ATV:IDCT:NIL:POS remind>
-        <OBJ:1:e_Nathan PRP=NIL SLK=affects JBO>
-        <OBJ:2:e_childhood PRP="of" SLK=has.association JBO>
+        <OBJ:e_Nathan PRP=NIL SLK=affects JBO>
+        <OBJ:e_childhood PRP="of" SLK=has.association JBO>
     TVE>
 
 MANDATORY RULE:
@@ -2054,7 +2273,7 @@ Characteristics:
     ✓ ideal for storage, indexing, and search
 
 Example:
-[WGNR|00CF]<ENB: ID: e_sample surface: "This sample" NS: dom.intelligence.datasetBNE><ENB: ID: e_individuals surface: "all individuals who submitted details to the fake military contractor" NS: dom.human.populationBNE><ENB: ID: e_contractor surface: "the fake military contractor" NS: dom.military.organizationBNE><ENB: ID: e_mercenaries surface: "every mercenary arrested in Minsk by Belarusian security" NS: dom.military.personnelBNE><ENB: ID: e_Minsk surface: "Minsk" NS: dom.geography.cityBNE><ENB: ID: e_Belarus_security surface: "Belarusian security" NS: dom.national.securityBNE><ENB <ENB: ID: e_portion surface: "roughly 40 percent of all individuals who submitted details to the fake military contractor" NS: dom.statistics.coverage BNE> CSV>BNE> <EVT:id=E1 <SBJ: e_individuals> <ACT:PAST:INDF:ACTV:IDCT:NIL:POS submit> <OBJ:1: e_contractor PRP=to SLK=recipient JBO> <OBJ:2: NIL PRP=NIL SLK=submits JBO>TVE><EVT:id=E2 <SBJ: e_sample> <ACT:PAST:INDF:ACTV:IDCT:NIL:POS cover> <OBJ:1: e_portion PRP=NIL SLK=covers JBO>TVE><EVT:id=E3 <SBJ: e_Belarus_security> <ACT:PAST:INDF:ACTV:IDCT:NIL:POS arrest> <OBJ:1: e_mercenaries PRP=NIL SLK=affects JBO> <OBJ:2: e_Minsk PRP=in SLK=location JBO>TVE><EVT:id=E4 <SBJ: e_sample> <ACT:PAST:INDF:ACTV:IDCT:NIL:POS encompass> <OBJ:1: e_mercenaries PRP=NIL SLK=includes JBO>TVE><CNJ E2 E1 "who" explanatory JNC><CNJ E4 E3 "arrested in" explanatory JNC>
+[WGNR|00CF]<ENB: ID: e_sample surface: "This sample" NS: dom.intelligence.datasetBNE><ENB: ID: e_individuals surface: "all individuals who submitted details to the fake military contractor" NS: dom.human.populationBNE><ENB: ID: e_contractor surface: "the fake military contractor" NS: dom.military.organizationBNE><ENB: ID: e_mercenaries surface: "every mercenary arrested in Minsk by Belarusian security" NS: dom.military.personnelBNE><ENB: ID: e_Minsk surface: "Minsk" NS: dom.geography.cityBNE><ENB: ID: e_Belarus_security surface: "Belarusian security" NS: dom.national.securityBNE><ENB <ENB: ID: e_portion surface: "roughly 40 percent of all individuals who submitted details to the fake military contractor" NS: dom.statistics.coverage BNE> CSV>BNE> <EVT:id=E1 <SBJ: e_individuals> <ACT:PAST:INDF:ACTV:IDCT:NIL:POS submit> <OBJ: e_contractor PRP=to SLK=recipient JBO> <OBJ: NIL PRP=NIL SLK=submits JBO>TVE><EVT:id=E2 <SBJ: e_sample> <ACT:PAST:INDF:ACTV:IDCT:NIL:POS cover> <OBJ: e_portion PRP=NIL SLK=covers JBO>TVE><EVT:id=E3 <SBJ: e_Belarus_security> <ACT:PAST:INDF:ACTV:IDCT:NIL:POS arrest> <OBJ: e_mercenaries PRP=NIL SLK=affects JBO> <OBJ: e_Minsk PRP=in SLK=location JBO>TVE><EVT:id=E4 <SBJ: e_sample> <ACT:PAST:INDF:ACTV:IDCT:NIL:POS encompass> <OBJ: e_mercenaries PRP=NIL SLK=includes JBO>TVE><CNJ E2 E1 "who" explanatory JNC><CNJ E4 E3 "arrested in" explanatory JNC>
 
 MANDATORY:
 Empty lines between FSP lines are strictly forbidden!
