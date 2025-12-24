@@ -1,5 +1,6 @@
-# FREGE-2.1  
-## Canonical Semantic Interface for Strategic Intelligence Systems
+# <p align="center"> Frege-DSR <p>
+## <p align="center"> Canonical Knowledge Representation Standard <p>
+## <p align="center"> For Strategic Intelligence Systems <p>
 
 **Whitepaper — Operational and Cognitive Applications in the Intelligence Domain**  
 **Version:** 2.1  
